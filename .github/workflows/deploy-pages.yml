@@ -1,0 +1,41 @@
+name: Deploy Slide Fourteen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Restore compiled game
+        shell: bash
+        run: |
+          cat payload/site.tar.gz.part-* > site.tar.gz
+          echo "fb0f8d592c340c4cbf8df04a8ffe4b939a4cd793f427dc4aa4da5b42eee6f210  site.tar.gz" | sha256sum --check --strict
+          tar -xzf site.tar.gz
+          test -f site/index.html
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload game
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
