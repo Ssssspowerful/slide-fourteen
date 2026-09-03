@@ -41,6 +41,8 @@ jobs:
             echo 'Old GitHub project base path remains in the deployed site.' >&2
             exit 1
           fi
+      - name: Prepare localized SEO pages
+        run: node .github/scripts/prepare-site.mjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload game
