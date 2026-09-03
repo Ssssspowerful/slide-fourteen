@@ -208,6 +208,35 @@ async function patchLocaleRuntime() {
   await writeFile(file, source);
 }
 
+async function patchMobileNavigation() {
+  const files = (await walk(path.join(SITE_DIR, "_next", "static", "css"))).filter(
+    (file) => file.endsWith(".css"),
+  );
+  const hiddenRule = ".left-rail .old-links{display:none}";
+  const visibleRule = ".left-rail .old-links{display:block;grid-column:1/-1}";
+  const candidates = [];
+
+  for (const file of files) {
+    const source = await readFile(file, "utf8");
+    if (source.includes(hiddenRule)) candidates.push([file, source]);
+  }
+  if (candidates.length !== 1) {
+    throw new Error(`Expected one hidden mobile mirror rule; found ${candidates.length}.`);
+  }
+
+  const [file, source] = candidates[0];
+  const patched = replaceRequired(
+    source,
+    hiddenRule,
+    visibleRule,
+    "mobile external mirror navigation",
+  );
+  if (patched.includes(hiddenRule) || !patched.includes(visibleRule)) {
+    throw new Error("Mobile external mirror navigation patch failed validation.");
+  }
+  await writeFile(file, patched);
+}
+
 function sitemap() {
   const urls = pages
     .map(
@@ -220,6 +249,7 @@ function sitemap() {
 
 const baseHtml = await readFile(path.join(SITE_DIR, "index.html"), "utf8");
 await patchLocaleRuntime();
+await patchMobileNavigation();
 
 for (const page of pages) {
   const directory = path.join(SITE_DIR, page.directory);
@@ -230,4 +260,6 @@ for (const page of pages) {
 await writeFile(path.join(SITE_DIR, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 await writeFile(path.join(SITE_DIR, "sitemap.xml"), sitemap());
 
-console.log("Prepared root entry, three localized game routes, robots.txt, and sitemap.xml.");
+console.log(
+  "Prepared root entry, three localized game routes, mobile mirror navigation, robots.txt, and sitemap.xml.",
+);
