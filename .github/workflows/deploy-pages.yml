@@ -30,6 +30,17 @@ jobs:
           echo "fb0f8d592c340c4cbf8df04a8ffe4b939a4cd793f427dc4aa4da5b42eee6f210  site.tar.gz" | sha256sum --check --strict
           tar -xzf site.tar.gz
           test -f site/index.html
+      - name: Retarget compiled game for custom domain
+        shell: bash
+        run: |
+          find site -type f \( -name '*.html' -o -name '*.txt' -o -name '*.js' -o -name '*.css' \) -print0 |
+            xargs -0 sed -i \
+              -e 's#/slide-fourteen##g' \
+              -e 's#http://localhost:3000/og.png#https://slidefourteen.org/og.png#g'
+          if grep -R --include='*.html' --include='*.txt' --include='*.js' --include='*.css' '/slide-fourteen' site; then
+            echo 'Old GitHub project base path remains in the deployed site.' >&2
+            exit 1
+          fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload game
