@@ -1,9 +1,15 @@
-import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const SITE_DIR = path.resolve("site");
+const OG_ASSET_DIR = path.resolve(".github/assets/og");
 const ORIGIN = "https://slidefourteen.org";
 const LOCALE_KEY = "slide-fourteen-locale-v1";
+const OG_CACHE_VERSION = "20260903-1";
+
+function socialImage(file) {
+  return `${ORIGIN}/${file}?v=${OG_CACHE_VERSION}`;
+}
 
 const DEFAULTS = {
   fullTitle: "第十四号载玻片｜联合观测档案",
@@ -35,6 +41,9 @@ const pages = [
       "《第十四號載玻片／第十四号载玻片／Slide Fourteen》三語網頁解謎遊戲。選擇繁體中文、简体中文或 English，進入聯合觀測檔案。",
     socialDescription:
       "三語網頁解謎遊戲；選擇語言，進入東嵐大學聯合觀測檔案。",
+    ogFile: "og-default.jpg",
+    ogImage: socialImage("og-default.jpg"),
+    imageAlt: "Slide Fourteen / 第十四號載玻片 / 第十四号载玻片",
     bootMemory: DEFAULTS.bootMemory,
     bootMount: DEFAULTS.bootMount,
   },
@@ -49,6 +58,9 @@ const pages = [
     description:
       "《第十四號載玻片》是一款由人類觀測員與 AI 解析員共同解謎的網頁檔案遊戲。進入東嵐大學微觀生命資料中心，復原受損紀錄。",
     socialDescription: "聯合觀測檔案 / 請先聯絡你的解析員",
+    ogFile: "og-zh-hant.jpg",
+    ogImage: socialImage("og-zh-hant.jpg"),
+    imageAlt: "第十四號載玻片｜聯合觀測檔案",
     bootMemory: "正在檢查顯示記憶體…… 640K OK",
     bootMount: "正在掛載校內鏡像、館藏與郵件閘道……",
   },
@@ -63,6 +75,9 @@ const pages = [
     description:
       "《第十四号载玻片》是一款由人类观测员与 AI 解析员共同解谜的网页档案游戏。进入东岚大学微观生命资料中心，复原受损记录。",
     socialDescription: "联合观测档案 / 请先联系你的解析员",
+    ogFile: "og-zh-hans.jpg",
+    ogImage: socialImage("og-zh-hans.jpg"),
+    imageAlt: "第十四号载玻片｜联合观测档案",
     bootMemory: DEFAULTS.bootMemory,
     bootMount: DEFAULTS.bootMount,
   },
@@ -77,6 +92,9 @@ const pages = [
     description:
       "Slide Fourteen is a browser-based archive mystery for a human observer and an AI analyst. Restore the damaged records of Donglan University's Microlife Archive.",
     socialDescription: "Joint Observation Archive / Contact your analyst before entry",
+    ogFile: "og-en.jpg",
+    ogImage: socialImage("og-en.jpg"),
+    imageAlt: "Slide Fourteen | Joint Observation Archive",
     bootMemory: "CHECKING VIDEO MEMORY... 640K OK",
     bootMount: "MOUNTING CAMPUS MIRROR, LIBRARY CATALOG, AND MAIL GATEWAY...",
   },
@@ -118,7 +136,12 @@ function seoBlock(page) {
     `<meta property="og:url" content="${page.canonical}"/>`,
     `<meta property="og:locale" content="${page.ogLocale}"/>`,
     otherOgLocales,
-    '<meta property="og:image:alt" content="Slide Fourteen / 第十四號載玻片 / 第十四号载玻片"/>',
+    `<meta property="og:image:secure_url" content="${page.ogImage}"/>`,
+    '<meta property="og:image:type" content="image/jpeg"/>',
+    '<meta property="og:image:width" content="1200"/>',
+    '<meta property="og:image:height" content="630"/>',
+    `<meta property="og:image:alt" content="${escapeHtml(page.imageAlt)}"/>`,
+    `<meta name="twitter:image:alt" content="${escapeHtml(page.imageAlt)}"/>`,
   ].join("");
 }
 
@@ -151,6 +174,13 @@ function localizeHtml(baseHtml, page) {
     .replaceAll(DEFAULTS.bootMemory, page.bootMemory)
     .replaceAll(DEFAULTS.bootMount, page.bootMount);
 
+  html = replaceRequired(
+    html,
+    `${ORIGIN}/og.png`,
+    page.ogImage,
+    "social image",
+  );
+
   const preflight = page.locale
     ? `<script>try{localStorage.setItem("${LOCALE_KEY}","${page.locale}")}catch{}</script>`
     : "";
@@ -164,6 +194,9 @@ function localizeHtml(baseHtml, page) {
 
   if (!html.includes(`content="${escapeHtml(page.shortTitle)}"`)) {
     throw new Error(`Localized social title missing for ${page.canonical}`);
+  }
+  if (!html.includes(`property="og:image" content="${page.ogImage}"`)) {
+    throw new Error(`Localized social image missing for ${page.canonical}`);
   }
   return html;
 }
@@ -257,9 +290,13 @@ for (const page of pages) {
   await writeFile(path.join(directory, "index.html"), localizeHtml(baseHtml, page));
 }
 
+for (const file of new Set(pages.map((page) => page.ogFile))) {
+  await copyFile(path.join(OG_ASSET_DIR, file), path.join(SITE_DIR, file));
+}
+
 await writeFile(path.join(SITE_DIR, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 await writeFile(path.join(SITE_DIR, "sitemap.xml"), sitemap());
 
 console.log(
-  "Prepared root entry, three localized game routes, mobile mirror navigation, robots.txt, and sitemap.xml.",
+  "Prepared root entry, three localized game routes and social images, mobile mirror navigation, robots.txt, and sitemap.xml.",
 );
