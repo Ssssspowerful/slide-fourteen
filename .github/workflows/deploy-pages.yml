@@ -41,8 +41,12 @@ jobs:
             echo 'Old GitHub project base path remains in the deployed site.' >&2
             exit 1
           fi
+      - name: Patch onboarding, forum interactions and Chinese text
+        run: node .github/scripts/patch-game-v19.mjs
       - name: Prepare localized SEO pages
         run: node .github/scripts/prepare-site.mjs
+      - name: Verify interaction and locale build
+        run: node .github/scripts/verify-site-v19.mjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload game

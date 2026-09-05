@@ -1,7 +1,7 @@
 import { copyFile, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const SITE_DIR = path.resolve("site");
+const SITE_DIR = path.resolve(process.env.SLIDE14_SITE_DIR || "site");
 const OG_ASSET_DIR = path.resolve(".github/assets/og");
 const ORIGIN = "https://slidefourteen.org";
 const LOCALE_KEY = "slide-fourteen-locale-v1";
@@ -274,7 +274,7 @@ function sitemap() {
   const urls = pages
     .map(
       (page) =>
-        `  <url>\n    <loc>${page.canonical}</loc>\n    <lastmod>2026-09-03</lastmod>\n  </url>`,
+        `  <url>\n    <loc>${page.canonical}</loc>\n    <lastmod>2026-09-05</lastmod>\n  </url>`,
     )
     .join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
