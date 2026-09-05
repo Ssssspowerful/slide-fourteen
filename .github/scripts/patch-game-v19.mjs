@@ -239,6 +239,7 @@ const traditional = {
   "本提示只在建立新观测员档案时显示一次。":
     "本提示僅於建立新觀測員檔案時顯示一次。",
   "RINGBOARD 短消息": "RINGBOARD 私人訊息",
+  "短消息 ": "私人訊息 ",
   "收件箱：": "收件匣：",
   "状态：登录前已读": "狀態：登入前已讀",
   "未读消息：2": "未讀訊息：2",
@@ -266,6 +267,7 @@ const english = {
   "本提示只在建立新观测员档案时显示一次。":
     "This notice is displayed once when a new observer file is created.",
   "RINGBOARD 短消息": "RINGBOARD PRIVATE MESSAGES",
+  "短消息 ": "PRIVATE MESSAGES ",
   "收件箱：": "INBOX: ",
   "状态：登录前已读": "STATUS: READ BEFORE LOGIN",
   "未读消息：2": "UNREAD MESSAGES: 2",

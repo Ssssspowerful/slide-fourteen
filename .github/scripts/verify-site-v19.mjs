@@ -52,6 +52,7 @@ for (const [text, label] of [
   ["【数据交换】是本次观测的任务与进度中心", "Data Exchange orientation"],
   ["章硯秋，別再拿研究會的帳號回文。", "independent Traditional forum wording"],
   ["NEW OBSERVER: PLEASE CONFIRM THE READING ORDER", "English orientation wording"],
+  ['"短消息 ":"PRIVATE MESSAGES "', "English inbox toolbar label"],
   ["RINGBOARD 短消息", "forum inbox"],
   ["二食堂又停热水。晚上吃凉面？", "cold-noodle easter egg"],
   ["forum-reflecting", "water reflection state"],
