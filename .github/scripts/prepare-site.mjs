@@ -44,7 +44,7 @@ const pages = [
     ogFile: "og-default.jpg",
     ogImage: socialImage("og-default.jpg"),
     imageAlt: "Slide Fourteen / 第十四號載玻片 / 第十四号载玻片",
-    bootMemory: DEFAULTS.bootMemory,
+    bootMemory: "正在检查基本内存…… 640K OK",
     bootMount: DEFAULTS.bootMount,
   },
   {
@@ -61,7 +61,7 @@ const pages = [
     ogFile: "og-zh-hant.jpg",
     ogImage: socialImage("og-zh-hant.jpg"),
     imageAlt: "第十四號載玻片｜聯合觀測檔案",
-    bootMemory: "正在檢查顯示記憶體…… 640K OK",
+    bootMemory: "正在檢查基本記憶體…… 640K OK",
     bootMount: "正在掛載校內鏡像、館藏與郵件閘道……",
   },
   {
@@ -78,7 +78,7 @@ const pages = [
     ogFile: "og-zh-hans.jpg",
     ogImage: socialImage("og-zh-hans.jpg"),
     imageAlt: "第十四号载玻片｜联合观测档案",
-    bootMemory: DEFAULTS.bootMemory,
+    bootMemory: "正在检查基本内存…… 640K OK",
     bootMount: DEFAULTS.bootMount,
   },
   {
@@ -95,7 +95,7 @@ const pages = [
     ogFile: "og-en.jpg",
     ogImage: socialImage("og-en.jpg"),
     imageAlt: "Slide Fourteen | Joint Observation Archive",
-    bootMemory: "CHECKING VIDEO MEMORY... 640K OK",
+    bootMemory: "CHECKING BASE MEMORY... 640K OK",
     bootMount: "MOUNTING CAMPUS MIRROR, LIBRARY CATALOG, AND MAIL GATEWAY...",
   },
 ];
@@ -238,6 +238,20 @@ async function patchLocaleRuntime() {
     '(0,r.jsx)("p",{children:y("正在检查显存…… 640K OK",n)}),(0,r.jsx)("p",{children:y("正在挂载校内镜像、馆藏与邮件网关……",n)})',
     "localized boot screen",
   );
+  // Keep DEFAULTS as the unmodified payload markers; patch the runtime and
+  // translation key together so hydration matches each localized HTML page.
+  source = replaceRequired(
+    source,
+    DEFAULTS.bootMemory,
+    pages.find((page) => page.locale === "zh-CN").bootMemory,
+    "base-memory boot terminology",
+  );
+  source = replaceRequired(
+    source,
+    "CHECKING VIDEO MEMORY... 640K OK",
+    pages.find((page) => page.locale === "en").bootMemory,
+    "English base-memory boot terminology",
+  );
   await writeFile(file, source);
 }
 
@@ -274,7 +288,7 @@ function sitemap() {
   const urls = pages
     .map(
       (page) =>
-        `  <url>\n    <loc>${page.canonical}</loc>\n    <lastmod>2026-09-05</lastmod>\n  </url>`,
+        `  <url>\n    <loc>${page.canonical}</loc>\n    <lastmod>2026-09-06</lastmod>\n  </url>`,
     )
     .join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;

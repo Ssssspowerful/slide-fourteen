@@ -95,7 +95,7 @@ const textRevisions = [
   ],
   [
     "B-204 旧 CCD 已更换为可自动缓存四帧图像的型号。由于磁盘空间有限，新帧写入后将覆盖旧帧焦距参数。",
-    "B-204 原有 CCD 已更换为四帧自动缓存型号。受磁盘容量限制，新帧写入时将覆盖前一帧的焦距参数。",
+    "B-204 原有 CCD 已更换为四帧自动缓存型号。受磁盘容量限制，新帧写入时将覆盖前一帧的对焦参数。",
   ],
   [
     "测试期间发现蓝色通道会在静止对象周围产生拖影。设备科确认这属于成像问题，与对象运动无关。",
@@ -169,11 +169,41 @@ const textRevisions = [
     "今晚 21:40 我会关闭自动接收。不要来 B-204。",
     "今晚 21:40 我会关掉自动接收。别来 B-204。",
   ],
+  // Correct optical terminology without explaining the anomalous response.
+  [
+    "物镜尚未移入视野时，对象已转向载玻片背面。",
+    "物镜尚未转入观察位置时，对象已转向载玻片背面。",
+  ],
+  [
+    "对象具有普通喇叭虫形态，却会在物镜进入视野前移动到玻片背面。遮挡研究员视线时运动停止；遮挡摄影机无效。",
+    "对象具有普通喇叭虫形态，却会在物镜转入观察位置前移动到玻片背面。遮挡研究员视线时运动停止；遮挡摄影机无效。",
+  ],
+  [
+    "旧 CCD 缓存共四帧。每次刷新会丢失前一帧的焦距参数；请自行比较变化。",
+    "旧 CCD 缓存共四帧。每次刷新会丢失前一帧的对焦参数；请自行比较变化。",
+  ],
+  [
+    "03:21，镜头忽然失焦。系统自动把焦距从载玻片表面调到显示器玻璃。那里映出一位正在阅读文字的观测者。",
+    "03:21，镜头忽然失焦。系统自动把焦点从载玻片表面调到显示器玻璃。那里映出一位正在阅读文字的观测者。",
+  ],
 ];
 
 for (const [before, after] of textRevisions) {
   // Each line appears once in the game and once as the English dictionary key.
   source = replaceExact(source, before, after, 2, `text revision: ${before.slice(0, 18)}`);
+}
+
+for (const [before, after] of [
+  [
+    "Before the objective enters the field, the subject has already turned toward the rear of the slide.",
+    "Before the objective is moved into position, the subject has already turned toward the rear of the slide.",
+  ],
+  [
+    "The subject has ordinary Stentor morphology, yet moves to the rear of the slide before the objective enters the field. Its movement stops when the researcher's view is blocked; blocking the camera has no effect.",
+    "The subject has ordinary Stentor morphology, yet moves to the rear of the slide before the objective is moved into position. Its movement stops when the researcher's view is blocked; blocking the camera has no effect.",
+  ],
+]) {
+  source = replaceExact(source, before, after, 1, "English objective-position terminology");
 }
 
 const traditional = {
@@ -190,8 +220,8 @@ const traditional = {
     "最近研究會借了 B-204 的交換器，說要讓查詢程式多查一點水質資料。我說幫浦又不該有網路位址。章硯秋只笑，說：「它只是需要一個更大的樹冠。」",
   "明晚我去拆接口。要是这页的最后修订日期变成 11 月 4 日，就当我没赶上。":
     "明晚我去拆介面。要是這頁的最後修改日期變成 11 月 4 日，就當我沒趕上。",
-  "B-204 原有 CCD 已更换为四帧自动缓存型号。受磁盘容量限制，新帧写入时将覆盖前一帧的焦距参数。":
-    "B-204 原有 CCD 已更換為可自動快取四幀影像的機型。因磁碟容量有限，新影像寫入時會覆寫前一幀的焦距參數。",
+  "B-204 原有 CCD 已更换为四帧自动缓存型号。受磁盘容量限制，新帧写入时将覆盖前一帧的对焦参数。":
+    "B-204 原有 CCD 已更換為可自動快取四幀影像的機型。因磁碟容量有限，新影像寫入時會覆寫前一幀的對焦參數。",
   "试拍时，蓝色通道在静止样本周围出现拖影。设备科确认系成像故障，与样本移动无关。":
     "試拍時，藍色頻道在靜止樣本周圍出現殘影。設備組確認為成像故障，與樣本移動無關。",
   "因热水管线检修，第二食堂自今晚 20:00 起暂停供应热水，预计三日后恢复。第一食堂及东区锅炉房照常供应。":

@@ -118,6 +118,6 @@ for (const [directory, title, locale] of localizedPages) {
 }
 
 const sitemap = await readFile(path.join(SITE_DIR, "sitemap.xml"), "utf8");
-requireText(sitemap, "<lastmod>2026-09-05</lastmod>", "updated sitemap date");
+requireText(sitemap, "<lastmod>2026-09-06</lastmod>", "updated sitemap date");
 
 console.log("Verified v19 interaction state, frozen narrative text, packet integrity, locale routes and responsive styles.");
