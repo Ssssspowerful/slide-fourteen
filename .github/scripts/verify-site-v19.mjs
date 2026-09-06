@@ -57,6 +57,7 @@ for (const [text, label] of [
   ["二食堂又停热水。晚上吃凉面？", "cold-noodle easter egg"],
   ["forum-reflecting", "water reflection state"],
   ["onWaterSeen:()=>q({waterReflectionSeen:!0})", "one-time water callback"],
+  ['window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches?500:1200', "motion-aware water duration"],
 ]) {
   requireText(js, text, label);
 }
@@ -65,6 +66,9 @@ for (const [text, label] of [
   ["章砚秋，别再用研究会终端登录论坛。", "old forum wording"],
   ["卡片题名被水洗掉，边码还能读。登录号、库位与借阅日期互相矛盾。", "old Qiao email wording"],
   ["orientationDismissed", "dismiss-only orientation state"],
+  ["本提示只在建立新观测员档案时显示一次。", "immersion-breaking Simplified orientation note"],
+  ["本提示僅於建立新觀測員檔案時顯示一次。", "immersion-breaking Traditional orientation note"],
+  ["This notice is displayed once when a new observer file is created.", "immersion-breaking English orientation note"],
 ]) {
   forbidText(js, text, label);
 }
@@ -73,6 +77,8 @@ for (const [text, label] of [
   ["这封邮件被标为无关记录，但它是唯一明确说明 B-204 不应该有供水的档案。", "ambiguous hot-water annotation"],
   ["录音里不是泵声。每一次脉冲都是一组细胞同时放电，树状终端只是把相位差翻译成可点击的分枝。", "Zhang Yanqiu email"],
   ["从提问者还没问出口的那条分枝来。", "waterbranch forum line"],
+  ["林启文的个人首页（第二份同名备份）", "Lin Qiwen second same-name backup"],
+  ["不要比较文字差异；它想知道你会相信哪一份比较旧。", "Lin Qiwen no-comparison warning"],
 ]) {
   requireText(js, text, `frozen ${label}`);
 }
@@ -87,11 +93,13 @@ if (packetHash !== "07755aeacfde913f5da22b5fcb5a1c37018db55fbba38d4cca0aca4fd8fe
 
 for (const marker of [
   'body[data-archive-locale=en]{font-family:Times New Roman,Georgia,serif;font-size:15px}',
-  ".orientation-title{",
+  ".orientation-screen{position:fixed;z-index:70;inset:0;display:grid;place-items:center;padding:18px;background:transparent}",
   ".forum-dialog-shade{",
   ".forum-mobile-wet{display:none",
-  "@keyframes forumSubmerge",
-  "@media (prefers-reduced-motion:reduce){.forum-water-event{animation:none}",
+  ".forum-mirror.forum-reflecting{overflow:visible;filter:none}",
+  ".forum-water-event{position:fixed;z-index:90;inset:0;width:100vw;height:100vh",
+  "@keyframes archiveSubmerge",
+  "@media (prefers-reduced-motion:reduce){.forum-water-event{animation:none;-webkit-backdrop-filter:none;backdrop-filter:none}",
 ]) {
   requireText(css, marker, `style marker ${marker}`);
 }
