@@ -6,7 +6,7 @@ const SITE_DIR = path.resolve(process.env.SLIDE14_SITE_DIR || "site");
 const OG_ASSET_DIR = path.resolve(".github/assets/og");
 const ORIGIN = "https://slidefourteen.org";
 const LOCALE_KEY = "slide-fourteen-locale-v1";
-const OG_CACHE_VERSION = "20260903-1";
+const OG_CACHE_VERSION = "20260906-entry-1";
 
 function socialImage(file) {
   return `${ORIGIN}/${file}?v=${OG_CACHE_VERSION}`;
@@ -44,6 +44,9 @@ const pages = [
       "三語網頁解謎遊戲；選擇語言，進入東嵐大學聯合觀測檔案。",
     ogFile: "og-default.jpg",
     ogImage: socialImage("og-default.jpg"),
+    imageType: "image/jpeg",
+    imageWidth: 1200,
+    imageHeight: 630,
     imageAlt: "Slide Fourteen / 第十四號載玻片 / 第十四号载玻片",
     bootMemory: "正在检查基本内存…… 640K OK",
     bootMount: DEFAULTS.bootMount,
@@ -59,9 +62,12 @@ const pages = [
     description:
       "《第十四號載玻片》是一款由人類觀測員與 AI 解析員共同解謎的網頁檔案遊戲。進入東嵐大學微觀生命資料中心，復原受損紀錄。",
     socialDescription: "聯合觀測檔案 / 請先聯絡你的解析員",
-    ogFile: "og-zh-hant.jpg",
-    ogImage: socialImage("og-zh-hant.jpg"),
-    imageAlt: "第十四號載玻片｜聯合觀測檔案",
+    ogFile: "og-entry-zh-hant.png",
+    ogImage: socialImage("og-entry-zh-hant.png"),
+    imageType: "image/png",
+    imageWidth: 1053,
+    imageHeight: 841,
+    imageAlt: "《第十四號載玻片》繁體中文入口：1997 年校園鏡像站、舊實驗室照片與觀測員登記表。",
     bootMemory: "正在檢查基本記憶體…… 640K OK",
     bootMount: "正在掛載校內鏡像、館藏與郵件閘道……",
   },
@@ -76,9 +82,12 @@ const pages = [
     description:
       "《第十四号载玻片》是一款由人类观测员与 AI 解析员共同解谜的网页档案游戏。进入东岚大学微观生命资料中心，复原受损记录。",
     socialDescription: "联合观测档案 / 请先联系你的解析员",
-    ogFile: "og-zh-hans.jpg",
-    ogImage: socialImage("og-zh-hans.jpg"),
-    imageAlt: "第十四号载玻片｜联合观测档案",
+    ogFile: "og-entry-zh-hans.png",
+    ogImage: socialImage("og-entry-zh-hans.png"),
+    imageType: "image/png",
+    imageWidth: 1090,
+    imageHeight: 837,
+    imageAlt: "《第十四号载玻片》简体中文入口：1997 年校园镜像站、旧实验室照片与观测员登记表。",
     bootMemory: "正在检查基本内存…… 640K OK",
     bootMount: DEFAULTS.bootMount,
   },
@@ -93,9 +102,12 @@ const pages = [
     description:
       "Slide Fourteen is a browser-based archive mystery for a human observer and an AI analyst. Restore the damaged records of Donglan University's Microlife Archive.",
     socialDescription: "Joint Observation Archive / Contact your analyst before entry",
-    ogFile: "og-en.jpg",
-    ogImage: socialImage("og-en.jpg"),
-    imageAlt: "Slide Fourteen | Joint Observation Archive",
+    ogFile: "og-entry-en.png",
+    ogImage: socialImage("og-entry-en.png"),
+    imageType: "image/png",
+    imageWidth: 1025,
+    imageHeight: 866,
+    imageAlt: "English entry screen for Slide Fourteen: a 1997 university mirror site, an old laboratory photograph, and an observer registration form.",
     bootMemory: "CHECKING BASE MEMORY... 640K OK",
     bootMount: "MOUNTING CAMPUS MIRROR, LIBRARY CATALOG, AND MAIL GATEWAY...",
   },
@@ -137,10 +149,15 @@ function seoBlock(page) {
     `<meta property="og:url" content="${page.canonical}"/>`,
     `<meta property="og:locale" content="${page.ogLocale}"/>`,
     otherOgLocales,
+  ].join("");
+}
+
+function socialImageMetadata(page) {
+  return [
     `<meta property="og:image:secure_url" content="${page.ogImage}"/>`,
-    '<meta property="og:image:type" content="image/jpeg"/>',
-    '<meta property="og:image:width" content="1200"/>',
-    '<meta property="og:image:height" content="630"/>',
+    `<meta property="og:image:type" content="${page.imageType}"/>`,
+    `<meta property="og:image:width" content="${page.imageWidth}"/>`,
+    `<meta property="og:image:height" content="${page.imageHeight}"/>`,
     `<meta property="og:image:alt" content="${escapeHtml(page.imageAlt)}"/>`,
     `<meta name="twitter:image:alt" content="${escapeHtml(page.imageAlt)}"/>`,
   ].join("");
@@ -181,6 +198,9 @@ function localizeHtml(baseHtml, page) {
     page.ogImage,
     "social image",
   );
+  const imageTag = `<meta property="og:image" content="${page.ogImage}"/>`;
+  // Open Graph image properties belong immediately after their parent image.
+  html = replaceRequired(html, imageTag, `${imageTag}${socialImageMetadata(page)}`, "social image metadata");
 
   const preflight = page.locale
     ? `<script>try{localStorage.setItem("${LOCALE_KEY}","${page.locale}")}catch{}</script>`
@@ -317,7 +337,8 @@ for (const page of pages) {
   await writeFile(path.join(directory, "index.html"), localizeHtml(baseHtml, page));
 }
 
-for (const file of new Set(pages.map((page) => page.ogFile))) {
+// Keep previously published image URLs available for cached social cards.
+for (const file of await readdir(OG_ASSET_DIR)) {
   await copyFile(path.join(OG_ASSET_DIR, file), path.join(SITE_DIR, file));
 }
 
