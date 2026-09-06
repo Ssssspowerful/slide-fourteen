@@ -1,4 +1,5 @@
 import { copyFile, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import path from "node:path";
 
 const SITE_DIR = path.resolve(process.env.SLIDE14_SITE_DIR || "site");
@@ -253,6 +254,10 @@ async function patchLocaleRuntime() {
     "English base-memory boot terminology",
   );
   await writeFile(file, source);
+  return {
+    filename: path.basename(file),
+    version: createHash("sha256").update(source).digest("hex").slice(0, 16),
+  };
 }
 
 async function patchMobileNavigation() {
@@ -294,8 +299,16 @@ function sitemap() {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 }
 
-const baseHtml = await readFile(path.join(SITE_DIR, "index.html"), "utf8");
-await patchLocaleRuntime();
+const originalHtml = await readFile(path.join(SITE_DIR, "index.html"), "utf8");
+const gameRuntime = await patchLocaleRuntime();
+// The restored payload keeps its original Next.js filename after text patches.
+// Version every HTML/Flight reference using the final bytes to avoid stale code.
+const baseHtml = replaceRequired(
+  originalHtml,
+  gameRuntime.filename,
+  `${gameRuntime.filename}?v=${gameRuntime.version}`,
+  "versioned game script references",
+);
 await patchMobileNavigation();
 
 for (const page of pages) {
