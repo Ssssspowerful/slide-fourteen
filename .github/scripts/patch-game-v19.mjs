@@ -400,7 +400,7 @@ css = replaceExact(
   "English base font size",
 );
 css += `
-.orientation-screen{position:fixed;z-index:70;inset:0;display:grid;place-items:center;padding:18px;background:transparent}
+.orientation-screen{position:fixed;z-index:70;inset:0;display:grid;place-items:center;padding:18px;background:rgba(0,0,0,.18)}
 .orientation-dialog{width:min(520px,100%);color:#111;background:#c8c8c8;border:3px outset #fff;box-shadow:8px 8px 0 rgba(0,0,0,.42);font:13px Arial,"Microsoft YaHei",sans-serif}
 .orientation-title{display:flex;align-items:center;justify-content:space-between;padding:4px 5px 4px 8px;color:#fff;background:#000080;font-weight:700}
 .orientation-title button{min-width:24px;padding:0 4px;color:#000;background:#c8c8c8;border:2px outset #fff;font-weight:700}

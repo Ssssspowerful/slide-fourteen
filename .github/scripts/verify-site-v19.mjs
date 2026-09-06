@@ -95,7 +95,7 @@ if (packetHash !== "07755aeacfde913f5da22b5fcb5a1c37018db55fbba38d4cca0aca4fd8fe
 
 for (const marker of [
   'body[data-archive-locale=en]{font-family:Times New Roman,Georgia,serif;font-size:15px}',
-  ".orientation-screen{position:fixed;z-index:70;inset:0;display:grid;place-items:center;padding:18px;background:transparent}",
+  ".orientation-screen{position:fixed;z-index:70;inset:0;display:grid;place-items:center;padding:18px;background:rgba(0,0,0,.18)}",
   ".forum-dialog-shade{",
   ".forum-mobile-wet{display:none",
   ".forum-mirror.forum-reflecting{overflow:visible;filter:none}",
