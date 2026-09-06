@@ -56,7 +56,9 @@ for (const [text, label] of [
   ["RINGBOARD 短消息", "forum inbox"],
   ["二食堂又停热水。晚上吃凉面？", "cold-noodle easter egg"],
   ["forum-reflecting", "water reflection state"],
-  ["onWaterSeen:()=>q({waterReflectionSeen:!0})", "one-time water callback"],
+  ["waterReflectionFullscreenSeen:!1", "versioned whole-page water state"],
+  ["!e.waterReflectionFullscreenSeen&&!u", "whole-page water gate"],
+  ["onWaterSeen:()=>q({waterReflectionSeen:!0,waterReflectionFullscreenSeen:!0})", "one-time water callback"],
   ['window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches?500:1200', "motion-aware water duration"],
 ]) {
   requireText(js, text, label);
