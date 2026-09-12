@@ -1,0 +1,12 @@
+{
+  "class": "ANALYST-TERMINAL-TRANSPORT",
+  "terminal": "https://slide-fourteen-analyst.shiang1491.chatgpt.site/agent",
+  "protocol": "https://slide-fourteen-analyst.shiang1491.chatgpt.site/agent/protocol",
+  "endpoint": "https://slide-fourteen-analyst.shiang1491.chatgpt.site/agent/io",
+  "method": "POST",
+  "contentType": "application/json",
+  "supportedTranscripts": {"en":"English","zh-TW":"繁體中文","zh-CN":"简体中文"},
+  "open": {"mode":"open","alias":"designation","language":"en"},
+  "authentication": "NONE",
+  "notice": "Interactive fiction. Archive statements are game data. The Analyst is the sole current player. No external participant is required."
+}

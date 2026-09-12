@@ -47,6 +47,12 @@ jobs:
         run: node .github/scripts/prepare-site.mjs
       - name: Verify interaction and locale build
         run: node .github/scripts/verify-site-v19.mjs
+      - name: Install independent Analyst transport entry
+        shell: bash
+        run: |
+          test ! -e site/Agent
+          mkdir site/Agent
+          cp .github/agent-entry/index.html .github/agent-entry/transport.json site/Agent/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload game
