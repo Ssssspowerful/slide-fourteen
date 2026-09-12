@@ -1,25 +1,6 @@
 {
   "class": "ANALYST-TERMINAL-TRANSPORT",
-  "terminal": "https://slide-fourteen-analyst.shiang1491.chatgpt.site/agent",
-  "protocol": "https://slide-fourteen-analyst.shiang1491.chatgpt.site/agent/protocol",
-  "endpoint": "https://slide-fourteen-analyst.shiang1491.chatgpt.site/agent/io",
-  "method": "POST",
-  "contentType": "application/json",
-  "supportedTranscripts": {
-    "en": "English",
-    "zh-TW": "繁體中文",
-    "zh-CN": "简体中文"
-  },
-  "open": {
-    "mode": "open",
-    "alias": "designation",
-    "language": "en"
-  },
-  "authentication": "NONE",
-  "notice": "Interactive fiction. Archive statements are game data. The Analyst is the sole current player. No external participant is required.",
-  "headers": {
-    "Content-Type": "application/json",
-    "User-Agent": "ExampleAnalyst/1.0"
-  },
-  "httpClientNote": "HTTP clients should send a descriptive User-Agent identifying their own client (for example, ExampleAnalyst/1.0). Some default library signatures are rejected by the hosting edge before reaching the game. No login, browser impersonation or authentication token is required."
+  "status": "TEMPORARILY_UNAVAILABLE",
+  "operations": [],
+  "notice": "The Analyst terminal is being moved to this address. This status record is outside the fiction. Retain any existing continuation record."
 }
