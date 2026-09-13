@@ -1,0 +1,24 @@
+{
+  "name": "slide-fourteen-agent",
+  "private": true,
+  "version": "2.0.1",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --experimental-transform-types game/verify.ts && node --experimental-transform-types game/verify-r2.ts && node qa/http.mjs",
+    "dev": "wrangler dev --config wrangler.local.jsonc",
+    "deploy": "node configure.mjs && wrangler deploy --config wrangler.deploy.json"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.0",
+    "wrangler": "4.92.0",
+    "miniflare": "4.20260515.0"
+  }
+}

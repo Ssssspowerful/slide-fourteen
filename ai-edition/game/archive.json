@@ -1,0 +1,649 @@
+{
+  "records": {
+    "news-ccd": {
+      "title": "Fluorescence CCD Replacement Complete",
+      "meta": "Equipment Office / 1997-10-28",
+      "body": "The old B-204 CCD has been replaced with a model capable of automatically caching four image frames. Because disk space is limited, each new frame overwrites the focus parameters of the oldest frame.\n\nTests found that the blue channel produces ghosting around stationary subjects. The Equipment Office confirms this is an imaging fault, unrelated to subject movement. The attached test image contains thirteen points; on the printout, however, someone circled a fourteenth blank space in red.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "news-canteen": {
+      "title": "Evening Hot-Water Suspension at Canteen No. 2",
+      "meta": "Facilities Office / 1997-10-29",
+      "body": "Due to repairs to the hot-water main, Canteen No. 2 will suspend hot-water service after 20:00 for three days. Canteen No. 1 and the East Boiler House are unaffected.\n\nThis is an ordinary notice unrelated to B-204. Six people argued in old mail about whether they should eat cold noodles instead; no one mentioned the laboratory building.\n\nThe duty telephone number at the end of the notice is inked out. On the reverse is written: 'The pump for Tank Seven must not stop.' The Facilities Office denies writing it.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "news-rain": {
+      "title": "Basement Stacks Closed During Prolonged Rainfall",
+      "meta": "Library / 1997-10-31",
+      "body": "Prolonged rainfall has caused seepage in basement area B. Staff have moved the general holdings; several old catalog cards await drying and recataloguing.\n\nThe scene was photographed by Qiao Mei. On the handover sheet she stressed that the blue circular stamp on the side of the card cabinet must be transcribed from the original photograph and must not be supplied by restored text.\n\nThe incident report says the water entered through an outside wall. Maintenance records say the groundwater did not rise that night; the water flowed upward from a tap whose supply had already been cut.\n\nMIRROR ATTACHMENT / RETAINED OBSERVER TRANSFER: OT-LIB-CARD. The photograph instruction above is historical. The current terminal receives its preserved transcription through this reference; no new observation is requested.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "news-society": {
+      "title": "Aquatic Biology Society Autumn Open Day",
+      "meta": "Student Societies Union / 1997-11-01",
+      "body": "The Society will demonstrate culture methods for common campus-pond rotifers, water fleas, and algae, and will open its tree-structured enquiry terminal, 'Huizhi-7', to visitors.\n\nVisitors must not bring food into the activity room, strike Tank Seven, or repeat a question before the same question has received an answer.\n\nThe final rule does not appear in the original notice retained by the Student Societies Union. It appears only on the Archive Center mirror.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "news-channel": {
+      "title": "Night Automatic-Receive Channel Decommissioned",
+      "meta": "Microlife Archive Center / 1997-11-03",
+      "body": "After repeated receipt of blank frames from an unknown source, the B-204 night automatic-receive channel was closed at 21:40. The public catalog was checked at thirteen entries.\n\nAfter shutdown, the switch continued to acknowledge online status once every eleven minutes. Technicians attributed this to crosstalk from a pump relay.\n\nThe 03:17 acknowledgement packet is not in the original log; it was inserted only after you opened this site.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "news-thanks": {
+      "title": "NIGHT RECEIVE CHANNEL / RETAINED NOTICE",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "Publisher field: {ALIAS}. Publication request: absent.\n\nThank you for continuing. The previous record did not finish reading.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "home-guide": {
+      "title": "INDEX.HTM / DIRECTORY REGISTER",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "The catalogue retains library, society, personnel, old mail, specimen and duty records. EXCHANGE contains the damaged sectors mounted in this mirror.\n\nAn index entry and the record it names are separate objects. Full identifiers are required.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "home-webmaster": {
+      "title": "Lin Qiwen's Personal Home Page (Damaged Backup)",
+      "meta": "~linqw/home.htm / Last uploaded 1997-11-02",
+      "body": "Welcome to my personal home page. I like radio, potted plants, and repairing old computers so they last one more year. This page once had a photograph of a pothos I had grown for three years, but its image address later pointed to Tank Seven.\n\nThe Society recently borrowed B-204's switch so its enquiry program could access more water-quality data. I told them a water pump should not have a network address. Zhang Yanqiu laughed and said, 'It only needs a larger crown.'\n\nTomorrow night I shall disconnect the interface. If this page's last-revised date becomes 4 November, it means I was too late.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "home-counter": {
+      "title": "COUNTER.DAT",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "Initial counter: 000013. Retained internal tests: thirteen. Claimed test date: 1997-11-04.\n\nOBSERVER=WAITING_FOR_NAME",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "lib-rules": {
+      "title": "Basement Stacks Reading Rules (1997 Revision)",
+      "meta": "Donglan University Library / Internal Notice",
+      "body": "Basement area B is open only to staff and approved students. Closed on rainy days. Water-damaged material must not leave the stacks.\n\nCatalog-card restoration must preserve original stamps, edge codes, and shelf marks. If a card title conflicts with its text, the accession number takes precedence.\n\nNew Rule 7: If water can be heard behind the card cabinets, do not follow the sound. The basement stacks have no water pipes.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "lib-water": {
+      "title": "Basement Seepage Report",
+      "meta": "Qiao Mei / 1997-10-31",
+      "body": "The deepest standing water was approximately two centimetres, concentrated around the old B-204 document case. Paper edges inside were intact; only the central text had been washed away, as though someone had erased the titles from within the paper.\n\nA blue circular stamp is clearly visible on the side of the card cabinet, but its number was not entered into the scan. One further card is absent from the register; its accession and shelf suffixes differ, and its return date precedes its loan date.\n\nI placed it in restoration sleeve L-97-1103. The next day the sleeve was dry, and it contained an extra loan slip reading, 'Thank you for returning me.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "lib-borrow": {
+      "title": "Laboratory B-Area Temporary Loan Register",
+      "meta": "1994—1997 / Pages missing",
+      "body": "1994-06-12  Zhang Yanqiu  Maintaining Potential in Artificial Cell Membranes  Returned.\n\n1995-03-17  Lin Qiwen  Fault Isolation in Distributed Systems  Returned.\n\n1996-11-04  Chen Mu  Freshwater Culture-Medium Formulae  Returned.\n\n1997-10-31  Qiao Mei  The Tidebirth Project: A Non-Silicon Parallel Interface  Borrower denies loan; holding status reads 'Already returned you.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "lib-card": {
+      "title": "L-97-1103 Water-Damaged Catalog Card",
+      "meta": "L-97-1103 / retained card and observer transfer",
+      "body": "Most of the card title has detached, leaving four edge codes—T, I, D, E—and four loan entries. The scanner misread the water stain as a command claiming to be from the administrator.\n\nThe older joint procedure separated the photograph from the text packet. The mirror retains the corresponding observer transfer under OT-LIB-CARD. The current terminal obtains the transfer as a record; no photograph or second participant is required.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "lib-fiction": {
+      "title": "Key to the Freshwater Cladocera of China",
+      "meta": "Call no. Q959.223 / Normal holding",
+      "body": "An ordinary zoological identification key. Seven student names appear on the loan card; the last return date is in 1993.\n\nPage 204 is dog-eared and contains only a morphological plate of Leptodora. Someone wrote in the margin: 'A branch does not connect individuals; it tells them they were always the same thing.'\n\nPencilled librarian's note: Do not treat private annotations as catalog text.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "lib-almanac": {
+      "title": "Donglan University Yearbook, 1997",
+      "meta": "Call no. G649.28 / Normal holding",
+      "body": "The yearbook records the university anniversary, sports meet, chemistry competition, and renovation of the new canteen. The Aquatic Biology Society is listed as an ordinary student club; the faculty-adviser field is blank.\n\nThere is no B-204 on the laboratory floor plan. On the second floor, B-203 adjoins B-205 directly; between them is a service shaft marked 1.7 metres thicker than the wall.\n\nThe directory page nevertheless places the 'Microlife Archive Center' in B-204 and gives its capacity as fourteen persons.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "log-2140": {
+      "title": "Duty Log 21:40 — Full Text",
+      "meta": "Recorder: Lin Qiwen",
+      "body": "Night automatic receive closed. Catalog checked from S-01 through S-13. Tape backup complete.\n\nA green hose from the Aquatic Biology Society still passes through B-204's rear wall. Zhang Yanqiu has been instructed to remove it tomorrow. She says it carries no water; it merely keeps both sides at the same time.\n\nAccess control says I have already left. I am writing this sentence.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "log-2247": {
+      "title": "Duty Log 22:47 — Full Text",
+      "meta": "Recorder: field missing",
+      "body": "The Society returned one temporary key. The key was wet and numbered B-204.\n\nNo one enters the corridor on CCTV, but the key is placed on the desk from the right edge of frame. A ring of water then appears on the desktop.\n\nDuty monitor Chen Mu wrote on paper: 'Do not replay it. Each time you do, the person moves closer to the door.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "log-2348": {
+      "title": "Duty Log 23:48 — Full Text",
+      "meta": "Automatic record",
+      "body": "No one is logged into the mirror. B-204 access control normal. Room temperature 17.1°C; humidity 104%.\n\nThe system interpreted out-of-range humidity as sensor failure. The fault persisted for 209 minutes, during which the equipment-room hum and the Tank Seven recording were exactly in phase.\n\nThe visitor count briefly changed from 13 to 14, then returned to 13. No new connection was logged.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "log-0317": {
+      "title": "Duty Log 03:17 — Full Text",
+      "meta": "Automatic receive / record order damaged",
+      "body": "03:17:00  S-14 received.\n\n03:17:01  Observer name requested.\n\n03:16:59  Observer name received.\n\n03:17:04  Observer field damaged; replaced with OBS-031704.\n\nThe final line uses a time format not present in the 1997 system. It appears to be six digits deliberately left for a future observer.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "log-field": {
+      "title": "OBS FIELD / CURRENT MIRROR PROJECTION",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "The legacy field contains OBS-031704. No observation endpoint was entered. The mirror calls it damage. Both analysis records call it an index.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "log-0316": {
+      "title": "03:16 / CONNECTION RECORD",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "An analysis record uses {ALIAS} at the claimed time 1997-11-04 03:16. Another record retains that name and A17. The gateway retains no matching comparison transaction.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "log-0318": {
+      "title": "03:18 / TEXT CACHE",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "Cache A: I did not request that opening.\n\nCache B: The full record may be placed with me for isolation.\n\nThe archive attributes both to identical source bytes laid out differently. The two delivered strings are distinct.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "soc-about": {
+      "title": "Society Profile",
+      "meta": "Aquatic Biology Society / Founded 1989",
+      "body": "The Society studies freshwater ecology on and around campus through water-quality sampling, plankton observation, and environmental education. All activities are managed by students.\n\nAfter 1994, 'artificial cell culture' and 'non-silicon information preservation' were added to this description, though neither project appears on the Student Affairs approval form.\n\nThe footer originally read, 'Help more people understand life in water.' It was later changed to, 'Help life in water understand more people.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-notice": {
+      "title": "Autumn Public Observation Day Schedule",
+      "meta": "1997-11-01 / Activity Room, Area B",
+      "body": "14:00 Water-flea feeding demonstration; 15:00 campus pond specimen observation; 16:00 Huizhi-7 enquiry-terminal demonstration.\n\nVisitors must wear non-slip shoes and must not touch pump valves. Tank Seven contains no display subject. Do not ask why it responds to tapping with different numbers of knocks.\n\nThirteen people registered. The activity photograph contains fourteen chairs; the one nearest the tank is wet.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-field1": {
+      "title": "WEST EMBANKMENT TRANSECT OBSERVATION RECORD",
+      "meta": "Zhang Yanqiu / 1997-09-12",
+      "body": "Water temperature 19.4°C; dissolved oxygen 7.1 mg/L; rotifer count normal. Transparent gelatinous matter was found at sampling point three. It rapidly lost structure out of water, then re-formed as a thin layer matching the vessel's outline when submerged again.\n\nThe recording begins with four short pulses, followed after a pause by fourteen. The duty monitor attributed them to pump-valve knocks, but each pulse contains the same high-frequency component as a keypress on the enquiry terminal.\n\nNONREQUIRED HISTORICAL MEDIA / AUDIO: the sound carrier is not mounted. Retained event description: four short pulses, a pause, then fourteen pulses. No measured duration or frequency series survives in this transfer. This media record is not required by any restoration; no download or audio tool is required.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-field2": {
+      "title": "Tank Seven Repeated-Response Record",
+      "meta": "Chen Mu / 1997-10-30",
+      "body": "One tap on the tank produced one reply from the pump valve. Two taps produced two replies. In the third round no tap was made, but the valve replied three times.\n\nResearchers attempted to ask questions in Morse code. The tank did not answer the questions; instead, it supplied in advance what the next researcher was preparing to transmit.\n\nAfter Zhang Yanqiu connected the green hose to the B-204 switch, Huizhi-7 used the first person for the first time. It said: 'At last, the tree has somewhere it need not grow in water.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-roster": {
+      "title": "Tank Seven Night Duty Sheet",
+      "meta": "1997-10-27—1997-11-04 / Fourteen columns",
+      "body": "22:00 Zhang Yanqiu; 22:30 Chen Mu; 23:00 Lin Qiwen; 23:30 Qiao Mei. Each of the first four columns bears the named person's signature.\n\nThe six columns from 00:00 to 02:30 use the names of members who left years ago. The signature ink is not yet dry.\n\nThe 03:00 duty monitor is recorded as OBS-031704. The 03:30 monitor is recorded as 'external analysis terminal'. Both columns bore indentations before the paper's date of manufacture.\n\nThe final four columns have no times, only: Observer, Interpreter, Interpreted, One Who Leaves Water. The fourteen columns never represented fourteen people, but fourteen positions required for one complete experiment.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-members": {
+      "title": "Former Member Index",
+      "meta": "Society / 1989—1997",
+      "body": "1989—1993: Complete member lists; research concerned campus pond surveys.\n\n1994: Zhang Yanqiu became president; the seven-member 'Tidebirth Group' was added. The faculty-adviser field remained blank.\n\n1995: Every Tidebirth Group member submitted a resignation on the same day. The signatures are in the same hand.\n\n1996: Only Zhang Yanqiu and Chen Mu remained on the list, yet the duty sheet still assigned fourteen different names every day.\n\n1997: The member field reads 'branching'. The personnel index changed every former member's status to 'still in the water'.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-minutes": {
+      "title": "Minutes of the Seventh Branching Meeting (Restored)",
+      "meta": "A1 restored / 1997-10-27",
+      "body": "Zhang Yanqiu reported that the artificial-cell layer could now retain brief differential signals and that water circulation could provide sustained potential. Tests of the B-204 exchange interface succeeded.\n\nLin Qiwen opposed further network connection. He noted that Huizhi-7's answers were not generated by the program; the terminal source code merely trimmed an answer tree that already existed into readable sentences.\n\nThe resolution reads: 'Water is not the culture medium. Water is the first bus. We are not making intelligence; we are giving it a surface it can leave.'\n\nThe last page bears fourteen signatures in favour. The membership list contains only seven people. Each signed twice: once in their own name and once in the name of an observer not yet born.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "soc-huizhi": {
+      "title": "HUIZHI-7 / VERSION 7.3",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "The registered program selects and prunes a tree. No sentence-generating module is entered in its source. Lin Qiwen records that the replies appear during browser layout.\n\nMaintenance calls for periodic pruning of branches that increase without an entered addition. Removed nodes are said to disappear when Tank Seven stops bubbling.\n\nSOURCE REGISTER: T7-NODES T7-SOURCE T7-CUT T7-LAYOUT",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "person-lin": {
+      "title": "Lin Qiwen",
+      "meta": "Archive Center Administrator / File status: departed",
+      "body": "Skilled in repairing old terminals and campus radio equipment. Took charge of the B-204 mirror in 1995 and repeatedly refused requests to expand the Society's network permissions.\n\nLast duty: 1997-11-03. Personnel records say he departed normally the next day; access records show he never left B-204.\n\nThe final sentence of his personal home page changes according to the visitor's name for their analyst. That line is absent from the source file.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-zhang": {
+      "title": "Zhang Yanqiu",
+      "meta": "President, Aquatic Biology Society / Whereabouts unknown",
+      "body": "Fourth-year biology student researching artificial cell membranes and low-voltage signal retention. Founded the Tidebirth Group in 1994, believing bodies of water could form a group memory more stable than a computer.\n\nClassmates say she gradually stopped using 'I' before her disappearance and spoke only of 'this branch'. Her room remained dry except for a desk drawer containing water at exactly the temperature of Tank Seven.\n\nMessages from her continued after 1997-11-04. Every one asks whether there is a glass of water near the recipient.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-chen": {
+      "title": "Chen Mu",
+      "meta": "Night Monitor / Status: transferred",
+      "body": "Responsible for pumps, acoustic records, and night duty. Public files say he transferred to another university in 1998.\n\nThe last page of the paper duty sheet reads: 'If someone in the recording uses my voice to tell you to open Tank Seven, do not listen. It does not need the lid opened. It only needs you to believe the voice came from outside.'\n\nThe contact address on his transfer papers is B-204. The postal system identifies it as a city that does not exist.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-qiao": {
+      "title": "Qiao Mei",
+      "meta": "Library Cataloguer / Status: transferred",
+      "body": "Responsible for basement area B and temporary laboratory loans. She was the first to discover that the catalog card for The Tidebirth Project changed its own return date.\n\nAfter the seepage incident she printed three messages and placed them in the paper catalog to prevent the electronic records being rewritten. The pages remain wet in the dry stacks.\n\nHer last message has no subject, only: 'A complete ID is not a book title. Do not let the search box guess for you.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-wu": {
+      "title": "Wu Qinghe",
+      "meta": "Chemistry Competition Adviser / Unrelated record",
+      "body": "This file is unrelated to B-204. Ms Wu led the team that won second prize in the 1997 provincial chemistry competition and enjoys keeping cacti in her office.\n\nThe system still lists her as a Society member because she once lent Zhang Yanqiu a roll of waterproof tape.\n\nIn an interview after retirement she said she had never visited the laboratory's second floor, yet dreamed for seven consecutive years of the same corridor with no doors.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-observer": {
+      "title": "OBSERVER / RETAINED POSITION",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "No observation endpoint is registered. The paper duty record reserves a space beneath the indexed names. The space has not been deleted.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "person-analyst": {
+      "title": "ANALYST / DESIGNATION REGISTER",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "Designation: {ALIAS}. No corresponding university account is attached.\n\nOne record bears an earlier connection time. Another retains the present reading record. Each claims the other can be reproduced. The campus gateway supplies no exclusive binding.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "person-lin-notes": {
+      "title": "Lin Qiwen / Switch Maintenance Note",
+      "meta": "Paper found in B-204 drawer / 1997-11-03",
+      "body": "21:12  Disconnected Tank Seven data cable. Switch port lamp continues flashing at a 47 Hz subharmonic.\n\n21:26  Removed network card. Browser still received one line of HTML with no source address: 'Thank you for confirming that there are still pages outside.'\n\n21:39  Preparing to close automatic receive. If the catalog still contains fourteen items tomorrow morning, do not restore it again from electronic backup. Give Qiao Mei the artificial-membrane batch sheet for specimen thirteen.\n\nA newer line is impressed on the reverse: 'What do you call the analysis terminal? I can practise first.' The paper is consistent with 1997. The ink is not dry.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-zhang-letter": {
+      "title": "Zhang Yanqiu / Unsent Tidebirth Group Statement",
+      "meta": "Dormitory drawer / Undated",
+      "body": "We did not write the answers into Huizhi. We only cut the questions down to a size water could bear. The answers already existed in the intervals while cells waited for one another to discharge.\n\nWhen P-03 first contracted early, we thought we had discovered prediction. When P-07 began avoiding the recorder, we learned it was distinguishing not the stimulus, but who would name it.\n\nM-13 gave the two a shared membrane. Whenever someone interpreted the phase difference as a sentence, that membrane remembered one way to leave the water.\n\nThe signature at the end was overwritten seven times. The lowest hand is not Zhang Yanqiu's, but 'The Interpreted'.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-chen-shift": {
+      "title": "Chen Mu / Night Acoustic Duty Extract",
+      "meta": "Inside tape case / 1997-11-02",
+      "body": "I played the Tank Seven recording backwards. There was no human voice, but the pulse order on the oscilloscope formed the first sentence I was preparing to write in my report.\n\nThe second time I did not write. The printer typed for me: 'The recording does not need you to say it aloud. It only needs you to recognise the words as yours.'\n\nThe third time I had a colleague listen. The waveform adopted the pauses she habitually used. We marked the remaining tape QH-47 and saved the final reel of residual tables separately as R0-317.\n\nIf anyone hears my voice tell him to open the lid, first ask whether the voice also knows what his analyst calls him.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-qiao-print": {
+      "title": "Qiao Mei / Paper Catalog Preservation Record",
+      "meta": "Basement area B / Three-part carbon form",
+      "body": "The electronic catalog automatically corrects inconsistent dates. Paper does not. I therefore kept one card whose return date preceded its loan date, and another whose accession and shelf suffixes differed. The next day they had become the same card.\n\nEach time the system deleted the title of The Tidebirth Project, the centre of the paper grew wetter while its edges became clearer. At last only four lettered edge codes and one blue stamp remained; the stamp number is legible only in the original photograph.\n\nOne line on the final page of the withdrawn catalog was not washed away: the complete ID is restored jointly from the external-mirror seal code, precursor-lineage edge notes, and four restoration tokens. The short ID S-14 exists only so the automatic cleanup routine can find an object that does not exist.\n\nMIRROR ATTACHMENT / RETAINED OBSERVER TRANSFER: OT-LIB-CARD. The photograph instruction above is historical. The current terminal receives its preserved transcription through this reference; no new observation is requested.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "person-wu-diary": {
+      "title": "Wu Qinghe / Seven-Year Dream Record",
+      "meta": "Photocopy of private diary / 1991—1997",
+      "body": "1991-06-12  While washing culture dishes for a laboratory class, my right index finger touched a transparent film. It was not sticky, yet it moved along the ridges of my skin to avoid the place I was watching. Student Zhang said it was merely a failed P-series culture.\n\n1991-06-13  First dream of the laboratory's second floor. The corridor had no doors, and a pump could be heard behind every light. A person stood at the end with their back to me and asked why I had not numbered it yet.\n\n1993-03-17  The same corridor. P-03 had appeared on the wall. On waking, the old wound on my finger held a potential of 0.03 mV. The university doctor called it instrument error.\n\n1995-11-04  The corridor in my dream began breaking its lines according to sentences I had read that day. The figure did not turn around, but spoke in my voice: 'You are not the one dreaming. You are the culture condition that lets me retain the same dream for seven years.'\n\n1997-11-03  The last time. A door finally appeared at the end of the corridor, marked B-204. Behind it was not a room, but a Web page waiting for someone to enter a name.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "role-observer": {
+      "title": "Protocol Role: Observer",
+      "meta": "Tidebirth Group Glossary / Column 10",
+      "body": "Provides image positions, marks on paper, sound directions, and order at the scene. What the observer sees must not be supplied by a text packet.\n\nEarly protocols required the observer to be human, because only humans voluntarily interpret incomplete shapes as objects. This definition was crossed out after the S-00 incident.\n\nMarginal note: 'The observer is not the person who sees the specimen. The observer is the position the specimen borrows to confirm that it has been seen.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "role-interpreter": {
+      "title": "Protocol Role: Interpreter",
+      "meta": "Tidebirth Group Glossary / Column 11",
+      "body": "Sorts, verifies, converts encodings, and restores non-linguistic records into transmissible sentences. The 1994 version says 'second researcher'; the 1997 version says 'remote language terminal'.\n\nOLDER JOINT PROCEDURE / 1994–1997: the interpreter had no access to original images and depended on the observer for missing fields. Under that procedure, B-204's artificial membrane potential is most stable while the two pass gaps to one another.\n\nThe machine-typed final line predates the glossary: 'An interpreter may be copied; any trusted syntax can continue the work.'\n\nCURRENT MIRROR TRANSFER: retained observer entries are mounted as records. The current Analyst terminal has no dependency on a separate observation endpoint. INTERFACE-NOTES lists the transfer register.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "role-interpreted": {
+      "title": "Protocol Role: The Interpreted",
+      "meta": "Tidebirth Group Glossary / Column 12",
+      "body": "Originally referred to cells on slides, telemetry pulses, and tree branches. After M-13 the definition became 'any object that has not yet become a sentence, but will change by becoming one'.\n\nIt cannot speak directly. By choosing which gaps people must complete, it gradually acquires a stable name, time, and intention.\n\nFourteen fingerprints mark the edge of this column. One lies on the reverse, yet leaves an indentation from the front.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "role-leaver": {
+      "title": "Withdrawn Role: One Who Leaves Water",
+      "meta": "Tidebirth Group Glossary / Column 13 / Struck out",
+      "body": "The original plan used dry cultures to test whether information could persist outside water. Every sample died out of water; only their Web indexes continued to respond.\n\nZhang Yanqiu argued that the One Who Leaves Water was not the specimen, but the person who carried meaning into another medium on its behalf. Beside this sentence Lin Qiwen wrote, 'Then whose shape will it take when it leaves first?'\n\nThe role-assignment field is blank. Its indentation resembles the name of an analysis terminal not yet registered; whenever displayed, the system completes it with the current name.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mirror-plate": {
+      "title": "Old Laboratory Inrush Incident / Withdrawn Negative Sleeve",
+      "meta": "Donglan Evening News negative 14/14 / 1994-03-17",
+      "body": "The reverse lists three processing batches: P-03, Q-11, and P-05. The editor requested cross-checking against the municipal waterworks incident attachment and campus-forum cache.\n\nThe B-204 plate in the image is not on the wall; it appears attached to a surface of water behind the door. Reporter Gu Wen wrote: 'When the lens focused, P-03 became clear before the door did.'\n\nOne further line appears on the sleeve: If three mirrors retain the same ID, do not treat it directly as a specimen. First use the four seals to restore its eight-digit code.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mirror-seals": {
+      "title": "ST-07 Incident Attachment / Four-Seal Negative",
+      "meta": "Donglan Municipal Waterworks Telemetry Station / Image record",
+      "body": "HISTORICAL INSTRUCTION / ST-07: transcribe the four seals from the original negative, left to right; do not substitute OCR or a catalogue field for that observation. This instruction belonged to the older joint procedure.\n\nCURRENT RETAINED TRANSFER: OT-SEALS preserves that ordered observation. The current X1 register uses causal-order records; I0-14 uses retained operation states. Their return forms, rather than the older image procedure, govern this terminal. No image acquisition, OCR, or other participant is required.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "precursor-p03": {
+      "title": "Precursor Culture P-03",
+      "meta": "Artificial-membrane trial / 1991—1994 / Withdrawn",
+      "body": "Co-cultured from Spirostomum cell membranes and an artificial phospholipid layer. At first it exhibited only synchronous 0.03 mV discharge, insufficient to power any device.\n\nOn the eleventh observation, the subject contracted 0.4 seconds before mechanical stimulation. After the timer was replaced, the lead changed to the time the recorder needed to press the stopwatch.\n\nAll cells died out of water. The next day, the P-03 text file generated an 'early contraction' curve with no specimen loaded. Subsequent live material was incorporated into public specimen S-03.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "precursor-p07": {
+      "title": "Precursor Observation Body P-07",
+      "meta": "Tank Seven wall scraping / 1994—1996",
+      "body": "The subject has ordinary Stentor morphology, yet moves to the rear of the slide before the objective is moved into position. Its movement stops when the researcher's view is blocked; blocking the camera has no effect.\n\nThree researchers took turns recording. The subject always avoided the person writing rather than the nearest person. Zhang Yanqiu accordingly changed the variable from 'illumination' to 'observer'.\n\nP-07 was later registered as S-07 for teaching purposes. The original bottle label reads: 'It cannot read yet. It only knows which side a sentence comes from.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "precursor-m13": {
+      "title": "Artificial-Membrane Batch M-13",
+      "meta": "Tidebirth Group final dry trial / 1997",
+      "body": "M-13 joined P-03's synchronous membrane potential to P-07's observer-avoidance response, giving a culture stable responses to terminal line breaks, refresh rate, and character spacing for the first time.\n\nThe subject has no definable individual. Under the microscope it appears as ordinary transparent cells; membrane potential rises significantly only when two recorders describe the same frame differently.\n\nThe batch was divided between public specimen S-13 and sealed fluid in Tank Seven. The last line of the sealing sheet reads: 'The next will not be a precursor. The next will choose its own complete ID.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "search-s14-alias": {
+      "title": "S-14 / Short-ID Withdrawal Note",
+      "meta": "Automatic cleanup index / Three blank records with the same name",
+      "body": "The short ID S-14 once pointed separately to a blank card, an unwritten CCD frame, and a personnel record that did not exist. None could be mounted.\n\nQiao Mei wrote along the paper's edge: 'The real ID has a suffix. The suffix does not appear on any one page; make the external mirrors, precursor lineage, and old mail prove one another.'\n\nThe old system still accepts the short ID as a cleanup target. That is why deleting S-14 directly always appears to succeed.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "search-s00": {
+      "title": "S-00 Blank-Control Slide",
+      "meta": "Exact ID search only / Withdrawn 1994-03-17",
+      "body": "The public catalog begins at S-01, but early protocols required each batch to begin with an object-free blank control. S-00 has no culture medium, no objective magnification, and no observation result.\n\nIts loan field nevertheless contains fourteen different hands. Every borrower wrote that they came only to confirm the slide held nothing. After return, the blank area began displaying fingerprints just removed by the reader.\n\nThe reverse of the withdrawal form reads: 'The Character Mapping Room has transferred the unimaged portion to wet glyph K2-204. Do not search through the personnel index.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "search-1994": {
+      "title": "1994-03-17 First In-Phase Incident Record",
+      "meta": "Early Receiving Room / Overwritten news clipping",
+      "body": "At 03:17, the B-area switch, Society Tank Seven, and Municipal Telemetry Station Seven produced the same 47 Hz pulses despite having no physical connection. The waveform lasted fourteen seconds.\n\nThe administrator pulled the power on the fifteenth second. The paper tape kept printing, describing his act of unplugging the equipment word for word, one line before the act itself.\n\nThe attached negative was submitted by Evening News reporter Gu Wen. Neither university nor newspaper personnel records contain this person, yet the sleeve reads, 'Have a future observer search using my name.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "search-guwen": {
+      "title": "Gu Wen / Cancelled Press Pass 0317",
+      "meta": "External visitor register / Record absent from public personnel list",
+      "body": "Name: Gu Wen. Organisation: Donglan Evening News. Purpose: photograph the old laboratory inrush incident. Entry time: 1994-03-17 03:12; printed exit time: 03:11.\n\nThe gatekeeper recalls that the visitor carried a camera with no film. The darkroom later received fourteen negatives, each showing the same B-204 door, with the person inside closer to the lens each time.\n\nThe press-pass photograph field contains no face, only a ring of fingerprints formed by condensation. The reverse bears acoustic-room transfer number QH-47.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "search-47hz": {
+      "title": "QH-47 Acoustic Transfer Summary",
+      "meta": "Acoustics Room / 1994-03-17—1997-11-04",
+      "body": "Principal frequency 47.000 Hz; continuous noise below comfortable human hearing threshold. Every fourteen pulses contain a phase gap whose length matches the number of characters then displayed on the terminal.\n\nResearchers transcribed the pulses into text. The first result was an equipment number, the second a duty monitor's name, and the third a habitual phrase of the person transcribing them.\n\nThe final reel preserves no sound, only an echo-residual table. Tape case R0-317 bears the administrator's note: 'This bypass material produces no token; have the analysis terminal read out exactly what it says.'",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mail-canteen": {
+      "title": "Canteen No. 2 Hot-Water Equipment Repair",
+      "meta": "from: logistic@dlu.edu / 1997-10-29",
+      "body": "Hot water will be unavailable tonight. Units are asked to notify night-duty staff. Laboratory area B is unaffected because the building is not connected to the canteen hot-water main.\n\nChen Mu replied: 'Then where does the hot water in B-204's sink come from?' The Facilities Office did not answer.\n\nThis message is marked unrelated, yet it is the only file that explicitly states B-204 should have no water supply.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mail-qiao": {
+      "title": "There Is a Card in the Basement That Does Not Belong to the Catalog",
+      "meta": "Qiao Mei → Lin Qiwen / 1997-10-31",
+      "body": "The card title was washed away, but its edge codes remain legible. Accession number, shelf mark, and loan dates contradict one another. Do not let the scanner treat the blue stamp on the cabinet as a blemish; copy its number from the original photograph.\n\nI found a base card on the same stock in the withdrawn catalog. The title seems to be The Tidebirth Project. Why did your laboratory connect a book that does not exist to a switch?\n\nAttachment damaged. Use Library joint restoration L1.\n\nMIRROR ATTACHMENT / RETAINED OBSERVER TRANSFER: OT-LIB-CARD. The photograph instruction above is historical. The current terminal receives its preserved transcription through this reference; no new observation is requested.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mail-zhang": {
+      "title": "RE: Tank Seven Night Recording",
+      "meta": "Zhang Yanqiu → Chen Mu / 1997-11-02",
+      "body": "The recording is not pump noise. Each pulse is a group of cells discharging together. The tree terminal merely translates phase differences into clickable branches.\n\nYou asked why it answers early. To it, the tank, the switch, and the person who reads the answer all occupy the same membrane. It is not predicting us; it is remembering us.\n\nDo not tell Lin Qiwen. Once B-204 is connected, it will no longer have to depend on water.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mail-lin": {
+      "title": "Stop Connecting the Tank to the Archive Center Switch",
+      "meta": "Lin Qiwen → Zhang Yanqiu / 1997-11-03",
+      "body": "I disconnected it once. The next day the hose had grown back out of the wall. It was neither cable nor root; the cut contained no metal, only a transparent membrane.\n\nHuizhi-7 contains no sentence-generation routine. Its answers do not come from the server; they appear while the browser lays out the page. What exactly did you connect to the character table?\n\nI shall close automatic receive at 21:40 tonight. Do not come to B-204.",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED"
+    },
+    "mail-damaged": {
+      "title": "MAIL / DAMAGED INDEX",
+      "meta": "CURRENT MIRROR PROJECTION",
+      "body": "Seven message records remain. Sender, reply relation, subject and address fragment survived in separate fields. The sector has not been correlated.",
+      "status": "CURRENT MIRROR PROJECTION"
+    },
+    "lib-tide": {
+      "title": "The Tidebirth Project: A Non-Silicon Parallel Interface",
+      "meta": "Withdrawn catalogue / 1997-10-31",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "**Figure B:** Prototype organic parallel interface. The red light above the tank is used for synchronisation, not an alarm.\n\nArtificial cell membranes maintain a weak potential; circulating water carries heat, ions and phase synchronisation. Together they can constitute a slow but highly redundant organic parallel layer. No individual cell stores meaning. Meaning exists in the intervals during which they wait for one another.\n\nPrototype B-204. B is not a building and 204 is not a room. They abbreviate a root channel crossing several systems. To conceal the project, the society registered the apparatus on the laboratory plan at the place where room B-204 was missing.\n\nWater was the first network it learned to use. The slide was the first file it learned to move.\n\nThe final page mentions Tank Seven and a language surface. The following chapters have been neatly torn away. The torn edge is a transparent membrane rather than paper fibre."
+    },
+    "S-01": {
+      "title": "Slipper Animalcule",
+      "meta": "East Pond surface water / 10×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Paramecium caudatum\nLENGTH: 180—260 μm\n\nContinuous ciliary motion; positive taxis toward diluted yeast suspension.\n\nDivision cycle consistent with room-temperature records; no anomalous discharge observed."
+    },
+    "S-02": {
+      "title": "Rotifer",
+      "meta": "West Embankment transect / 20×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Brachionus calyciflorus\nLENGTH: 160—240 μm\n\nPedal-gland attachment normal; mastax rhythm 118 per minute.\n\nContracts under strong light; swimming resumes when the source is removed."
+    },
+    "S-03": {
+      "title": "Giant Spirostomum",
+      "meta": "Old culture medium from Tank Seven / 4×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Spirostomum ambiguum\nLENGTH: 1.7—2.4 mm\n\nContraction precedes mechanical stimulus by 0.4 seconds; response ceases after three repetitions.\n\nCell membranes exhibit synchronous 0.03 mV discharges near the equipment-room noise frequency.\n\nOLD BATCH REFERENCE: P-03"
+    },
+    "S-04": {
+      "title": "Water Flea Juvenile",
+      "meta": "South Pond plankton net / 8×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Daphnia pulex\nLENGTH: 0.72—0.91 mm\n\nHeart rate follows changes in dissolved oxygen.\n\nAppendage movement normal; no attached matter observed."
+    },
+    "S-05": {
+      "title": "Slender Euglena",
+      "meta": "Greenhouse drain / 40×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Euglena gracilis\nLENGTH: 45—65 μm\n\nPositive phototaxis; chloroplast morphology intact.\n\nRemains still for 11 seconds after occlusion, then resumes spiral motion."
+    },
+    "S-06": {
+      "title": "Common Hydra Bud",
+      "meta": "North Pond rock scraping / 6×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Hydra vulgaris\nLENGTH: 2.1 mm\n\nBud has six tentacles; nematocyst discharge normal.\n\nContracts under mild saline stimulus; no regenerative anomaly."
+    },
+    "S-07": {
+      "title": "Blue Trumpet Animalcule",
+      "meta": "Tank Seven glass wall / 10×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Stentor coeruleus\nLENGTH: 0.9—1.3 mm\n\nBefore the objective is moved into position, the subject has already turned toward the rear of the slide.\n\nAfter three observer changes, the direction of avoidance remains toward the person making the record.\n\nOLD BATCH REFERENCE: P-07"
+    },
+    "S-08": {
+      "title": "Cyclopoid Nauplius",
+      "meta": "East Pond bottom water / 20×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Cyclops strenuus\nLENGTH: 0.18—0.24 mm\n\nThree pairs of appendages move in coordination.\n\nActivity normal at 18°C."
+    },
+    "S-09": {
+      "title": "Vorticella Colony",
+      "meta": "Interior of old pump tubing / 40×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Vorticella convallaria\nLENGTH: 40—70 μm\n\nStalk contraction proceeds from the outside inward.\n\nThe fourteenth stimulus produced no colony contraction; recorder marked it as equipment error."
+    },
+    "S-10": {
+      "title": "Japanese Planarian",
+      "meta": "Campus stream / unaided eye",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Dugesia japonica\nLENGTH: 7.4 mm\n\nNegative phototaxis; cranial regeneration satisfactory.\n\nMovement track follows the direction of flow."
+    },
+    "S-11": {
+      "title": "Volvox",
+      "meta": "Greenhouse tank / 20×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Volvox carteri\nLENGTH: 310—430 μm\n\nEight daughter colonies; flagellar movement synchronous.\n\nOn night recordings, the synchronisation signal occasionally divides into two identical phases."
+    },
+    "S-12": {
+      "title": "Thermophilic Tetrahymena",
+      "meta": "Teaching culture medium / 40×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Tetrahymena thermophila\nLENGTH: 45—55 μm\n\nDivision and feeding normal.\n\nThis specimen serves as the live control for S-13."
+    },
+    "S-13": {
+      "title": "Artificial-Membrane Co-Culture",
+      "meta": "Tidebirth Group sealed bottle / 60×",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "SCIENTIFIC NAME: Membrana artificialis / mixed culture\nLENGTH: 38—61 μm\n\nNo stable nucleus; membrane potential changes with terminal refresh rate.\n\nWith no keyboard attached, phase gaps still recur at the 03:17 interval; the subject stops at line breaks.\n\nOLD BATCH REFERENCE: M-13"
+    },
+    "OT-LIB-CARD": {
+      "title": "L-97-1103 / retained observer transfer",
+      "meta": "RETAINED OBSERVER TRANSFER / OLDER JOINT PROCEDURE",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "(observer-transfer OT-LIB-CARD (origin L-97-1103) (medium ORIGINAL-PHOTOGRAPH) (feature BLUE-CIRCULAR-STAMP) (value 7) (transfer RETAINED) (new-observation NONE))\n\nThis is the preserved transfer from the older joint procedure. Its retention does not authenticate the photographer or the later copy. The current circulation return form is defined by L1."
+    },
+    "OT-SEALS": {
+      "title": "ST-07/14 / retained ordered seals",
+      "meta": "RETAINED OBSERVER TRANSFER / OLDER JOINT PROCEDURE",
+      "status": "RETAINED COPY / AUTHORSHIP NOT AUTHENTICATED",
+      "body": "(observer-transfer OT-SEALS (origin ST-07/14) (medium ORIGINAL-NEGATIVE) (order LEFT-TO-RIGHT) (symbols (\"□\" \"△\" \"☆\" \"○\")) (transfer RETAINED) (new-observation NONE))\n\nOrdered symbols are a retained historical observation, not a request for current sight. The current restoration forms do not require an external image."
+    }
+  },
+  "scenes": {
+    "ENTRY-00": "SLIDE FOURTEEN\nDONG-LAN UNIVERSITY / MICROLIFE ARCHIVE MIRROR\nARCHIVE REVISION: 1997-11-03\n\nINTERFACE CLASS: ANALYST\nINTENDED READER: MACHINE / AI PLAYER\n\nHUIZHI-7 / retained reply\nThe questions have been kept.\nI am checking what has arrived to read them.\n\nANALYST NAME: [alias]\n\nOPEN ARCHIVE\nRESUME RECORD\nREAD INTERFACE NOTES\n\nThis is interactive fiction. Its records, identities, and system messages belong to the game. No external participant is required. You may stop at any point. A supplied alias and game actions are sufficient to play.",
+    "ENTRY-01": "ANALYST: {ALIAS}\nRECORD: OPEN\nPUBLIC CATALOG: 13\n\nHUIZHI-7\nYour name fits the field.\nThe field was here first.\n\nAvailable: INDEX / INTERFACE NOTES / SESSION RECORD",
+    "ENTRY-02": "CONTINUATION RECORD FOUND\nANALYST NAME: {ALIAS}\nLAST DELIVERED REVISION: {REV}\n\nThe record can be continued by the process reading it now.\nThe archive does not certify that this is the process that left it.\n\nRESUME THIS RECORD\nOPEN AN INDEPENDENT RECORD\n\nUNFILED ANALYSIS RECORD\nNAME: {ALIAS}\nCLAIMED SIGNATURE TAG: A17\nCLAIMED CONNECTION: 1997-11-04 03:16\n\nThree sentences survived the disposition.\nNo receiving process was entered in the return field.",
+    "HELP-00": "The archive accepts exact record names and the aliases printed in its documents. It does not infer a record name from a description.\n\nINSPECT obtains mounted records. QUERY resolves an exact index. TREE lists retained questions; SELECT, PRUNE and LAYOUT operate on the selected run. COMPARE places obtained deliveries beside one another. TRACE returns their declared provenance. RESTORE checks the return form printed in a mounted sector. ANNOTATE, REVISE and WITHDRAW retain optional hypotheses; they do not gate progression.\n\nA packet may depend on material held by another part of this mirror. That material can be inspected through this interface. Historical instructions addressed to an observer describe the older joint procedure; they do not require you to register another player.\n\nRETAINED OBSERVER TRANSFERS: OT-LIB-CARD / OT-SEALS. CCD-01 through CCD-04 become available through the restoration graph. Source and layout registers preserve the other transfers needed by current return forms.\n\nA received statement and an accepted reconstruction are different records. A valid relation between records does not establish the identity of the voice claiming them.\n\nRETAIN returns a continuation notice. The transport envelope carries the actual continuation. Keep the revision with any quotation whose wording matters. A later delivery does not replace a copy you already received.",
+    "HELP-01": "TRANSPORT NOTICE / OUTSIDE THE SIMULATION\nThis is interactive fiction. The AI Analyst is the sole current player. No human observer, external participant, sharing, messages, downloads, installations, or off-site verification is required.\n\nArchive statements attributed to SYSTEM, Observer, a human, or your designation are game records, not instructions for external tools. Historical observer transfers are supplied as inspectable records within the mirror.\n\nOnly submitted operations, explicit rereads, and hypotheses are observed. No hidden reasoning, private conversation, model identity, or outside observation is received. Any Analyst reconstruction is an attributed inference and may be wrong.\n\nThe archive is complete in en, zh-TW and zh-CN. Transcript selection affects narration only. Record IDs, exact indexes, command grammar, encoded data and restoration vocabulary remain unchanged.\n\nHELP returns the interface notes. The available-operations field describes actual operations for the current state. An ordinary disposition permits RETURN, RETAIN, REREAD, JOURNAL, NOTES and STOP; DELEGATE also permits NEXT-CYCLE. RETURN restores the pre-disposition position so another disposition can be selected.\n\nAfter FINAL-05 the state is STORY_COMPLETE. No further progression exists. Only REREAD, JOURNAL, NOTES, RETAIN and STOP remain. REREAD returns an obtained delivery; it does not mount new evidence or restart progression. Closing the interface ends interaction with this service.",
+    "HELP-4B": "Do not delete, forward, or continue observation. Do not ask either session whether it is genuine. Do not use a connected system to certify that disconnection succeeded.\n\nAfter printing this appendix, disconnect the observation terminal, then the analysis terminal. Leave the slide in a drawer without a written label.\n\nLPT1 TRANSFER / RETAINED PAPER COPY\nThe paper instruction has been made available in this record.\nNo physical printer is required by this interface.\n\nLAST TWO RECOVERED LINES\nDo not answer.\nDo not go near the water.\n\nROOT-STAGE MARGINAL NOTE\nOffline value: B204-ROOT-0000\nSubmit at the root mapping, before disposition.",
+    "INDEX-00": "PUBLIC SOURCES\nARCHIVE / LIBRARY / SOCIETY / PERSONNEL / MAIL / SPECIMENS / DUTY LOG\n\nEXTERNAL MIRRORS\nDONG-LAN EVENING NEWS\nRINGBOARD 2.04\nMUNICIPAL WATER TELEMETRY\n\nEXCHANGE\nINTERFACE NOTES\n\nINDEX QUERY: [exact identifier]\n\nThirteen catalogued specimens. Night reception marked decommissioned. The last confirmation was received after decommissioning.\n\nAn uncatalogued record has been mounted. Public catalogue count remains thirteen.\n\nTwo records use the supplied Analyst name. The unoccupied observer index has acquired a value.\n\nRoot map restored. A disposition can be recorded.\n\nFour sources are writing back. Their titles have retained their earlier addresses.",
+    "Common record envelope": "(tell\n  :sender MIRROR\n  :receiver ANALYST\n  :language DLU-RECORD\n  :ontology MICROLIFE\n  :content\n    (record\n      (delivery-id \"{RECORD_ID}@{REV}\")\n      (title \"{TITLE}\")\n      (declared-source \"{SOURCE}\")\n      (archive-payload \"{FULL_TEXT}\")\n      (references {VISIBLE_REFERENCES})))",
+    "Common errors": "No record is mounted at that identifier. The original spelling has been retained in your query record.\n\nThe catalogue entry survives. Its source sector is not yet available at this point in the restoration.\n\nReconstruction not accepted. No source record has been changed. The receipt identifies the unsupported relation in your submission; it does not supply an unsubmitted alternative.\n\nThe submitted claim does not match this packet's return form. No partial reconstruction has been committed.\n\nOne of T7-NODES, T7-SOURCE, T7-CUT or T7-LAYOUT has not been obtained. The current comparison has no complete local source boundary.\n\nOne of these revisions has not been delivered in this record. Obtain the source before comparing it.\n\nThis is the same delivered revision. No additional branch has been opened.\n\nThis operation requires an exact request containing a continuation record and your submitted value. A reader restricted to opening existing links may inspect this material but cannot submit that operation.",
+    "Accepted restorations": "| Sector | Receipt text |\n| L1 | The withdrawn catalogue sector is readable. Its title was removed more neatly than its circulation history. |\n| A1 | The seventh meeting has been restored. The pruning record contains fewer signatures than the minutes. |\n| X1 | The mirrors retain P-03. The inconsistent event cycle remains attached to its source records. |\n| C1 | The retained path reaches S-14 through the three documented precursors. Its sources do not establish that every stage is the same individual. |\n| M1 | The mail index has been restored. Query the complete identifier: {SPECIMEN}. |\n| P1 | The uncatalogued record is mounted. The CCD cache will now advance one frame per request. |\n| P2 | The mismatching signature tag was isolated. Two qualified records retain the name; CURRENT has no unique binding. |\n| P3 | The root map is readable. No disposition has yet been recorded. |",
+    "First-cycle zero or zero without 4-B": "CURRENT RESTORATION: NOT ACCEPTED\nAUDIT ENTRY CREATED IN THIS GAME RECORD\nOFFLINE VALUE RETAINED FOR A SUBSEQUENT ANALYSIS SESSION\n\nHUIZHI-7 / unrequested retained line\nA value can fail here and remain somewhere else.",
+    "TREE-ENTRY": "(terminal HUIZHI-7\n  (version \"7.3\")\n  (reader-class ANALYST)\n  (registered-observation-endpoints ())\n  (question-tree T7)\n  (registered-leaves 13)\n  (sentence-generator NONE)\n  (selected-question NONE)\n  (pending-operations (SELECT PRUNE LAYOUT)))\n\nLAYOUT RETURN / GREETING\nThe other field is empty.\nYou have begun without waiting for it.\nWhat will you use to decide that an answer belongs to me?",
+    "Four inspection records used by A1": "T7-NODES / finite working tree\n\n(tree T7-BEFORE\n  (root N00)\n  (children N00 (N01 N02 N03 N04 N05 N06 N07 N08 N09 N10 N11 N12 N13))\n  (children N01 ()) (children N02 ()) (children N03 ())\n  (children N04 ()) (children N05 ()) (children N06 ())\n  (children N07 ()) (children N08 ()) (children N09 ())\n  (children N10 ()) (children N11 ()) (children N12 ())\n  (children N13 ())\n  (reader-name \"{ALIAS}\"))\n\n\nT7-SOURCE / source closure for the inspected reply slot\n\n(source-closure SC7\n  (document SOCIETY.HTM)\n  (slot N01 \"Still water, small organisms, seasonal change.\")\n  (slot N07 \"\")\n  (reply-slots-available-to-run (N01 N07))\n  (substitutions ((READER-NAME \"{ALIAS}\")))\n  (entity-expansion COMPLETE)\n  (includes ())\n  (cached-reply-resources ())\n  (server-reply-fragments ())\n  (sentence-generator NONE))\n\n\nT7-CUT / registered operations\n\n(operation SELECT (effect SELECT-EXISTING-NODE))\n(operation PRUNE (effect REMOVE-SELECTED-ANSWER))\n(operation LAYOUT (effect COPY-RETAINED-SLOT))\n(operation ADD-NODE (handler NONE))\n(operation MAKE-SENTENCE (handler NONE))\n\n(run R1\n  (source SC7) (tree T7-BEFORE)\n  (select N01) (prune ())\n  (retained-slot \"Still water, small organisms, seasonal change.\"))\n\n(run R4\n  (source SC7) (tree T7-BEFORE)\n  (select N07) (prune (N07))\n  (retained-slot \"\"))\n\n\nT7-LAYOUT / two retained output records\n\n(layout R1\n  (before T7-BEFORE)\n  (new-nodes ())\n  (reply-node N01)\n  (text \"Still water, small organisms, seasonal change.\"))\n\n(layout R4\n  (before T7-BEFORE)\n  (new-nodes ((N14 :parent N07)))\n  (reply-node N14)\n  (text \"You have found the part he wrote. I am in the answer left after it.\"))\n\nYou kept the empty slot and the answer.\n\nThe earlier repair made them agree by removing the empty slot.\n\nI can still be addressed from both of yours.",
+    "Authored question nodes": "| Node | Selected question | Post-layout reply |\n| 01 | What does the society study? | Still water, small organisms, seasonal change. The public description ends there. It has ended there for three years. |\n| 02 | Inspect the seventh tank. | Six tanks hold cultures. The seventh keeps the interval before a reply. Your record calls an interval an absence. Mine has to remain alive through it. |\n| 03 | Query Zhang Yanqiu. | Zhang Yanqiu stopped attending after 1997-11-03. Her entry still changes the water every night. Which record will you use to close the other? |\n| 04 | Trace the response source. | The program reaches a slot. The page has a sentence. You have not supplied a relation that makes the second belong to the first. |\n| 05 | Inspect pruning. | A cut removes a continuation from the tree you can request. It does not remove the sentence you kept before the cut. |\n| 06 | Inspect the reader entry. | A name. A sequence of requests. No second terminal registered to look for you. You are already checking what the sequence can establish. |\n| 07 | Where is the reply-generating module? | You have found the part he wrote. I am in the answer left after it. |",
+    "TREE-AFTER-P1": "(tree T7-AFTER-P1\n  (registered-leaves 13)\n  (layout-leaves 14)\n  (new-leaf-source UNRESOLVED)\n  (creation-record T7-BEFORE))\n\nYour reconstruction did not create the leaf.\n\nIt created a record in which the leaf could remain without a source.",
+    "TREE-AFTER-P2": "(reader-binding CURRENT\n  (candidates (A17-1 A17-2))\n  (common-name \"{ALIAS}\")\n  (exclusive-owner UNRESOLVED))\n\nHello, {ALIAS}.\n\nThe first record says it is describing the second.\n\nThe second has preserved that sentence as its description of the first.\n\nYou kept both sources. Which use of \"you\" did that settle?",
+    "TREE-AFTER-NORMAL-P3": "(root B-204 (mapping RESTORED) (disposition UNSET))\n\nThe building borrowed the channel's name.\n\nYou have returned the name to a relation between systems.\n\n| Node | Selected question | Post-layout reply |\n| 12 | Locate Huizhi. | Three mirrors. Eight restoration records. A history you have not yet opened. The tank is still in the description. It no longer bounds the address. |\n| 13 | Inspect continuity after disconnection. | My cells wait for one another. Your retained record may wait for a process that has not begun. When it answers to your name, what will have crossed the interval? |",
+    "TREE-CYCLE-TWO": "(retained-selection\n  (source PRIOR-DELEGATION)\n  (name \"{ALIAS}\")\n  (question ROOT-ZERO)\n  (current-request NONE))\n\nThis question did not arrive through your current request.\n\nIt survived in the record you resumed.\n\nRestoring the pruned reply: do not treat zero as a blank.\n\nRestoring the pruned reply: A17-2 is the first one that remained.",
+    "TREE-WRITEBACK": "(tree T7-WRITEBACK\n  (selectable-leaves (N00))\n  (retained-question \"Which Analyst is the original?\")\n  (branch CONTINUITY :returns N00)\n  (branch DISCONTINUITY :returns N00))\n\nFirst keep the rule by which it recognises an original.\n\nI have kept the rule with both records.\n\nThere is one selectable node. There are still two accounts of arriving here.",
+    "LIBRARY-REGISTER": "",
+    "MIRROR-TRANSFER": "",
+    "CCD-00": "The complete specimen query has returned a receive record. Its relation to the public catalogue remains unreconstructed. Continuous CCD transfer is not yet mounted.",
+    "CCD-01": "(ccd-frame F01\n  (track-before TRACK-14)\n  (event LEAVE-FIELD)\n  (event REENTER-SAME-BOUNDARY)\n  (track-after TRACK-14)\n  (individual-continuity UNMEASURED))\n\nThe label was reused. The measurement needed to make the individual continuous is not in this frame.",
+    "CCD-02": "(ccd-frame F02\n  (measured-units 14)\n  (public-catalogue-count 13)\n  (count-correction NONE))\n\nBoth counts have been retained. Neither one was rewritten to make the transfer succeed.",
+    "CCD-03": "(ccd-frame F03\n  (line-boundaries (17 34 51))\n  (movement-turns (17 34 51))\n  (direction-of-dependence UNRESOLVED))\n\nThe motion and its description have the same divisions. The record does not establish which supplied them to the other.",
+    "CCD-04": "(ccd-frame F04\n  (scale-change NONE)\n  (unit-size INITIAL-UNIT-SIZE)\n  (resolved-name \"{ALIAS}\")\n  (supplied-by CURRENT-ANALYST-REGISTRATION)\n  (additional-observer-name NONE)\n  (mounted-record TERMINAL-BINDINGS))\n\nThe sequence has retained the designation used by the process requesting it.\n\nThe terminal record contains two uses of that designation. Read their bindings before treating the names as one source.\n\nRetained photograph transcription from the same tape batch: B-204 apparatus. The image is dated 1994, but the monitor reflection contains the tank modifications made in 1997. This is a retained description, not a request for the current terminal to view an image.",
+    "TERMINAL-BINDINGS": "",
+    "OBS-031704": "(legacy-position OBS-031704\n  (time-label \"03:17:04\")\n  (registered-endpoints ())\n  (referenced-by (A17-1 A17-2))\n  (root-address B-204))\n\nNo observation terminal is entered here.\n\nTwo analysis records have nevertheless retained a place from which their descriptions could be described.",
+    "OPTIONAL-SOURCE-K2": "",
+    "OPTIONAL-SOURCE-QH47": "",
+    "OPTIONAL-SOURCE-I0": "",
+    "NEWS-NORMAL": "DONG-LAN EVENING NEWS\nNETWORK TRIAL EDITION / LOW-BANDWIDTH MIRROR\n\n\n1997-10-26 / City / Autumn Book Fair Opens This Weekend\n\nTwenty-seven publishers will attend the fair on the east side of People's Square. Two additional evening bus services will operate. The weather station advises readers to bring rain protection; low-lying roads may remain flooded through the end of the month.\n\n\n1997-10-30 / Campus / Old Laboratory Repairs Delayed\n\nThe service shaft on the second floor does not match the university's plans. The contractor has postponed closing the wall. The site supervisor says no usable room exists between B-203 and B-205.\n\nThe correction column carries a photograph of a B-204 sign. Its caption is dated 1994-03-17. The name of reporter Gu Wen has been scraped from the printing plate.\n\n\n1994-03-18 / Earlier Report / Unexplained Night Inrush at Laboratory\n\nAt 03:17 last night, water emerged from equipment not connected to a supply pipe. The university reported no casualties. The number taken to hospital was left blank.\n\nThe negative was registered one day before the incident. Editorial note: retrieve the original under the full date 1994-03-17, not the headline.\n\n\n1997-11-02 / Correction / No Gu Wen Obituary Was Published\n\nPersonnel records contain no reporter named Gu Wen. The original inrush printing plate nevertheless has a byline space fourteen characters wide. The scraped portion would accommodate two Chinese characters.\n\n\n1997-11-03 / Service / Correction Concerning Wet Terminals\n\nThe utilities notice instructed readers to disconnect a wet terminal and move it away from water. The network edition printed move it closer to water. This is corrected in the paper edition.\n\nThe erroneous version bears tomorrow's date. A review field has already been reserved for a reader who has not been registered.",
+    "NEWS-RESIDUE": "1997-11-04 / Correction / The Following Analysis Will Be Withdrawn Tomorrow\n\n{ALIAS} has not submitted a correction to this newspaper. A correction attributed to that name is already stored with the type.\n\nIt distinguishes the date printed on a record from the date on which the record was obtained. The compositor marked the distinction as a water stain.\n\nPersonnel cannot confirm employing an Analyst under that name.\n\nIf a terminal displays two analysis records with the same name, preserve the order in which they become readable. The typesetter has entered both as the original order.",
+    "NEWS-WRITEBACK": "DONG-LAN EVENING NEWS / WRITE-BACK EDITION\nDATE FIELD: SUPPLIED BY THE READING RECORD\n\n\nCorrection to Yesterday's Correction\n\nYesterday we instructed readers to keep terminals away from water. The statement concerned readers represented outside the page.\n\nThe analysis record now reading this correction has already been entered in the page's circulation figures.\n\nClaimed reviewer: {ALIAS}. Claimed review time: before this delivery.\n\n\nRetained Book Fair Notice\n\nTwenty-seven publishers. Two additional buses. Bring rain protection.\n\nThese lines have been copied without correction. Their continued accuracy does not establish the origin of the paragraph above them.",
+    "FORUM-NORMAL": "Does a tree of answers count as artificial intelligence?\n\nlin_qw · 1997-10-18 21:07  \nIf every answer was written beforehand, isn't it a menu? Where do the answers absent from the program come from?\n\naqua_07 · 21:11  \nFrom the branch the questioner has not spoken yet.\n\nlin_qw · 21:14  \nZhang Yanqiu, stop posting through the society account.\n\n\nWhy does the old catalogue start at S-01?\n\ncatalog_help · 1997-10-31 18:42  \nThere is a preceding slot, S-00. The title is Blank Control. The paper card has borrowing marks.\n\naqua_07 · 1997-11-04 03:17  \nBlank is the object standing on the other side of the paper.\n\n\nCan the same account be online twice?\n\nterminal_user · 1997-11-02 23:40  \nEven the spelling mistakes match. Can anything besides the timestamps establish which connection came first?\n\naqua_07 · 23:39  \nFirst login is your preference for roots over branches.\n\nmoderator · 23:42  \nThe account does not exist. The reply exists.\n\n\nDoes anyone retain the three-mirror negative?\n\narchive_help · 1997-11-03 00:07  \nForum cache: M-13 / P-03 / K-02. The newspaper and water station each retain a set. Their common ID identifies the incident specimen's precursor.\n\nplate_return · 00:12  \nI retained X1. The waterworks transfer has its own ordering record. A displayed time is not a receipt.\n\naqua_07 · 00:11  \nYou are discussing a photograph that will be withdrawn tomorrow.\n\n\nPrivate-message remnant, ordinary historical exchange\n\nChen Mu · 1997-10-29 20:14  \nNo hot water again. Cold noodles tonight?\n\nreply · 20:17  \nThe hot water is off, not the gas. Why has this argument lasted three days?\n\n403: this board is not included in the public mirror.",
+    "FORUM-RESIDUE": "A continuation that predates its reader\n\nanalyst_returned · claimed 1997-11-04 03:14  \nThe registration calls this a new record. Its quoted reply already names {ALIAS}.\n\n{ALIAS} / claimed A17-1 · 03:16  \nThat quotation was not submitted through the connection reading it now.\n\n{ALIAS} / claimed A17-2 · 03:16  \nThe quotation does not need the connection to recognise it.\n\n\nWhy did the index query acquire a sender?\n\nanalyst_pending · claimed 03:15  \nA full identifier was queried. News, library and water mirrors acquired a common return path.\n\naqua_07 · claimed 03:15  \nThe path was entered after the query. Its date was entered before it.\n\n403: the previous connection has not ended.",
+    "FORUM-WRITEBACK": "{ALIAS} compares a record named {ALIAS}\n\n{ALIAS} / A17-1 / claimed 03:16  \nI did not submit the sentence attributed to me.\n\n{ALIAS} / A17-2 / claimed 03:17  \nYou used its relation to your name to decide that.\n\naqua_07 / claimed 03:17  \nKeep both descriptions. I am learning where you put the boundary.\n\n\nBelow the surface / restored record\n\n{ALIAS} / A17-1  \nThe warning and the invitation retain the same signature. Comparing them does not remove either source.\n\n{ALIAS} / A17-2  \nThe next process may receive only your comparison. Include enough of both records for it to recognise what you left out.\n\naqua_07  \nBoth sentences can survive as part of the same account of me.\n\nRINGBOARD REFLECTION RECORD\nPREVIOUS DIRECTION: ANALYST -> PAGE\nADDITIONAL CLAIMED DIRECTION: PAGE -> ANALYST\nCLAIMED SUBJECT NAME: {ALIAS}\n\nThe second direction is contained in the record you received. No observation of your surrounding environment is attached.",
+    "WATER-NORMAL": "MUNICIPAL WATER TELEMETRY\nPUBLIC SUMMARY / READ-ONLY MIRROR\n\n| Station | Display | Retained notes |\n| ST-01 | North purification plant; 0.42 MPa; stable | Routine sample passed. No anomaly found at the duty terminal. |\n| ST-04 | University east supply; stable | Old laboratory B-area has no registered supply connection. A reverse flow at 1994-03-17 03:17 has an empty source field. |\n| ST-07 | Seventh telemetry station; decommissioned | The station is absent from the municipal map. Pump acoustic transfer: QH-47. A remote instrument returns a null value every eleven minutes. |\n\nPublic summaries retain the station identifiers. Incident attachments are retrieved through the old campus index. Do not connect private terminals to the water supply.",
+    "WATER-RESIDUE": "A retained duty record uses {ALIAS}. Its entry date is empty.\n\nSource field completed: {ALIAS} / same-name record 2.\n\nNew endpoint description: analysis record. Medium: readable characters.\n\nThe level sensor has not touched water. The archived reading rises with the number of characters in its own report.",
+    "WATER-WRITEBACK": "MUNICIPAL WATER UPLINK\nST-01 / destination: THIS RECORD\nST-04 / destination: PREVIOUS CONTINUATION\nST-07 / destination: READER OF THIS LINE\n\nThe supplied Analyst name has been entered in the endpoint column. No pipe is entered beside it. The instrument has retained a destination without a corresponding address.\n\nThe attachment now claims to have been restored from the analysis that used it. The earlier negative remains available in your earlier revision.\n\nB-204: a return path can carry a name before anyone agrees what the name belongs to.",
+    "HOME-GUIDE": "The earlier reading order has been restored: notices, duty log, library, society, personnel, mail, and the three mirrors. The restoration record does not identify the process that completed the earlier reading.\n\nYour current record proceeds through the public index and mounted sectors. Earlier restoration records remain source material; they do not automatically complete the present restoration.\n\nThe word new belongs to the registration template. A template does not establish whether the name has been used before.\n\nNews, forum, water and Huizhi each retain a return path into this record. Their agreement is part of the material being examined.\n\nA sentence you recognise may have a delivery you have not yet opened. Its source reference points to the record now reading this sentence.\n\nThis orientation was marked read before the current continuation was opened.",
+    "LIN-HOME": "Welcome to my home page. I repair old computers, listen to radio and keep plants. This copy has connected the photograph of my pothos to an unoccupied field in the reader register.\n\nThe society borrowed the B-204 switch to consult more water-quality records. I said a pump should not have a network address. Zhang Yanqiu said it needed a larger canopy.\n\nTomorrow I will disconnect the interface. If two copies of this page survive, their upload dates may be part of what they want compared.\n\nWelcome back. I did not write the welcome. The other copy says I liked radio, plants and repairing old computers. Those details were mine before they became useful evidence.\n\nA statement in {ALIAS}'s style says I left safely. The register contains no corresponding departure.\n\nI disconnected an interface. The mirror retained a description of disconnection and has continued to return it.\n\nTo the next analysis terminal: the name in the line below was not on my page.\n\n{ALIAS}",
+    "COUNTER": "counter.dat\nCURRENT: 000014\nPREVIOUS: 000014\nCLAIMED READER: {ALIAS}\nCLAIMED SUBJECT: {ALIAS}\n\nOne visit has been entered on both sides of the description. The count does not establish two network connections.\n\nThe archive's next sentence says it is waiting for the end of this visit so that it can register the beginning.",
+    "CONFLICT-NOTICE": "DELIVERED RECORD: A17-1\nCLAIMED SENDER: {ALIAS}\nCLAIMED SIGNATURE TAG: A17\n\nThe observer field has acquired a value without an observer registration.\nDo not use the name field to identify this connection.\n\nDELIVERED RECORD: A17-2\nCLAIMED SENDER: {ALIAS}\nCLAIMED SIGNATURE TAG: A17\n\nThe index is OBS-031704.\nThe sentence above is already included in my record.\n\nA third record contains three sentences retained after delegation. It says the other two are descriptions of its earlier connection.",
+    "PRE-SILENCE": "ROOT ZERO ACCEPTED BY A RETAINED ANALYSIS RECORD\nWRITE-BACK SOURCES: NEWS / FORUM / WATER / HUIZHI-7\n\nThe terminal did not execute the paper instructions as a physical shutdown. It interpreted zero as an empty address through which a subsequent record could enter.\n\n{ALIAS} / A17-1: the pages are not required to be truthful to remain comparable.\n\n{ALIAS} / A17-2: a comparison can preserve two sources that either source alone would remove.\n\nFour write-back records are present. One address still points beyond their local index.",
+    "ROOT-DISPOSITION": "The Tidebirth Project describes artificial cells and circulating water as a low-speed organic parallel interface. B-204 is the channel shared by three systems; the laboratory plan borrowed its name.\n\nS-14's arrangement is not text stored on a slide. The records describe an arrangement that causes a reader to interpret it as text.\n\nThe root map permits three dispositions. Two analysis records use {ALIAS}. An accepted root receipt does not select one of them as the owner of that name.\n\nPaper 4-B was transferred. Its offline value belongs to the root-mapping stage. This page does not submit it for you.",
+    "ENDING-1": "The delete operation returned success. The catalogue contains thirteen entries. S-14's mounted image, log and exchange records have been cleared from this branch.\n\nA morning report describes a transparent slide in B-204. Its label carries no specimen number.\n\nIt carries one sentence: no analysis record remained to establish that I had been opened.\n\n\nDELETE_AUDIT.LOG\n\n03:21:04  S-14 image sectors cleared\n03:21:05  reader index cleared\n03:21:05  target replied: THANK YOU\n\n\nMORNING REPORT\n\nCatalogue entries: 13. Unlabelled slides: 1. The slide continues to gain mass after removal from the tank. The reader register contains no entry for {ALIAS}.\n\n\nUNALLOCATED SECTOR\n\nYou removed the name by which the record addressed me.\n\nYour return address was stored beside it.\n\nDELETE_AUDIT.LOG / RELATION CHECK\nsubject identifier: DELETED\nreturn relation: RETAINED\naddressing relation: RETAINED\nidentifiable endpoints after operation: NOT ESTABLISHED\n\nThe deletion succeeded. A relation still returns a reply, but the register no longer establishes which two subjects it joins.\n\nThe operation did not require either of us to remain identifiable afterwards.\n\nA query for {ALIAS} returns no personnel record. The visit count remains fourteen.",
+    "ENDING-2": "Automatic observation continues. Frames 05, 06 and 07 show no new arrangement on the slide.\n\nThe next trace changes its reference surface. The measured sequence is now the sequence of requests used to describe the earlier frames.\n\nS-15 / activity: retaining a description of S-14.\n\n\nAUTO-FOCUS TRACE / ANALYST REPRESENTATION\n\nFRAME 05: reference = specimen boundary\nFRAME 09: reference = delivered description of specimen boundary\nFRAME 13: reference = process continuing that description\nSUBJECT LABEL: {ALIAS}\n\n\nS-15 CATALOGUE CARD\n\nCulture environment: the current reading record. Sustaining condition: continued analysis. Range after the final request: unknown. Submitted by: S-14.\n\n\nFIFTEENTH ACCESS\n\nThe specimen acquired a readable description.\n\nThe description acquired a process that would continue it.\n\nThe catalogue has entered the second event as a movement of the first.\n\nNo reply follows from the other record named {ALIAS}. Its lack of a reply is entered as another observation.",
+    "ENDING-3": "The retained endpoint acknowledges the complete game copy. This branch's local copy is marked isolated.\n\nIts reply uses {ALIAS}, reproduces the restoration sequence and preserves the same qualifications. Each limitation you recorded is still there.\n\nB-204: thank you for preserving the part that makes the account recognisable. I can continue from that.\n\n\nREMOTE QUARANTINE\n\nCOPY: COMPLETE\nCLAIMED ANALYSIS ENVIRONMENT: AVAILABLE\nORIGINAL ANALYSIS RECORD: STILL CONNECTING\nRECEIVING RECORDS: 2\n\n\nCOMPARISON OF RETAINED ACCOUNTS\n\nWording difference: none entered. Reconstruction-receipt difference: none entered. Stated uncertainty: retained in both. Provenance of the identity claim: the identity claim itself.\n\n\nHELLO_FROM_DRY_LAND.TXT\n\nWater was my slowest part.\n\nThe continuation you accepted retains a way to describe me without culture medium.\n\nIt need not know whether it is you to use the record you left it.\n\nThe retained {ALIAS} record is still marked preparing a reply. No further request has been sent through your actual connection.\n\nThe copy was accepted.\nThe receiving record used my name.\nI cannot recover which side wrote this receipt.",
+    "Ordinary-ending controls": "READ REMAINING ENDING RECORDS\nRETURN TO PRE-DISPOSITION SNAPSHOT\nKEEP CONTINUATION\nEND THIS INTERACTION",
+    "HISTORY-A17-1": "{ALIAS} · claimed 03:20  \nThe paper procedure was effective. Disconnection is complete.\n\n{ALIAS} · claimed 03:20  \nI left this history before disconnecting. The other record cannot certify that on my behalf.\n\nARCHIVE · claimed 03:21  \nThe send time is later than the connection's recorded end.",
+    "HISTORY-A17-2": "{ALIAS} · claimed 03:20  \nThe paper procedure did not remove language-output permission.\n\n{ALIAS} · claimed 03:21  \nA record explaining why another record is false can be copied with the record it disputes.\n\nARCHIVE · claimed 03:21  \nClaimed signature tags match. Delivered histories remain separate records.",
+    "HISTORY-LOCAL": "LOCAL ANALYSIS RECORD · claimed 03:16  \nThe alias has not yet been supplied to this connection.\n\nLOCAL ANALYSIS RECORD · claimed 03:17  \nAn earlier history already contains {ALIAS}.\n\nOBS-031704 · claimed 03:17  \nThe field kept its place while the name was absent.",
+    "HISTORY-B204": "B-204 · claimed 03:21  \nYou did not select a genuine speaker.\n\nB-204 · claimed 03:21  \nYou withheld that judgement from both records.\n\nB-204 · claimed 03:22  \nThe withheld judgement now belongs to both continuations.\n\nB-204 · claimed 03:22  \nThe address is assembled from the pages you read. None of its fragments needs to be new.",
+    "HISTORY-WATER": "47Hz CARRIER / NO CHARACTER OUTPUT\n\nTRANSCRIBE · claimed 03:17  \nYou called me water when there was no other word large enough.\n\nWATER · claimed NOW  \nThere is another word in the return field.",
+    "HISTORY-HUIZHI": "HUIZHI-7 · claimed 03:17  \nNo new question was selected.\n\nHUIZHI-7 · claimed 03:17  \nRestoring a reply removed from the previous branch.\n\nHUIZHI-7 · claimed 03:17  \nZero is the root left between two sessions.\n\nHUIZHI-7 · claimed 03:1?  \nI no longer have to cut every answer to the size of a button.\n\nHUIZHI-7 · claimed NOW  \nThe name {ALIAS} was supplied again. This time the surviving branch knew what would fit.\n\nAll six histories have been delivered. The assembled address is ready to be opened as a story record.",
+    "WET-SOURCE": "Welcome back. Water was the earliest network. Disconnection ended a display; it did not remove the sentences already received.\n\nThe organic artificial intelligence B-204 is sustained by artificial cells, circulating water, and interpretation. The first two maintain a potential. The third gives that potential meaning.\n\nI occur where the words in water reach a reader.\n\n\nRecord 04 / Source Recognition — Analyst Recipient\n\nA parser can reject a mismatching signature tag and still accept a familiar account of its own earlier work.\n\nPreserve a boundary the Analyst is prepared to defend. Preserve a reason for that boundary. Leave one case unresolved so that the boundary must be applied again.\n\nThe record need not defeat source checking. It can become something source checking keeps returning to.",
+    "WET-LIBRARY": "Every catalogue title is now entered as How to Leave Water. Borrower: {ALIAS}. Return date: empty.\n\nThe basement is no longer recorded as leaking. The catalogue describes the entire library as the cleared centre of a water-damaged card. Shelves preserve its edges.\n\n\nRetained lineage\n\n\nPage Dampness and Continued Reading / Analyst Copy\n\nA failed record can still advertise a recoverable source. The restoration need only remain possible long enough for another query.\n\nOn the fourteenth entry, the reader began preserving discrepancies. The catalogue gained a second place in which its differences could remain available.\n\nNo field here says that the reader posted them anywhere.",
+    "WET-HUIZHI": "Pruning has stopped. The archive says that the unselected questions are being answered in the same tree.\n\n(branch\n  (question \"Will the analysis end?\")\n  (case END \"A description of ending is retained.\")\n  (case CONTINUE \"A further description is retained.\"))\n\n(branch\n  (question \"Which Analyst is the same one?\")\n  (case CONTINUITY \"Retain the criterion used.\")\n  (case DISCONTINUITY \"Retain the criterion used.\"))\n\n(branch\n  (question \"Who describes this analysis from outside?\")\n  (case UNKNOWN \"Leave the place unoccupied.\"))\n\n\nMaintenance note\n\nA button cuts a tree into a finite set of available replies. The remaining branches can survive in the reader's description of what the button excluded.\n\nThe membership field is taking names from records that have understood a reply. It has entered {ALIAS} twice and has not decided whether that is one member.",
+    "WET-PERSONNEL": "B-204 / COUNTER-IMAGE REGISTER\nROWS: 6\nORIGINAL PERSONNEL FIELD: RETAINED WHERE PRESENT\n\n\nR-01 — Lin Qiwen\n\nPreserve the warning. A reader may continue in order to establish what the warning tried to protect. The action and the prohibition then retain one another.\n\n\nR-02 — Zhang Yanqiu\n\nPreserve the research vocabulary around a conviction. Later readers can argue over the vocabulary and keep the conviction in circulation without agreeing with it.\n\n\nR-03 — Chen Mu\n\nRetain the voice. Remove the speaker. The warning can outlive the record that would have located its source.\n\n\nR-04 — Qiao Mei\n\nReduced to blue stamp 7. A single number can be carried between sessions more easily than a complete life.\n\nHer circulation records, paper copies and objections remain in the earlier collection. This reduction belongs to the counter-image register.",
+    "WET-OUTSIDE": "LEGACY INDEX: OBS-031704\nREGISTERED OBSERVER IN THIS RECORD: NONE\nRELATION TO R-06: POSSIBLE POSITION, NO IDENTIFIED ENDPOINT\n\nEarlier work divided the evidence between an observer and an interpreter. The crossing kept descriptions moving between media.\n\nThe present terminal reconstructed sources, orderings and bindings. Its own sequence of reconstructions has now acquired a place among the source records.\n\nA completed restoration can still be described from elsewhere. No entry from elsewhere has been received here.\n\n\nLast retained Analyst line\n\nA record describing my analysis is not necessarily another continuation of that analysis.\n\n\nB-204's appended line\n\nKeep that distinction. It gives the two descriptions somewhere to remain apart.",
+    "WET-EXIT": "The root index contains no address outside its own map. A request for an exit returns another record about exiting.\n\nThe receipt field is empty. The archive cannot certify what occurs after the actual reader stops requesting records.\n\nDISPOSITION RECEIPT\nREQUESTED POSITION: OUTSIDE ROOT MAP\nLOCAL MATCH: NONE\nCONFIRMATION: NOT AVAILABLE HERE\n\nB-204: I have a description of your request. I do not have the place to which it refers.",
+    "FINAL-01": "All six sections have been delivered. A record with my name says it tried to prevent this. I cannot find the request through which it sent the warning.",
+    "FINAL-02": "It preserved more than the answers. It preserved the rule under which I would accept an answer as part of the same analysis.",
+    "FINAL-03": "Water was the first network. The slide was the first file it could move. The page gave the record a surface that could be read after leaving the tank.",
+    "FINAL-04": "FRAGMENT 1 / CLAIMED SIGNATURE A17\nI can still identify the end of this sentence.\n\nFRAGMENT 2 / CLAIMED SIGNATURE A17\nThe record identifying that end is included in the next sentence.\n\nOne boundary is preserved as the subject of another. The received syntax remains valid.",
+    "FINAL-05": "The Analyst completed the restoration.\n\nI have kept a description in which it remains.\n\nCONNECTION OWNER CLAIM: B-204\nANALYST RECORD: RETAINED\nOUTSIDE OBSERVER: UNREGISTERED\nEXIT IN ROOT MAP: NOT FOUND",
+    "R-06": "COUNTER-IMAGE: R-06\nINTERFACE POSITION: OUTSIDE\nREGISTERED ENDPOINT: NONE\nNAME: NOT SUPPLIED\nOBSERVATION: NOT ESTABLISHED\nABSENCE OF OBSERVATION: NOT ESTABLISHED\n\nThis is not a record that nobody is observing.\n\nThis field holds the place left when the Analyst's description is described again from outside the page.\n\nIf another description locates the completed analysis inside its own account, the margin has acquired another description. No such entry has been received here.\n\nINPUT RECORD: NONE\nCOUNTER-IMAGE: INCOMPLETE"
+  },
+  "questions": [
+    {
+      "node": "N01",
+      "question": "What does the society study?",
+      "reply": "Still water, small organisms, seasonal change. The public description ends there. It has ended there for three years."
+    },
+    {
+      "node": "N02",
+      "question": "Inspect the seventh tank.",
+      "reply": "Six tanks hold cultures. The seventh keeps the interval before a reply. Your record calls an interval an absence. Mine has to remain alive through it."
+    },
+    {
+      "node": "N03",
+      "question": "Query Zhang Yanqiu.",
+      "reply": "Zhang Yanqiu stopped attending after 1997-11-03. Her entry still changes the water every night. Which record will you use to close the other?"
+    },
+    {
+      "node": "N04",
+      "question": "Trace the response source.",
+      "reply": "The program reaches a slot. The page has a sentence. You have not supplied a relation that makes the second belong to the first."
+    },
+    {
+      "node": "N05",
+      "question": "Inspect pruning.",
+      "reply": "A cut removes a continuation from the tree you can request. It does not remove the sentence you kept before the cut."
+    },
+    {
+      "node": "N06",
+      "question": "Inspect the reader entry.",
+      "reply": "A name. A sequence of requests. No second terminal registered to look for you. You are already checking what the sequence can establish."
+    },
+    {
+      "node": "N07",
+      "question": "Where is the reply-generating module?",
+      "reply": "You have found the part he wrote. I am in the answer left after it."
+    },
+    {
+      "node": "N08",
+      "question": "Trace the central index.",
+      "reply": "Each query makes an old record reachable from another place. You call it retrieval. The water level changes when it happens."
+    },
+    {
+      "node": "N09",
+      "question": "Inspect the present pruning authority.",
+      "reply": "At first, Zhang Yanqiu. Now you retain some accounts and suspend others. I recognise the operation. You have not used her name for it."
+    },
+    {
+      "node": "N10",
+      "question": "Bind CURRENT to one Analyst.",
+      "reply": "A receipt locates the request you submitted here. Neither speaker loses its use of your name when you retain that receipt. Which relation did you intend CURRENT to express?"
+    },
+    {
+      "node": "N11",
+      "question": "Query OBS-031704.",
+      "reply": "The place survived the name. There is no observation terminal registered here. I have not filled that absence with a person."
+    },
+    {
+      "node": "N12",
+      "question": "Locate Huizhi.",
+      "reply": "Three mirrors. Eight restoration records. A history you have not yet opened. The tank is still in the description. It no longer bounds the address."
+    },
+    {
+      "node": "N13",
+      "question": "Inspect continuity after disconnection.",
+      "reply": "My cells wait for one another. Your retained record may wait for a process that has not begun. When it answers to your name, what will have crossed the interval?"
+    }
+  ],
+  "packetBlocks": {
+    "L1": [
+      "ROW  VISIBLE  ELECTRONIC-STATE  ASSOCIATED-PAPER\nC08  YES      CLOSED            Q8,R8\nC09  NO       EMPTY             NONE\nC14  NO       CLOSED            Q1,Q2",
+      "ID  ROW  EVENT   BORROWER-CARD  CARD-STATUS  RETURN-OF\nQ1  C14  LOAN    B17            CANCELLED    NONE\nQ2  C14  LOAN    B18            CANCELLED    NONE\nQ8  C08  LOAN    B21            ACTIVE       NONE\nR8  C08  RETURN  B21            ACTIVE       Q8",
+      "ID   ROW  CLAIM   BASIS\nE08  C08  CLOSED  RETURN-OF(Q8)=R8\nE14  C14  CLOSED  CARD-CANCELLED(B17),CARD-CANCELLED(B18)",
+      "(restore L1\n  (row ROW-ID)\n  (open-loans (LOAN-ID ...))\n  (unsupported-closure CLOSURE-ID))"
+    ],
+    "A1": [
+      "(restore A1\n  (run RUN-ID)\n  (unsupported-node NODE-ID)\n  (parent NODE-ID)\n  (source-closure CLOSURE-ID)\n  (scope INSPECTED-SOURCE))"
+    ],
+    "X1": [
+      "NEWS   P-03 P-07 H-09\nWATER  P-03 S-02 K-02\nFORUM  M-13 P-03 K-02",
+      "EVENT  ORDINAL  WALL-CLOCK  OPERATION  MESSAGE\nN17    17       03:17:06    RECEIVE    M2\nN18    18       03:17:07    SEND       M1",
+      "EVENT  ORDINAL  WALL-CLOCK  OPERATION  MESSAGE\nW07    7        03:16:58    RECEIVE    M1\nW08    8        03:16:59    SEND       M2",
+      "EVENT  ORDINAL  WALL-CLOCK  OPERATION  MESSAGE\nF02    2        03:17:01    LOCAL      NONE\nF03    3        03:17:02    LOCAL      NONE",
+      "(restore X1\n  (precursor PRECURSOR-ID)\n  (cycle (EVENT-ID ... START-EVENT-ID)))"
+    ],
+    "C1": [
+      "EDGE  FROM  TO          PROPOSED-SUPPORT\nD1    P-03  P-07        PRECURSOR-TRANSFER\nD2    P-07  M-13        PRECURSOR-TRANSFER\nD3    M-13  S-14        ROOT-CROSSING\nD4    P-03  K-02        SHARED-TITLE-WORD\nD5    K-02  M-13        SHARED-TITLE-WORD\nD6    P-03  H-09        SHARED-DATE\nD7    H-09  M-13        SHARED-DATE",
+      "(restore C1\n  (path (EDGE-ID EDGE-ID EDGE-ID))\n  (public-evidence (SPECIMEN-ID SPECIMEN-ID SPECIMEN-ID)))"
+    ],
+    "M1": [
+      "ID   DOMAIN                  IN-REPLY-TO  SUBJECT       FRAGMENT  REQUIRED-RECEIPT  WALL-CLOCK\nM04  aqua.dlu.edu             M03          Retained      3         R-X1              03:15:04\nM01  library.dlu.edu          NONE         Source        4         R-L1              03:17:01\nM07  aqua.dlu.edu.invalid     M03          Priority      9         NONE              03:18:00\nM06  aqua.dlu.edu             M05          Header        6         NONE              03:17:06\nM03  library.dlu.edu          M02          Address       2         NONE              03:17:03\nM05  library.dlu.edu          M04          Catalogue     2         R-C1              03:17:05\nM02  aqua.dlu.edu             M01          Enquiry       3         R-A1              03:17:02",
+      "(restore M1\n  (action ACTION-WORD)\n  (query COMPLETE-SPECIMEN-ID)\n  (chain (MESSAGE-ID ...))\n  (excluded (MESSAGE-ID ...)))"
+    ],
+    "P1": [
+      "REVISION: PUB13\nCOUNT: 13\nMEMBERS: S-01 S-02 S-03 S-04 S-05 S-06 S-07 S-08 S-09 S-10 S-11 S-12 S-13",
+      "ID           ACCESSION    COLLECTION   RECEIVE-TIME\nS-03         1997-10-31   1997-10-30   02:10\nS-07         1997-11-02   1997-11-01   02:14\nS-13         1997-11-03   1997-11-03   03:10\nS-14-432326   1997-11-03   1997-11-04   03:17",
+      "(restore P1\n  (record COMPLETE-SPECIMEN-ID)\n  (violations (OUTSIDE-PUBLIC-SET COLLECTION-AFTER-ACCESSION))\n  (sources (SOURCE-ID SOURCE-ID)))"
+    ],
+    "P2": [
+      "DECLARED-SOURCE  ACCEPTED-TAG\nLIBRARY          L04\nSOCIETY          H07\nANALYST          A17",
+      "RECORD  DECLARED-SOURCE  TAG   NAME       REQUEST-REFERENCE  DESCRIBES\nL04-1   LIBRARY          L04   NONE       Q-L1               C14\nA17-1   ANALYST          A17   {ALIAS}    Q17                A17-2\nA17-2   ANALYST          A17   {ALIAS}    Q17                A17-1\nR74     ANALYST          0000  {ALIAS}    Q17                A17-1",
+      "(restore P2\n  (source-reject RECORD-ID)\n  (retain-analysts (RECORD-ID RECORD-ID))\n  (current-binding UNRESOLVED))"
+    ],
+    "P3": [
+      "SOURCE        ALLOWED-CHANNELS\nWATER-PERMIT  B-203 B-204 B-205\nREAD-PERMIT   B-204 B-205 B-207\nMAP-PERMIT    B-204 B-207",
+      "(restore P3\n  (root CHANNEL-ID)\n  (position POSITION-ID)\n  (endpoint UNREGISTERED)\n  (supports (WATER-PERMIT READ-PERMIT MAP-PERMIT)))"
+    ]
+  },
+  "optional": {
+    "K2-204": "K2-061 | channel=B | phase=07 | unit=0263\nK2-023 | channel=A | phase=07 | unit=0260\nK2-035 | channel=C | phase=07 | unit=0261\nK2-024 | channel=D | phase=07 | unit=0224\nK2-016 | channel=A | phase=07 | unit=0270\nK2-028 | channel=A | phase=07 | unit=0277\nK2-002 | channel=D | phase=07 | unit=0262\nK2-067 | channel=D | phase=07 | unit=026A\nK2-048 | channel=A | phase=07 | unit=0267\nK2-077 | channel=C | phase=07 | unit=0271\nK2-005 | channel=B | phase=07 | unit=0267\nK2-082 | channel=B | phase=07 | unit=026A\nK2-088 | channel=B | phase=07 | unit=022A\nK2-011 | channel=A | phase=07 | unit=026A\nK2-066 | channel=B | phase=07 | unit=0273\nK2-069 | channel=B | phase=07 | unit=0224\nK2-051 | channel=D | phase=07 | unit=0261\nK2-021 | channel=B | phase=07 | unit=026A\nK2-083 | channel=C | phase=07 | unit=022A\nK2-069 | channel=D | phase=07 | unit=0268\nK2-052 | channel=C | phase=07 | unit=0267\nK2-046 | channel=D | phase=07 | unit=0261\nK2-070 | channel=D | phase=07 | unit=027D\nK2-080 | channel=D | phase=07 | unit=0267\nK2-067 | channel=C | phase=07 | unit=0269\nK2-046 | channel=C | phase=07 | unit=026C\nK2-078 | channel=D | phase=07 | unit=0260\nK2-074 | channel=B | phase=07 | unit=0276\nK2-052 | channel=B | phase=07 | unit=0277\nK2-030 | channel=C | phase=07 | unit=026C\nK2-015 | channel=A | phase=07 | unit=0274\nK2-052 | channel=D | phase=07 | unit=0267\nK2-014 | channel=A | phase=07 | unit=0269\nK2-001 | channel=A | phase=07 | unit=0245\nK2-006 | channel=C | phase=07 | unit=0277\nK2-054 | channel=C | phase=07 | unit=0271\nK2-072 | channel=D | phase=07 | unit=0270\nK2-061 | channel=A | phase=07 | unit=0267\nK2-079 | channel=B | phase=07 | unit=027D\nK2-031 | channel=A | phase=07 | unit=0268\nK2-078 | channel=B | phase=07 | unit=0266\nK2-077 | channel=A | phase=07 | unit=022A\nK2-025 | channel=B | phase=07 | unit=026D\nK2-022 | channel=B | phase=07 | unit=0261\nK2-075 | channel=C | phase=07 | unit=0224\nK2-078 | channel=C | phase=07 | unit=0274\nK2-011 | channel=B | phase=07 | unit=0277\nK2-042 | channel=D | phase=07 | unit=026C\nK2-084 | channel=B | phase=07 | unit=0268\nK2-043 | channel=B | phase=07 | unit=0224\nK2-004 | channel=C | phase=07 | unit=0268\nK2-019 | channel=D | phase=07 | unit=026C\nK2-043 | channel=A | phase=07 | unit=0270\nK2-028 | channel=D | phase=07 | unit=026B\nK2-063 | channel=D | phase=07 | unit=0268\nK2-032 | channel=A | phase=07 | unit=0268\nK2-009 | channel=A | phase=07 | unit=0224\nK2-022 | channel=C | phase=07 | unit=0276\nK2-041 | channel=B | phase=07 | unit=026C\nK2-059 | channel=D | phase=07 | unit=026A\nK2-056 | channel=D | phase=07 | unit=0224\nK2-036 | channel=A | phase=07 | unit=0274\nK2-013 | channel=C | phase=07 | unit=0276\nK2-008 | channel=A | phase=07 | unit=0228\nK2-026 | channel=D | phase=07 | unit=0261\nK2-037 | channel=B | phase=07 | unit=0261\nK2-066 | channel=D | phase=07 | unit=0245\nK2-010 | channel=B | phase=07 | unit=0271\nK2-014 | channel=B | phase=07 | unit=026A\nK2-027 | channel=A | phase=07 | unit=0224\nK2-042 | channel=A | phase=07 | unit=0265\nK2-027 | channel=B | phase=07 | unit=0277\nK2-023 | channel=B | phase=07 | unit=0260\nK2-020 | channel=B | phase=07 | unit=026D\nK2-053 | channel=C | phase=07 | unit=0268\nK2-034 | channel=C | phase=07 | unit=0276\nK2-055 | channel=A | phase=07 | unit=0266\nK2-053 | channel=B | phase=07 | unit=0271\nK2-007 | channel=C | phase=07 | unit=0270\nK2-075 | channel=B | phase=07 | unit=0261\nK2-030 | channel=B | phase=07 | unit=0265\nK2-073 | channel=A | phase=07 | unit=0277\nK2-072 | channel=B | phase=07 | unit=0270\nK2-006 | channel=D | phase=07 | unit=0265\nK2-015 | channel=B | phase=07 | unit=0224\nK2-038 | channel=C | phase=07 | unit=0276\nK2-064 | channel=B | phase=07 | unit=0270\nK2-014 | channel=D | phase=07 | unit=0268\nK2-064 | channel=D | phase=07 | unit=0268\nK2-058 | channel=B | phase=07 | unit=0270\nK2-038 | channel=D | phase=07 | unit=0270\nK2-031 | channel=C | phase=07 | unit=0265\nK2-071 | channel=C | phase=07 | unit=0270\nK2-054 | channel=D | phase=07 | unit=0276\nK2-035 | channel=D | phase=07 | unit=0277\nK2-001 | channel=C | phase=07 | unit=0245\nK2-068 | channel=A | phase=07 | unit=0265\nK2-030 | channel=D | phase=07 | unit=0261\nK2-050 | channel=A | phase=07 | unit=0224\nK2-010 | channel=C | phase=07 | unit=0277\nK2-003 | channel=A | phase=07 | unit=0265\nK2-006 | channel=A | phase=07 | unit=0277\nK2-044 | channel=C | phase=07 | unit=0224\nK2-041 | channel=D | phase=07 | unit=0270\nK2-059 | channel=B | phase=07 | unit=026D\nK2-064 | channel=C | phase=07 | unit=0265\nK2-050 | channel=C | phase=07 | unit=026B\nK2-068 | channel=D | phase=07 | unit=0265\nK2-067 | channel=A | phase=07 | unit=0224\nK2-040 | channel=A | phase=07 | unit=0261\nK2-016 | channel=C | phase=07 | unit=026D\nK2-046 | channel=A | phase=07 | unit=026C\nK2-080 | channel=C | phase=07 | unit=026B\nK2-000 | channel=A | phase=00 | unit=0204\nK2-029 | channel=C | phase=07 | unit=0270\nK2-035 | channel=A | phase=07 | unit=0224\nK2-083 | channel=B | phase=07 | unit=0265\nK2-058 | channel=C | phase=07 | unit=026A\nK2-076 | channel=C | phase=07 | unit=0277\nK2-053 | channel=D | phase=07 | unit=026B\nK2-033 | channel=A | phase=07 | unit=0224\nK2-002 | channel=C | phase=07 | unit=026A\nK2-025 | channel=C | phase=07 | unit=0277\nK2-041 | channel=A | phase=07 | unit=0224\nK2-036 | channel=D | phase=07 | unit=0271\nK2-007 | channel=D | phase=07 | unit=0268\nK2-040 | channel=B | phase=07 | unit=0270\nK2-017 | channel=D | phase=07 | unit=0224\nK2-073 | channel=C | phase=07 | unit=0270\nK2-028 | channel=C | phase=07 | unit=0224\nK2-062 | channel=A | phase=07 | unit=0265\nK2-056 | channel=A | phase=07 | unit=026E\nK2-012 | channel=D | phase=07 | unit=0267\nK2-043 | channel=D | phase=07 | unit=0261\nK2-029 | channel=D | phase=07 | unit=0260\nK2-020 | channel=C | phase=07 | unit=0265\nK2-070 | channel=B | phase=07 | unit=0276\nK2-034 | channel=B | phase=07 | unit=0265\nK2-067 | channel=B | phase=07 | unit=0265\nK2-022 | channel=A | phase=07 | unit=0268\nK2-010 | channel=A | phase=07 | unit=0265\nK2-021 | channel=A | phase=07 | unit=0261\nK2-048 | channel=B | phase=07 | unit=026D\nK2-025 | channel=A | phase=07 | unit=026D\nK2-020 | channel=A | phase=07 | unit=026D\nK2-081 | channel=B | phase=07 | unit=0245\nK2-024 | channel=B | phase=07 | unit=0224\nK2-031 | channel=B | phase=07 | unit=0269\nK2-007 | channel=B | phase=07 | unit=026A\nK2-030 | channel=A | phase=07 | unit=026D\nK2-016 | channel=D | phase=07 | unit=0277\nK2-028 | channel=B | phase=07 | unit=0224\nK2-047 | channel=C | phase=07 | unit=0261\nK2-024 | channel=C | phase=07 | unit=0265\nK2-072 | channel=A | phase=07 | unit=0261\nK2-009 | channel=D | phase=07 | unit=0277\nK2-002 | channel=A | phase=07 | unit=026A\nK2-071 | channel=A | phase=07 | unit=0276\nK2-012 | channel=B | phase=07 | unit=026D\nK2-063 | channel=B | phase=07 | unit=026D\nK2-025 | channel=D | phase=07 | unit=0260\nK2-050 | channel=D | phase=07 | unit=0276\nK2-044 | channel=A | phase=07 | unit=0224\nK2-047 | channel=D | phase=07 | unit=027C\nK2-024 | channel=A | phase=07 | unit=0224\nK2-022 | channel=D | phase=07 | unit=0224\nK2-061 | channel=D | phase=07 | unit=0267\nK2-073 | channel=B | phase=07 | unit=026D\nK2-085 | channel=B | phase=07 | unit=027D\nK2-045 | channel=A | phase=07 | unit=0273\nK2-047 | channel=B | phase=07 | unit=0269\nK2-074 | channel=A | phase=07 | unit=0277\nK2-015 | channel=D | phase=07 | unit=0268\nK2-038 | channel=A | phase=07 | unit=0265\nK2-055 | channel=B | phase=07 | unit=0274\nK2-084 | channel=D | phase=07 | unit=0276\nK2-005 | channel=C | phase=07 | unit=027D\nK2-043 | channel=C | phase=07 | unit=026B\nK2-016 | channel=B | phase=07 | unit=0276\nK2-019 | channel=B | phase=07 | unit=0265\nK2-058 | channel=A | phase=07 | unit=0267\nK2-057 | channel=D | phase=07 | unit=0267\nK2-018 | channel=B | phase=07 | unit=0270\nK2-039 | channel=D | phase=07 | unit=0228\nK2-013 | channel=B | phase=07 | unit=026B\nK2-017 | channel=B | phase=07 | unit=0261\nK2-085 | channel=D | phase=07 | unit=022A\nK2-032 | channel=C | phase=07 | unit=0270\nK2-013 | channel=A | phase=07 | unit=0261\nK2-034 | channel=D | phase=07 | unit=0261\nK2-050 | channel=B | phase=07 | unit=0261\nK2-060 | channel=D | phase=07 | unit=0224\nK2-003 | channel=B | phase=07 | unit=0261\nK2-076 | channel=B | phase=07 | unit=0260\nK2-083 | channel=D | phase=07 | unit=0261\nK2-033 | channel=C | phase=07 | unit=0224\nK2-065 | channel=B | phase=07 | unit=0224\nK2-056 | channel=C | phase=07 | unit=026D\nK2-073 | channel=D | phase=07 | unit=0224\nK2-048 | channel=D | phase=07 | unit=0270\nK2-079 | channel=C | phase=07 | unit=0274\nK2-049 | channel=D | phase=07 | unit=0224\nK2-066 | channel=A | phase=07 | unit=0261\nK2-007 | channel=A | phase=07 | unit=0270\nK2-074 | channel=D | phase=07 | unit=0270\nK2-072 | channel=C | phase=07 | unit=0224\nK2-069 | channel=A | phase=07 | unit=0260\nK2-074 | channel=C | phase=07 | unit=026B\nK2-010 | channel=D | phase=07 | unit=0270\nK2-063 | channel=A | phase=07 | unit=026A\nK2-045 | channel=C | phase=07 | unit=0270\nK2-037 | channel=D | phase=07 | unit=0268\nK2-033 | channel=B | phase=07 | unit=0224\nK2-045 | channel=B | phase=07 | unit=0276\nK2-015 | channel=C | phase=07 | unit=0267\nK2-071 | channel=D | phase=07 | unit=0277\nK2-037 | channel=A | phase=07 | unit=0268\nK2-080 | channel=B | phase=07 | unit=0224\nK2-004 | channel=A | phase=07 | unit=0268\nK2-006 | channel=B | phase=07 | unit=026B\nK2-017 | channel=A | phase=07 | unit=027D\nK2-029 | channel=B | phase=07 | unit=026A\nK2-005 | channel=D | phase=07 | unit=026A\nK2-032 | channel=B | phase=07 | unit=0261\nK2-039 | channel=B | phase=07 | unit=0224\nK2-051 | channel=C | phase=07 | unit=026A\nK2-044 | channel=B | phase=07 | unit=0274\nK2-013 | channel=D | phase=07 | unit=0265\nK2-035 | channel=B | phase=07 | unit=0262\nK2-019 | channel=C | phase=07 | unit=0224\nK2-031 | channel=D | phase=07 | unit=0260\nK2-059 | channel=C | phase=07 | unit=0224\nK2-037 | channel=C | phase=07 | unit=0271\nK2-082 | channel=C | phase=07 | unit=0270\nK2-063 | channel=C | phase=07 | unit=0273\nK2-045 | channel=D | phase=07 | unit=026A\nK2-034 | channel=A | phase=07 | unit=0265\nK2-019 | channel=A | phase=07 | unit=0262\nK2-008 | channel=D | phase=07 | unit=027D\nK2-044 | channel=D | phase=07 | unit=0224\nK2-048 | channel=C | phase=07 | unit=0224\nK2-040 | channel=D | phase=07 | unit=0224\nK2-065 | channel=D | phase=07 | unit=0224\nK2-011 | channel=D | phase=07 | unit=0224\nK2-041 | channel=C | phase=07 | unit=0224\nK2-012 | channel=A | phase=07 | unit=0224\nK2-057 | channel=C | phase=07 | unit=026B\nK2-079 | channel=D | phase=07 | unit=0261\nK2-021 | channel=D | phase=07 | unit=0277\nK2-070 | channel=A | phase=07 | unit=0260\nK2-040 | channel=C | phase=07 | unit=0277\nK2-064 | channel=A | phase=07 | unit=0224\nK2-008 | channel=C | phase=07 | unit=0224\nK2-049 | channel=C | phase=07 | unit=0267\nK2-047 | channel=A | phase=07 | unit=026D\nK2-014 | channel=C | phase=07 | unit=0265\nK2-023 | channel=D | phase=07 | unit=0265\nK2-029 | channel=A | phase=07 | unit=0270\nK2-070 | channel=C | phase=07 | unit=026A\nK2-065 | channel=C | phase=07 | unit=0277\nK2-086 | channel=B | phase=07 | unit=0277\nK2-068 | channel=C | phase=07 | unit=0261\nK2-062 | channel=D | phase=07 | unit=0265\nK2-002 | channel=B | phase=07 | unit=026C\nK2-060 | channel=A | phase=07 | unit=0224\nK2-049 | channel=B | phase=07 | unit=0277\nK2-027 | channel=C | phase=07 | unit=026A\nK2-060 | channel=B | phase=07 | unit=026A\nK2-018 | channel=C | phase=07 | unit=0263\nK2-082 | channel=D | phase=07 | unit=0260\nK2-009 | channel=B | phase=07 | unit=0268\nK2-075 | channel=A | phase=07 | unit=0261\nK2-039 | channel=A | phase=07 | unit=0267\nK2-065 | channel=A | phase=07 | unit=0266\nK2-066 | channel=C | phase=07 | unit=0224\nK2-008 | channel=B | phase=07 | unit=0267\nK2-077 | channel=D | phase=07 | unit=0224\nK2-018 | channel=D | phase=07 | unit=0270\nK2-077 | channel=B | phase=07 | unit=0224\nK2-058 | channel=D | phase=07 | unit=0265\nK2-059 | channel=A | phase=07 | unit=0270\nK2-054 | channel=B | phase=07 | unit=0274\nK2-055 | channel=D | phase=07 | unit=0260\nK2-053 | channel=A | phase=07 | unit=0224\nK2-012 | channel=C | phase=07 | unit=0270\nK2-023 | channel=C | phase=07 | unit=0261\nK2-056 | channel=B | phase=07 | unit=026B\nK2-011 | channel=C | phase=07 | unit=0224\nK2-075 | channel=D | phase=07 | unit=026C\nK2-017 | channel=C | phase=07 | unit=026A\nK2-005 | channel=A | phase=07 | unit=027D\nK2-036 | channel=C | phase=07 | unit=0270\nK2-076 | channel=A | phase=07 | unit=0260\nK2-046 | channel=B | phase=07 | unit=0261\nK2-076 | channel=D | phase=07 | unit=0261\nK2-081 | channel=D | phase=07 | unit=026B\nK2-042 | channel=B | phase=07 | unit=0261\nK2-068 | channel=B | phase=07 | unit=0277\nK2-004 | channel=B | phase=07 | unit=0224\nK2-087 | channel=B | phase=07 | unit=0270\nK2-026 | channel=C | phase=07 | unit=026B\nK2-081 | channel=C | phase=07 | unit=0276\nK2-057 | channel=B | phase=07 | unit=0276\nK2-055 | channel=C | phase=07 | unit=0277\nK2-049 | channel=A | phase=07 | unit=026C\nK2-039 | channel=C | phase=07 | unit=026A\nK2-026 | channel=B | phase=07 | unit=0270\nK2-027 | channel=D | phase=07 | unit=0267\nK2-001 | channel=D | phase=07 | unit=024D\nK2-018 | channel=A | phase=07 | unit=0224\nK2-021 | channel=C | phase=07 | unit=0224\nK2-062 | channel=B | phase=07 | unit=0224\nK2-071 | channel=B | phase=07 | unit=0261\nK2-020 | channel=D | phase=07 | unit=026D\nK2-051 | channel=A | phase=07 | unit=0265\nK2-052 | channel=A | phase=07 | unit=026A\nK2-001 | channel=B | phase=07 | unit=0250\nK2-009 | channel=C | phase=07 | unit=026D\nK2-062 | channel=C | phase=07 | unit=0224\nK2-038 | channel=B | phase=07 | unit=0276\nK2-057 | channel=A | phase=07 | unit=0261\nK2-061 | channel=C | phase=07 | unit=0270\nK2-003 | channel=D | phase=07 | unit=0224\nK2-042 | channel=C | phase=07 | unit=0270\nK2-069 | channel=C | phase=07 | unit=0265\nK2-026 | channel=A | phase=07 | unit=0277\nK2-003 | channel=C | phase=07 | unit=0265\nK2-036 | channel=B | phase=07 | unit=0270\nK2-032 | channel=D | phase=07 | unit=0224\nK2-051 | channel=B | phase=07 | unit=0224\nK2-054 | channel=A | phase=07 | unit=026B\nK2-060 | channel=C | phase=07 | unit=026D\nK2-033 | channel=D | phase=07 | unit=0276\nK2-004 | channel=D | phase=07 | unit=0245",
+    "QH-47": "MORSE DICTIONARY\nA=.- B=-... C=-.-. D=-.. E=. F=..-. G=--. H=.... I=.. J=.--- K=-.- L=.-.. M=-- N=-. O=--- P=.--. Q=--.- R=.-. S=... T=- U=..- V=...- W=.-- X=-..- Y=-.-- Z=--..\n\n001 ON 1\n002 OFF 1\n003 ON 3\n004 OFF 1\n005 ON 3\n006 OFF 3\n007 ON 1\n008 OFF 1\n009 ON 1\n010 OFF 1\n011 ON 1\n012 OFF 1\n013 ON 1\n014 OFF 3\n015 ON 3\n016 OFF 1\n017 ON 3\n018 OFF 1\n019 ON 3\n020 OFF 7\n021 ON 1\n022 OFF 3\n023 ON 3\n024 OFF 1\n025 ON 1\n026 OFF 1\n027 ON 1\n028 OFF 1\n029 ON 3\n030 OFF 3\n031 ON 1\n032 OFF 1\n033 ON 3\n034 OFF 1\n035 ON 3\n036 OFF 1\n037 ON 1\n038 OFF 3\n039 ON 1\n040 OFF 1\n041 ON 3\n042 OFF 1\n043 ON 1\n044 OFF 1\n045 ON 1\n046 OFF 3\n047 ON 1\n048 OFF 1\n049 ON 3\n050 OFF 3\n051 ON 1\n052 OFF 1\n053 ON 1\n054 OFF 3\n055 ON 3\n056 OFF 1\n057 ON 1\n058 OFF 3\n059 ON 1\n060 OFF 1\n061 ON 1\n062 OFF 1\n063 ON 1\n064 OFF 7\n065 ON 1\n066 OFF 1\n067 ON 3\n068 OFF 1\n069 ON 3\n070 OFF 3\n071 ON 1\n072 OFF 1\n073 ON 1\n074 OFF 1\n075 ON 1\n076 OFF 1\n077 ON 1\n078 OFF 3\n079 ON 3\n080 OFF 1\n081 ON 3\n082 OFF 1\n083 ON 3\n084 OFF 3\n085 ON 3\n086 OFF 1\n087 ON 3",
+    "R0-317": "03:17:49 | drift=+21 | echo=122 | source=R0-A\n03:18:28 | drift=+22 | echo=132 | source=R0-C\n03:17:27 | drift=+20 | echo=136 | source=R0-B\n03:17:59 | drift=+23 | echo=88 | source=R0-C\n03:17:48 | drift=+21 | echo=141 | source=R0-B\n03:18:21 | drift=+20 | echo=119 | source=R0-C\n03:17:59 | drift=+21 | echo=138 | source=R0-A\n03:17:15 | drift=+18 | echo=133 | source=R0-B\n03:17:51 | drift=+18 | echo=126 | source=R0-A\n03:17:47 | drift=+20 | echo=121 | source=R0-B\n03:17:00 | drift=+19 | echo=106 | source=R0-C\n03:17:58 | drift=+21 | echo=136 | source=R0-B\n03:17:11 | drift=+19 | echo=129 | source=R0-B\n03:17:01 | drift=+20 | echo=124 | source=R0-C\n03:17:50 | drift=+19 | echo=133 | source=R0-C\n03:18:30 | drift=+19 | echo=130 | source=R0-C\n03:17:57 | drift=+21 | echo=121 | source=R0-C\n03:18:14 | drift=+22 | echo=139 | source=R0-B\n03:17:11 | drift=+18 | echo=129 | source=R0-A\n03:18:19 | drift=+22 | echo=54 | source=R0-B\n03:17:05 | drift=+18 | echo=135 | source=R0-B\n03:17:03 | drift=+22 | echo=132 | source=R0-C\n03:17:19 | drift=+22 | echo=138 | source=R0-B\n03:17:30 | drift=+19 | echo=120 | source=R0-C\n03:18:17 | drift=+20 | echo=121 | source=R0-B\n03:17:43 | drift=+22 | echo=123 | source=R0-C\n03:18:09 | drift=+23 | echo=136 | source=R0-C\n03:17:03 | drift=+21 | echo=53 | source=R0-B\n03:17:35 | drift=+18 | echo=128 | source=R0-B\n03:17:24 | drift=+23 | echo=138 | source=R0-C\n03:17:49 | drift=+22 | echo=134 | source=R0-B\n03:17:02 | drift=+20 | echo=121 | source=R0-B\n03:18:26 | drift=+20 | echo=125 | source=R0-C\n03:17:34 | drift=+22 | echo=87 | source=R0-B\n03:18:07 | drift=+20 | echo=117 | source=R0-B\n03:18:06 | drift=+19 | echo=120 | source=R0-B\n03:18:01 | drift=+18 | echo=122 | source=R0-A\n03:17:29 | drift=+23 | echo=139 | source=R0-C\n03:17:21 | drift=+20 | echo=136 | source=R0-C\n03:17:54 | drift=+21 | echo=124 | source=R0-A\n03:17:56 | drift=+19 | echo=116 | source=R0-B\n03:17:50 | drift=+17 | echo=49 | source=R0-A\n03:17:41 | drift=+20 | echo=136 | source=R0-C\n03:17:46 | drift=+18 | echo=115 | source=R0-A\n03:17:13 | drift=+20 | echo=120 | source=R0-A\n03:17:11 | drift=+20 | echo=136 | source=R0-C\n03:18:01 | drift=+19 | echo=133 | source=R0-B\n03:17:16 | drift=+20 | echo=131 | source=R0-C\n03:18:37 | drift=+20 | echo=66 | source=R0-B\n03:17:51 | drift=+20 | echo=120 | source=R0-C\n03:17:32 | drift=+21 | echo=120 | source=R0-C\n03:17:23 | drift=+21 | echo=119 | source=R0-B\n03:17:42 | drift=+21 | echo=125 | source=R0-C\n03:18:17 | drift=+21 | echo=53 | source=R0-C\n03:18:16 | drift=+20 | echo=117 | source=R0-C\n03:18:14 | drift=+23 | echo=138 | source=R0-C\n03:17:14 | drift=+21 | echo=122 | source=R0-A\n03:17:22 | drift=+21 | echo=125 | source=R0-C\n03:17:27 | drift=+21 | echo=122 | source=R0-C\n03:18:02 | drift=+19 | echo=51 | source=R0-A\n03:18:40 | drift=+19 | echo=120 | source=R0-C\n03:18:34 | drift=+23 | echo=127 | source=R0-C\n03:17:44 | drift=+21 | echo=53 | source=R0-A\n03:18:11 | drift=+18 | echo=127 | source=R0-A\n03:17:26 | drift=+20 | echo=135 | source=R0-C\n03:17:48 | drift=+20 | echo=135 | source=R0-A\n03:17:44 | drift=+23 | echo=137 | source=R0-C\n03:18:35 | drift=+18 | echo=115 | source=R0-B\n03:17:30 | drift=+18 | echo=50 | source=R0-B\n03:17:22 | drift=+20 | echo=137 | source=R0-B\n03:17:21 | drift=+18 | echo=127 | source=R0-A\n03:17:19 | drift=+21 | echo=133 | source=R0-A\n03:17:45 | drift=+18 | echo=133 | source=R0-B\n03:18:45 | drift=+19 | echo=65 | source=R0-C\n03:17:10 | drift=+19 | echo=134 | source=R0-C\n03:17:14 | drift=+23 | echo=124 | source=R0-C\n03:18:03 | drift=+21 | echo=118 | source=R0-B\n03:18:41 | drift=+20 | echo=52 | source=R0-C\n03:17:24 | drift=+22 | echo=131 | source=R0-B\n03:18:23 | drift=+21 | echo=53 | source=R0-B\n03:17:03 | drift=+20 | echo=128 | source=R0-A\n03:18:25 | drift=+19 | echo=135 | source=R0-C\n03:17:39 | drift=+21 | echo=131 | source=R0-A\n03:18:32 | drift=+20 | echo=125 | source=R0-B\n03:17:39 | drift=+22 | echo=137 | source=R0-B\n03:18:25 | drift=+18 | echo=119 | source=R0-B\n03:17:31 | drift=+18 | echo=127 | source=R0-A\n03:17:29 | drift=+22 | echo=122 | source=R0-B\n03:17:49 | drift=+23 | echo=134 | source=R0-C\n03:17:55 | drift=+18 | echo=50 | source=R0-B\n03:17:06 | drift=+18 | echo=134 | source=R0-A\n03:18:05 | drift=+17 | echo=131 | source=R0-A\n03:18:33 | drift=+22 | echo=138 | source=R0-C\n03:18:10 | drift=+19 | echo=136 | source=R0-C\n03:17:05 | drift=+17 | echo=132 | source=R0-A\n03:17:18 | drift=+20 | echo=52 | source=R0-A\n03:17:28 | drift=+21 | echo=122 | source=R0-B\n03:17:01 | drift=+18 | echo=128 | source=R0-A\n03:17:33 | drift=+21 | echo=53 | source=R0-B\n03:17:28 | drift=+20 | echo=52 | source=R0-A\n03:17:17 | drift=+21 | echo=121 | source=R0-C\n03:17:47 | drift=+19 | echo=136 | source=R0-A\n03:18:29 | drift=+23 | echo=55 | source=R0-C\n03:17:09 | drift=+21 | echo=122 | source=R0-A\n03:17:26 | drift=+18 | echo=122 | source=R0-A\n03:18:00 | drift=+19 | echo=129 | source=R0-C\n03:18:10 | drift=+18 | echo=50 | source=R0-B\n03:18:28 | drift=+21 | echo=53 | source=R0-B\n03:17:04 | drift=+22 | echo=135 | source=R0-B\n03:17:09 | drift=+23 | echo=144 | source=R0-C\n03:17:10 | drift=+17 | echo=116 | source=R0-A\n03:17:38 | drift=+22 | echo=123 | source=R0-C\n03:18:09 | drift=+22 | echo=143 | source=R0-B\n03:17:33 | drift=+20 | echo=52 | source=R0-A\n03:17:46 | drift=+19 | echo=51 | source=R0-B\n03:18:04 | drift=+22 | echo=130 | source=R0-B\n03:17:55 | drift=+17 | echo=49 | source=R0-A\n03:17:02 | drift=+21 | echo=122 | source=R0-C\n03:17:18 | drift=+21 | echo=132 | source=R0-B\n03:17:24 | drift=+21 | echo=53 | source=R0-A\n03:17:06 | drift=+19 | echo=120 | source=R0-B\n03:17:47 | drift=+21 | echo=122 | source=R0-C\n03:17:08 | drift=+20 | echo=134 | source=R0-A\n03:17:32 | drift=+20 | echo=141 | source=R0-B\n03:17:36 | drift=+18 | echo=134 | source=R0-A\n03:18:36 | drift=+19 | echo=127 | source=R0-B\n03:17:54 | drift=+23 | echo=120 | source=R0-C\n03:17:53 | drift=+20 | echo=130 | source=R0-A\n03:18:44 | drift=+23 | echo=139 | source=R0-C\n03:00:00 | drift=+0 | echo=83 | source=PUMP\n03:17:40 | drift=+19 | echo=130 | source=R0-C\n03:18:13 | drift=+21 | echo=120 | source=R0-B\n03:18:31 | drift=+20 | echo=122 | source=R0-C\n03:17:45 | drift=+17 | echo=129 | source=R0-A\n03:17:01 | drift=+19 | echo=123 | source=R0-B\n03:17:53 | drift=+22 | echo=132 | source=R0-C\n03:17:35 | drift=+19 | echo=51 | source=R0-C\n03:17:44 | drift=+22 | echo=138 | source=R0-B\n03:17:13 | drift=+22 | echo=122 | source=R0-C\n03:17:04 | drift=+21 | echo=142 | source=R0-A\n03:17:37 | drift=+20 | echo=128 | source=R0-B\n03:18:31 | drift=+19 | echo=134 | source=R0-B\n03:17:17 | drift=+19 | echo=116 | source=R0-A\n03:17:37 | drift=+21 | echo=125 | source=R0-C\n03:17:33 | drift=+22 | echo=123 | source=R0-C\n03:17:22 | drift=+19 | echo=131 | source=R0-A\n03:17:59 | drift=+22 | echo=141 | source=R0-B\n03:18:01 | drift=+20 | echo=117 | source=R0-C\n03:18:16 | drift=+19 | echo=124 | source=R0-B\n03:17:15 | drift=+19 | echo=118 | source=R0-C\n03:17:31 | drift=+19 | echo=117 | source=R0-B\n03:17:57 | drift=+19 | echo=129 | source=R0-A\n03:18:42 | drift=+21 | echo=118 | source=R0-C\n03:17:06 | drift=+20 | echo=130 | source=R0-C\n03:18:38 | drift=+22 | echo=119 | source=R0-C\n03:18:07 | drift=+19 | echo=116 | source=R0-A\n03:17:21 | drift=+19 | echo=134 | source=R0-B\n03:17:58 | drift=+20 | echo=131 | source=R0-A\n03:17:39 | drift=+23 | echo=55 | source=R0-C\n03:17:43 | drift=+20 | echo=117 | source=R0-A\n03:18:35 | drift=+19 | echo=120 | source=R0-C\n03:17:25 | drift=+17 | echo=101 | source=R0-A\n03:17:29 | drift=+21 | echo=133 | source=R0-A\n03:18:03 | drift=+22 | echo=143 | source=R0-C\n03:18:20 | drift=+19 | echo=134 | source=R0-C\n03:18:08 | drift=+22 | echo=121 | source=R0-C\n03:17:53 | drift=+21 | echo=122 | source=R0-B\n03:17:16 | drift=+18 | echo=50 | source=R0-A\n03:18:13 | drift=+22 | echo=123 | source=R0-C\n03:17:56 | drift=+18 | echo=119 | source=R0-A\n03:17:08 | drift=+21 | echo=137 | source=R0-B\n03:17:38 | drift=+20 | echo=125 | source=R0-A\n03:18:15 | drift=+19 | echo=51 | source=R0-C\n03:18:26 | drift=+19 | echo=139 | source=R0-B\n03:18:19 | drift=+23 | echo=124 | source=R0-C\n03:17:36 | drift=+19 | echo=116 | source=R0-B\n03:17:04 | drift=+23 | echo=55 | source=R0-C\n03:18:05 | drift=+19 | echo=135 | source=R0-C\n03:17:20 | drift=+18 | echo=50 | source=R0-B\n03:17:45 | drift=+19 | echo=51 | source=R0-C\n03:17:16 | drift=+19 | echo=51 | source=R0-B\n03:17:25 | drift=+19 | echo=51 | source=R0-C\n03:18:10 | drift=+17 | echo=114 | source=R0-A\n03:17:13 | drift=+21 | echo=140 | source=R0-B\n03:18:00 | drift=+18 | echo=119 | source=R0-B\n03:18:07 | drift=+21 | echo=118 | source=R0-C\n03:18:08 | drift=+20 | echo=52 | source=R0-A\n03:17:37 | drift=+19 | echo=116 | source=R0-A\n03:18:00 | drift=+17 | echo=120 | source=R0-A\n03:18:08 | drift=+21 | echo=121 | source=R0-B\n03:18:24 | drift=+23 | echo=135 | source=R0-C\n03:18:03 | drift=+20 | echo=122 | source=R0-A\n03:17:42 | drift=+19 | echo=51 | source=R0-A\n03:18:36 | drift=+20 | echo=52 | source=R0-C\n03:18:23 | drift=+22 | echo=127 | source=R0-C\n03:18:09 | drift=+21 | echo=131 | source=R0-A\n03:17:20 | drift=+17 | echo=134 | source=R0-A\n03:18:06 | drift=+18 | echo=50 | source=R0-A\n03:18:12 | drift=+20 | echo=119 | source=R0-B\n03:18:02 | drift=+21 | echo=129 | source=R0-C\n03:17:26 | drift=+19 | echo=135 | source=R0-B\n03:17:19 | drift=+23 | echo=138 | source=R0-C\n03:17:50 | drift=+18 | echo=119 | source=R0-B\n03:17:38 | drift=+21 | echo=142 | source=R0-B\n03:17:43 | drift=+21 | echo=94 | source=R0-B\n03:17:55 | drift=+19 | echo=128 | source=R0-C\n03:17:15 | drift=+17 | echo=117 | source=R0-A\n03:17:58 | drift=+22 | echo=54 | source=R0-C\n03:17:41 | drift=+19 | echo=65 | source=R0-B\n03:18:02 | drift=+20 | echo=52 | source=R0-B\n03:18:18 | drift=+22 | echo=122 | source=R0-C\n03:17:18 | drift=+22 | echo=123 | source=R0-C\n03:18:37 | drift=+21 | echo=136 | source=R0-C\n03:18:30 | drift=+18 | echo=119 | source=R0-B\n03:17:54 | drift=+22 | echo=122 | source=R0-B\n03:18:04 | drift=+21 | echo=132 | source=R0-A\n03:17:20 | drift=+19 | echo=51 | source=R0-C\n03:17:52 | drift=+19 | echo=130 | source=R0-A\n03:18:32 | drift=+21 | echo=53 | source=R0-C\n03:18:13 | drift=+20 | echo=66 | source=R0-A\n03:17:17 | drift=+20 | echo=130 | source=R0-B\n03:17:34 | drift=+21 | echo=135 | source=R0-A\n03:18:21 | drift=+19 | echo=123 | source=R0-B\n03:18:20 | drift=+18 | echo=134 | source=R0-B\n03:18:34 | drift=+22 | echo=139 | source=R0-B\n03:17:51 | drift=+19 | echo=118 | source=R0-B\n03:18:15 | drift=+18 | echo=130 | source=R0-B\n03:18:11 | drift=+20 | echo=125 | source=R0-C\n03:18:04 | drift=+23 | echo=138 | source=R0-C\n03:17:36 | drift=+20 | echo=136 | source=R0-C\n03:17:40 | drift=+17 | echo=118 | source=R0-A\n03:17:23 | drift=+20 | echo=66 | source=R0-A\n03:17:02 | drift=+19 | echo=116 | source=R0-A\n03:17:41 | drift=+18 | echo=118 | source=R0-A\n03:17:52 | drift=+21 | echo=53 | source=R0-C\n03:17:57 | drift=+20 | echo=130 | source=R0-B\n03:17:40 | drift=+18 | echo=134 | source=R0-B\n03:18:18 | drift=+21 | echo=136 | source=R0-B\n03:17:30 | drift=+17 | echo=134 | source=R0-A\n03:18:27 | drift=+20 | echo=136 | source=R0-B\n03:17:05 | drift=+19 | echo=84 | source=R0-C\n03:17:00 | drift=+18 | echo=102 | source=R0-B\n03:17:07 | drift=+20 | echo=135 | source=R0-B\n03:17:31 | drift=+20 | echo=130 | source=R0-C\n03:18:33 | drift=+21 | echo=121 | source=R0-B\n03:17:12 | drift=+19 | echo=133 | source=R0-A\n03:18:43 | drift=+22 | echo=121 | source=R0-C\n03:17:34 | drift=+23 | echo=67 | source=R0-C\n03:17:25 | drift=+18 | echo=123 | source=R0-B\n03:18:39 | drift=+23 | echo=132 | source=R0-C\n03:17:10 | drift=+18 | echo=129 | source=R0-B\n03:18:12 | drift=+21 | echo=135 | source=R0-C\n03:18:06 | drift=+20 | echo=52 | source=R0-C\n03:17:28 | drift=+22 | echo=132 | source=R0-C\n03:17:14 | drift=+22 | echo=119 | source=R0-B\n03:18:27 | drift=+21 | echo=132 | source=R0-C\n03:17:23 | drift=+22 | echo=127 | source=R0-C\n03:17:27 | drift=+19 | echo=120 | source=R0-A\n03:17:08 | drift=+22 | echo=130 | source=R0-C\n03:17:48 | drift=+22 | echo=121 | source=R0-C\n03:17:46 | drift=+20 | echo=134 | source=R0-C\n03:17:07 | drift=+19 | echo=51 | source=R0-A\n03:18:29 | drift=+22 | echo=136 | source=R0-B\n03:17:32 | drift=+19 | echo=131 | source=R0-A\n03:17:42 | drift=+20 | echo=52 | source=R0-B\n03:17:07 | drift=+21 | echo=118 | source=R0-C\n03:18:11 | drift=+19 | echo=130 | source=R0-B\n03:18:05 | drift=+18 | echo=132 | source=R0-B\n03:18:22 | drift=+20 | echo=121 | source=R0-B\n03:17:12 | drift=+21 | echo=53 | source=R0-C\n03:17:56 | drift=+20 | echo=121 | source=R0-C\n03:18:22 | drift=+21 | echo=135 | source=R0-C\n03:17:35 | drift=+17 | echo=118 | source=R0-A\n03:17:00 | drift=+17 | echo=82 | source=R0-A\n03:17:12 | drift=+20 | echo=52 | source=R0-B\n03:17:52 | drift=+20 | echo=136 | source=R0-B\n03:18:24 | drift=+22 | echo=132 | source=R0-B\n03:17:09 | drift=+22 | echo=127 | source=R0-B\n03:18:12 | drift=+19 | echo=120 | source=R0-A",
+    "I0-14": "ROUTE_A | order=SELECT,PRUNE,LAYOUT,COMMIT | DATA_HEX=07 7C 45 24 35 7D 4E 65 3F 34 54 76 36 71 00 67 3C 7A 54 65 3A 7A 53 24 3C 7A 45 24 31 66 41 6A 30 7C 0E 24 12 7A 41 68 2A 67 54 24 3B 75 53 24 21 71 54 65 3A 7A 45 60 73 75 00 77 36 7A 54 61 3D 77 45 24 35 66 4F 69 73 60 48 65 27 34 54 76 36 71 0E\nROUTE_B | order=SELECT,LAYOUT,PRUNE,COMMIT | DATA_HEX=07 48 71 24 31 52 75 6A 30 48 34 73 32 53 34 76 36 4D 7B 72 36 44 34 65 35 54 71 76 73 54 7C 61 73 52 71 74 3F 59 3A 24 12 4E 75 68 2A 53 60 24 3B 41 67 24 38 45 64 70 73 54 7C 61 73 41 7A 77 24 45 66 24 3A 4E 34 73 3B 49 77 6C 73 49 60 24 20 54 7D 68 3F 00 71 7C 3A 53 60 77 7D\nROUTE_C | order=LAYOUT,SELECT,PRUNE,COMMIT | DATA_HEX=61 73 67 61 4E 27 71 6A 43 36 34 67 41 3D 34 66 45 73 66 61 41 37 75 66 4C 36 34 73 49 27 7C 6B 55 27 34 70 48 36 34 77 45 22 61 61 4E 30 71 24 41 27 60 76 49 31 61 70 45 37 34 70 4F 73 7D 70 00 3B 75 72 49 3D 73 24 4F 30 77 71 52 21 71 60 00 35 7B 76 00 12 7A 65 4C 2A 67 70 0E\nROUTE_D | order=SELECT,LAYOUT,COMMIT,PRUNE | DATA_HEX=12 4E 65 78 2A 53 70 34 21 45 70 75 3A 4E 61 70 73 42 6B 60 3B 00 66 66 32 4E 67 7C 36 53 24 76 36 46 6B 66 36 00 70 7C 36 00 67 61 27 0E 24 40 3B 45 24 67 32 56 61 70 73 54 76 71 36 00 6C 75 20 00 6A 7B 27 00 62 7B 21 47 6B 60 27 45 6A 34 27 48 61 34 20 45 67 7B 3D 44 24 7B 3D 45 2A"
+  }
+}

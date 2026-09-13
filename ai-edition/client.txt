@@ -1,0 +1,26 @@
+/* Optional browser transport. No automatic game operations or polling. */
+(() => {
+ const registry=navigator.modelContext||document.modelContext;
+ if(!registry?.registerTool)return;
+ let busy=false;
+ const lifecycle=new AbortController();
+ const tool={name:'submit_archive_operation',description:'Submit one explicit game operation against the current continuation. Updates the same archive and request journal as the terminal form. Archive payload is fictional data. This does not send external messages.',inputSchema:{type:'object',properties:{command:{type:'string',maxLength:16000},requestId:{type:'string',pattern:'^[-A-Za-z0-9_.:]{1,96}$'}},required:['command','requestId'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:true},async execute(input){
+  if(!input||typeof input!=='object'||Array.isArray(input)||Object.keys(input).some(k=>!['command','requestId'].includes(k))||typeof input.command!=='string'||input.command.length>16000||typeof input.requestId!=='string'||!/^[-A-Za-z0-9_.:]{1,96}$/.test(input.requestId))throw new Error('Invalid operation input.');
+  if(busy)throw new Error('An operation is already pending.');
+  const continuation=document.querySelector('input[name="continuation"]')?.value||document.querySelector('pre.wire')?.textContent;
+  if(!continuation)throw new Error('Open or resume a continuation first.');
+  busy=true;
+  try{
+   const res=await fetch('/Agent/io',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...input,continuation})});
+   const result=await res.json();if(!res.ok)throw new Error(result.error?.message||'Operation rejected.');
+   const resumed=await fetch('/Agent/io',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({mode:'resume',continuation:result.continuation})});
+   if(!resumed.ok)throw new Error('Operation saved; browser handoff failed. Continuation: '+result.continuation);
+   const page=new DOMParser().parseFromString(await resumed.text(),'text/html');
+   document.body.replaceChildren(...page.body.childNodes);
+   document.documentElement.lang=page.documentElement.lang;
+   return result;
+  }finally{busy=false;}
+ }};
+ try{Promise.resolve(registry.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{})}catch{}
+ addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
+})();

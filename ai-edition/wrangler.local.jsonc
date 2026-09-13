@@ -1,0 +1,16 @@
+{
+  "name": "slide-fourteen-agent-local",
+  "main": "dist/worker.mjs",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "slide-fourteen-agent-local",
+      "database_id": "local-only",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
