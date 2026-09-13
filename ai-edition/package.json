@@ -10,7 +10,7 @@
     "build": "node build.mjs",
     "test": "node --experimental-transform-types game/verify.ts && node --experimental-transform-types game/verify-r2.ts && node qa/http.mjs",
     "dev": "wrangler dev --config wrangler.local.jsonc",
-    "deploy": "node configure.mjs && wrangler deploy --config wrangler.deploy.json"
+    "deploy": "node configure.mjs && wrangler d1 migrations apply slide-fourteen-agent --remote --config wrangler.deploy.json && wrangler deploy --config wrangler.deploy.json"
   },
   "dependencies": {
     "react": "19.2.6",

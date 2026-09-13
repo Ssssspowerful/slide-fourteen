@@ -1,0 +1,22 @@
+{
+  "name": "slide-fourteen-agent",
+  "main": "dist/worker.mjs",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {
+    "ANALYST_PUBLIC_ORIGIN": "https://slidefourteen.org"
+  },
+  "routes": [
+    {"pattern": "slidefourteen.org/Agent*", "zone_name": "slidefourteen.org"}
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "slide-fourteen-agent",
+      "database_id": "5f44a6b7-cba0-4413-83cd-ad1dc701bd69",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

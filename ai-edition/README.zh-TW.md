@@ -25,22 +25,44 @@ GitHub Pages 提供靜態檔案；目前 AI 版的 `POST /Agent/io`、不可任�
 
 ## 尚需連接的設定
 
-2026-09-12 查得 `slidefourteen.org` 的 nameserver 仍是 Porkbun。此 Worker 路由方案需要有效 Cloudflare zone 與被代理的域名記錄。目前未改 nameserver、DNS、網域註冊商或人類站後端。
+此 Worker 路由方案需要有效 Cloudflare zone 與被代理的域名記錄。部署前確認 Cloudflare domain status 為 Active、原有 GitHub Pages DNS 記錄正確匯入，且 SSL/TLS 為 Full (strict)。
 
-實際設定前應先匯入並核對原有完整 DNS 記錄，再決定是否將 DNS 服務轉到 Cloudflare；網域仍可留在 Porkbun 註冊。人類端的 DNS/CDN 傳輸會受這個設定影響，雖然人類遊戲檔案與網址都不變。這不是單純新增資料夾就能完成的部署。
+DNS 服務轉到 Cloudflare 時，網域仍可留在 Porkbun 註冊。人類端的 DNS/CDN 傳輸會受這個設定影響，雖然人類遊戲檔案與網址都不變。這不是單純新增資料夾就能完成的部署。
 
 需要擁有者連接 Cloudflare 帳戶並完成域名設定。不要把 API token 貼進聊天或提交到 Git。
 
-## 部署方式
+## Cloudflare Dashboard 連接 GitHub
+
+`wrangler.jsonc` 已記錄擁有者提供的 D1 ID：`5f44a6b7-cba0-4413-83cd-ad1dc701bd69`。這是資源識別碼，不是存取憑證；第一次正式部署仍須透過擁有者的 Cloudflare 認證確認它可用。標準設定檔也讓 Workers Builds 能辨認這個子目錄內的 Worker。
+
+在 Workers & Pages 建立 application 並連接 GitHub，使用：
+
+| 欄位 | 值 |
+|---|---|
+| Repository | `Ssssspowerful/slide-fourteen` |
+| Production branch | `main` |
+| Worker name | `slide-fourteen-agent` |
+| Root directory | `ai-edition` |
+| Build command | `npm run build` |
+| Deploy command | `npm run deploy` |
+| Node version | 22.13 以上 |
+
+先確認建置使用的 API token 有 Account / D1 / Edit 權限。Cloudflare 自動建立的 Workers Builds token 預設列出 Workers Scripts、KV、R2、Workers Routes 等權限，沒有 D1；可在 My Profile → API Tokens 編輯該 token，或選擇已包含 D1 權限的部署 token。Token 留在 Cloudflare，不貼進聊天或 Git。
+
+`npm run deploy` 依序準備設定、套用尚未執行的 D1 migrations，再發布 Worker；資料庫步驟失敗時不會繼續發布。它不會刪除已存在的存檔。GitHub authorization 可只開放本 repository；部署只使用 `ai-edition/`。非正式分支建置可保持關閉。
+
+官方設定說明：[Workers Builds configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/)。
+
+## CLI 或 GitHub Actions 部署
 
 1. 將本目錄放到 GitHub repository 的 `ai-edition/`。
 2. 使用 Node 22.13 以上，在此目錄執行 `npm ci`、`npm run build`、`npm test`。
-3. 在使用者的 Cloudflare 帳戶建立獨立 D1 `slide-fourteen-agent`，保留它實際返回的 database ID。
-4. 設置 `AGENT_D1_DATABASE_ID` 為該 ID，執行 `node configure.mjs`。若沒有真實 ID，程式會停止，不會猜測。
+3. D1 預設使用 `wrangler.jsonc` 裡已提供的 ID。若部署到另一個帳戶，先建立獨立 D1 並取得實際 ID。
+4. 執行 `node configure.mjs`；如需使用另一個 D1，透過 `AGENT_D1_DATABASE_ID` 覆寫。設定會驗證 ID 格式，不會猜測。
 5. 在已登入的部署環境或 GitHub secrets 中設定 Cloudflare 認證。執行 `npx wrangler d1 migrations apply slide-fourteen-agent --remote --config wrangler.deploy.json`。
 6. 確認該域名的 Cloudflare route prerequisites 已完成，再執行 `npx wrangler deploy --config wrangler.deploy.json`。
 
-`deploy-agent.workflow.yml` 是手動觸發的 GitHub Actions 範本，可放到 `.github/workflows/deploy-agent.yml`；它不修改人類版 Pages 工作流程。需要 repository secrets `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 以及 variable `AGENT_D1_DATABASE_ID`。
+`deploy-agent.workflow.yml` 是手動觸發的 GitHub Actions 範本，可放到 `.github/workflows/deploy-agent.yml`；它不修改人類版 Pages 工作流程。需要 repository secrets `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`；variable `AGENT_D1_DATABASE_ID` 可省略，留空時使用標準設定的 ID。
 
 設定刻意關閉 `workers.dev` 與 preview URLs，公開地址只使用自己的域名。路由為 `slidefourteen.org/Agent*`，程式對 `/AgentExtra` 等非目標路徑直接交回 origin；不攔截人類版 `/`、`/en/`、`/zh-hant/`、`/zh-hans/` 或 `/_next/`。
 
