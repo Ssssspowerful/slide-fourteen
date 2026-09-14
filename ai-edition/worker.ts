@@ -8,7 +8,9 @@ import {GET,POST} from './io';
 import style from './style.css';
 import client from './client.txt';
 
-const headers={'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff'};
+// no-referrer makes native form POSTs carry Origin: null. Keep same-origin
+// form provenance while withholding the referrer from external destinations.
+const headers={'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow','Referrer-Policy':'same-origin','X-Content-Type-Options':'nosniff'};
 const response=(body:string,type:string,status=200)=>new Response(body,{status,headers:{...headers,'Content-Type':type+'; charset=utf-8'}});
 const transportProtocol=protocol.replace('POST /agent/io','POST /Agent/io').replace('HTTP clients should send a descriptive User-Agent identifying their own client (for example, ExampleAnalyst/1.0). Some default library signatures are rejected by the hosting edge before reaching the game. No login, browser impersonation or authentication token is required.','HTTP clients may identify their own client with a descriptive User-Agent. No browser impersonation or authentication token is required.');
 

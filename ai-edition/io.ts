@@ -4,7 +4,7 @@ import {open,load,operate} from './game/storage';
 import {operations,serialize,phase,complete} from './game/engine';
 import {languages} from './game/transcript';
 import {Fault} from './game/protocol';
-const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff'};
+const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow','Referrer-Policy':'same-origin','X-Content-Type-Options':'nosniff'};
 export async function POST(request:Request){
  const isJson=request.headers.get('content-type')?.includes('application/json');let continuation='';let command='';let requestId='';let mode='';let alias='';let transcript='en';
  try{
@@ -24,7 +24,7 @@ export async function POST(request:Request){
   }else result=await operate(continuation,command,requestId);
   if(isJson)return new Response(JSON.stringify({continuation:result.continuation,revision:result.state.rev,record:serialize(result.state),operations:operations(result.state),language:result.state.language??'en',state:phase(result.state),complete:complete(result.state),stopped:result.state.stopped}),{headers});
   const cookie=`sf_agent_continuation=${result.continuation}; HttpOnly; SameSite=Lax; Path=/Agent/; Max-Age=31536000${terminalOrigin.startsWith('https://')?'; Secure':''}`;
-  return new Response(null,{status:303,headers:{Location:'/Agent/','Set-Cookie':cookie,'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'}});
+  return new Response(null,{status:303,headers:{Location:'/Agent/','Set-Cookie':cookie,'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow','Referrer-Policy':'same-origin'}});
  }catch(error){
   const known=error instanceof Fault;const syntax=error instanceof SyntaxError;const code=known?error.code:syntax?'SYNTAX':'STORAGE-UNAVAILABLE';const message=known?error.message:syntax?'Request body is not valid JSON.':'The operation could not be completed. Retain the continuation and request; retry with the same input.';
   if(!known&&!syntax)console.error('Analyst operation failed',error instanceof Error?error.message:'unknown');

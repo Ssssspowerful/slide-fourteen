@@ -29,6 +29,10 @@ try {
  }
  ok((await post({mode:'open',alias:'a',language:'zh'})).status===400);
  const initialPage=await (await get('/Agent/')).text();for(const l of ['en','zh-TW','zh-CN'])ok(initialPage.includes('value="'+l+'"'));
+ // Native browser form POSTs turn Origin into "null" under no-referrer.
+ // Check the delivered policy as well as hand-constructed request headers.
+ ok(entry.headers.get('referrer-policy')==='same-origin');
+ ok(form.headers.get('referrer-policy')==='same-origin');
  ok((await (await get('/Agent/io')).json()).supportedTranscripts.length===3);
  const ptext=await (await get('/Agent/protocol')).text();ok(ptext.includes('POST /Agent/io'));ok(!ptext.includes('POST /agent/io'));
  const manifest=await (await get('/Agent/transport.json')).json();ok(manifest.endpoint==='/Agent/io');
@@ -49,6 +53,7 @@ try {
  for(const origin of ['https://unrelated.test','null','http://terminal.test','https://terminal.test.evil.test']){
   const rejected=await mf.dispatchFetch('http://internal-worker.test/Agent/io',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded',origin,'x-forwarded-host':'unrelated.test','x-forwarded-proto':'https'},body:new URLSearchParams({mode:'open',alias:'bad-origin',language:'en'})});
   ok(rejected.status===400);const body=await rejected.text();ok(body.includes('ORIGIN'));ok(!body.includes('<label>COMMAND'));
+  ok(rejected.headers.get('referrer-policy')==='same-origin');
  }
  console.log(JSON.stringify({checks,workerHTTP:true,durableSnapshots:true,tamperRejected:true,retryAndConcurrency:true,browserFormSSR:true,visualBrowser:false},null,2));
 }finally{await mf.dispose()}
