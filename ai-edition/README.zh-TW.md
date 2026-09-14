@@ -53,7 +53,32 @@ DNS 服務轉到 Cloudflare 時，網域仍可留在 Porkbun 註冊。人類端�
 
 官方設定說明：[Workers Builds configuration](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/)。
 
-## CLI 或 GitHub Actions 部署
+## GitHub Actions：只需新增一份部署金鑰
+
+若 Cloudflare 的 Connect GitHub 介面反覆回到 GitHub App 設定頁，可直接使用本 repository 已有的 [Deploy isolated Analyst terminal](https://github.com/Ssssspowerful/slide-fourteen/actions/workflows/deploy-agent.yml)。這條路徑由 GitHub 執行部署，不依賴 Cloudflare Dashboard 的 GitHub 連接流程。
+
+帳戶 ID 與既有 D1 ID 已填入部署設定；兩者是資源識別碼，不是金鑰。擁有者只需要建立並存入一份 `CLOUDFLARE_API_TOKEN`。
+
+1. 開啟 [Cloudflare 部署 token 預填表單](https://dash.cloudflare.com/profile/api-tokens?permissionGroupKeys=%5B%7B%22key%22%3A%22workers_scripts%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22d1%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22workers_routes%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22zone%22%2C%22type%22%3A%22read%22%7D%5D&accountId=39cfe59215d450c59f78d9f0f52f585e&zoneId=all&name=Slide%20Fourteen%20Agent%20Deploy)，名稱為 `Slide Fourteen Agent Deploy`。這是依官方 template URL 格式產生的連結；若登入後未預填，可在 [API Tokens](https://dash.cloudflare.com/profile/api-tokens) 選 Create Token → Create Custom Token 並填入下表。表單生成前仍須確認資源範圍。
+2. 設定下列權限，Account Resources 限目前的帳戶，Zone Resources 限 `slidefourteen.org`。
+
+| 範圍 | 權限 | 層級 |
+|---|---|---|
+| Account | Workers Scripts | Edit |
+| Account | D1 | Edit |
+| Zone | Workers Routes | Edit |
+| Zone | Zone | Read |
+
+3. 在 [GitHub repository secrets](https://github.com/Ssssspowerful/slide-fourteen/settings/secrets/actions/new) 新增：Name 為 `CLOUDFLARE_API_TOKEN`，Secret 為剛才的 token。只貼在 GitHub 的 Secret 欄，不貼進聊天、檔案或截圖。
+4. 開啟上面的 workflow，選 main 並 Run workflow；若已有一次停在缺少授權的執行，新增 secret 後重新執行該 job 即可。
+
+流程會安裝固定版本依賴、建置、執行三語及 HTTP 測試，然後套用 D1 migrations 並部署 `/Agent/`。Token 只提供給部署步驟。缺少 token 時會明確停止，不會送出 Cloudflare 部署請求。
+
+此 workflow 也會在 main 的 `ai-edition/**` 或本部署 workflow 更新時觸發。只有人類版檔案變動時，不觸發這個 AI 部署流程。設定仍關閉 `workers.dev` 與 preview URLs。
+
+官方說明：[Cloudflare 的 GitHub Actions 部署方式](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)、[API token 預填連結](https://developers.cloudflare.com/fundamentals/api/how-to/account-owned-token-template/)。
+
+## CLI 部署
 
 1. 將本目錄放到 GitHub repository 的 `ai-edition/`。
 2. 使用 Node 22.13 以上，在此目錄執行 `npm ci`、`npm run build`、`npm test`。
@@ -62,7 +87,7 @@ DNS 服務轉到 Cloudflare 時，網域仍可留在 Porkbun 註冊。人類端�
 5. 在已登入的部署環境或 GitHub secrets 中設定 Cloudflare 認證。執行 `npx wrangler d1 migrations apply slide-fourteen-agent --remote --config wrangler.deploy.json`。
 6. 確認該域名的 Cloudflare route prerequisites 已完成，再執行 `npx wrangler deploy --config wrangler.deploy.json`。
 
-`deploy-agent.workflow.yml` 是手動觸發的 GitHub Actions 範本，可放到 `.github/workflows/deploy-agent.yml`；它不修改人類版 Pages 工作流程。需要 repository secrets `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID`；variable `AGENT_D1_DATABASE_ID` 可省略，留空時使用標準設定的 ID。
+`deploy-agent.workflow.yml` 是 GitHub Actions 範本，repository 中對應 `.github/workflows/deploy-agent.yml`；它不修改人類版 Pages 工作流程。需要 repository secret `CLOUDFLARE_API_TOKEN`；帳戶 ID 已寫在 workflow。Variable `AGENT_D1_DATABASE_ID` 可省略，留空時使用標準設定的 ID。部署到其他帳戶前，需自行更新帳戶 ID、D1 ID 及 route 設定。
 
 設定刻意關閉 `workers.dev` 與 preview URLs，公開地址只使用自己的域名。路由為 `slidefourteen.org/Agent*`，程式對 `/AgentExtra` 等非目標路徑直接交回 origin；不攔截人類版 `/`、`/en/`、`/zh-hant/`、`/zh-hans/` 或 `/_next/`。
 
