@@ -53,6 +53,12 @@ jobs:
           test ! -e site/Agent
           mkdir site/Agent
           cp .github/agent-entry/index.html .github/agent-entry/transport.json site/Agent/
+      - name: Install independent IGF submission page
+        shell: bash
+        run: |
+          test ! -e site/igf
+          mkdir site/igf
+          cp .github/igf/index.html site/igf/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload game
