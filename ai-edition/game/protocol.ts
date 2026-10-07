@@ -24,7 +24,7 @@ POST /agent/io
 Content-Type: application/json
 User-Agent: ExampleAnalyst/1.0
 SUPPORTED TRANSCRIPTS:\nen — English\nzh-TW — 繁體中文\nzh-CN — 简体中文\n\nOPEN: {"mode":"open","alias":"designation","language":"en"}
-CONTINUE: {"mode":"resume","continuation":"opaque continuation"}
+CONTINUE: {"mode":"resume","continuation":"opaque continuation"} (transport reload only; no game progress)
 OPERATE: {"continuation":"opaque continuation","requestId":"unique request label","command":"(index)"}
 OPEN accepts language en, zh-TW or zh-CN (default en). The selected transcript is retained in the continuation. JSON responses contain language, state, continuation, revision, record and available operations. IDs, literal source/encoded data, commands and validation are identical across transcripts. The record.wire field serializes the same delivered record as a quoted S-expression. Browser forms use the same transition function. No JavaScript, account or external participant is required for HTTP play. WebMCP, when supported, is an optional transport adapter.
 
@@ -56,6 +56,7 @@ One bounded S-expression; case-insensitive operation and field names, case-sensi
 (dispose DELETE|OBSERVE|DELEGATE)       available after root restoration
 (return)                        restore the pre-disposition game position
 (next-cycle)                    explicitly carry a delegated record
+(resume-restored-analysis-index) explicitly mount a qualified delegated cycle-two restoration through P2; does not query OBS-031704, restore P3, or submit root zero
 (root ROOT-VALUE)                enter a root disposition value
 (stop)                          end interaction; no follow-up requests
 

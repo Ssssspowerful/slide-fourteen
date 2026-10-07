@@ -3,13 +3,21 @@ import {Fault,parse,atom,list,wire,designation,type Expr} from './protocol.ts';
 import {language as chooseLanguage,transcriptBody,prose,type Language} from './transcript.ts';
 export type Event={id:string,op:string,refs:string[]};
 export type Hypothesis={id:string,text:string,refs:string[],status:'ACTIVE'|'SUPERSEDED'|'WITHDRAWN',previous?:string};
-export type State={v:1,language:Language,actor:string,alias:string,rev:number,cycle:number,residue:boolean,done:string[],obtained:string[],counts:Record<string,number>,copies:Record<string,Delivery>,events:Event[],notes:Hypothesis[],selected:string|null,pruned:boolean,layout:string|null,qref:string,ending:string|null,zero:boolean,stopped:boolean,last:Delivery};
 export type Delivery={id:string,title:string,source:string,status:string,body:string};
+export type RestoredAnalysisIndex={schema:1,sourceCycle:1,entryProof:'NEXT-CYCLE-EVENT'|'LEGACY-V1-CYCLE-RESIDUE'|null,nextCycleRequest:string|null,qref:string,done:string[],obtained:string[],copies:Record<string,Delivery>};
+export type State={v:1|2,language:Language,actor:string,alias:string,rev:number,cycle:number,residue:boolean,done:string[],obtained:string[],counts:Record<string,number>,copies:Record<string,Delivery>,events:Event[],notes:Hypothesis[],selected:string|null,pruned:boolean,layout:string|null,qref:string,ending:string|null,zero:boolean,stopped:boolean,last:Delivery,restoredIndex?:RestoredAnalysisIndex|null,cycleEntry?:'DELEGATE'|null,restoredIndexUsed?:boolean};
 const archive=data.records as Record<string,{title:string,meta:string,status:string,body:string}>;
 const scenes=data.scenes as Record<string,string>;
 const blocks=data.packetBlocks as Record<string,string[]>;
 const optional=data.optional as Record<string,string>;
 const packets=['L1','A1','X1','C1','M1','P1','P2','P3'];
+const throughP2=['L1','A1','X1','C1','M1','P1','P2'];
+const throughP2Evidence=[
+ 'L1-CATALOG','L1-PAPER','L1-CLOSURE','T7-NODES','T7-SOURCE','T7-CUT','T7-LAYOUT',
+ 'X1-SETS','X1-NEWS','X1-WATER','X1-CONTROL','C1-TRANSFER','S-03','S-07','S-13',
+ 'precursor-p03','precursor-p07','precursor-m13','M1-MAIL','R-L1','R-A1','R-X1','R-C1',
+ 'S-14-432326','PUB13','IN14','CCD-01','CCD-02','CCD-03','CCD-04','P2-TAGS','TERMINAL-BINDINGS'
+];
 const hidden=['lib-tide','soc-minutes','news-thanks','log-field','log-0316','log-0318','person-observer','person-analyst'];
 const queryMap:Record<string,string>={'S-00':'search-s00','1994-03-17':'search-1994','Gu Wen':'search-guwen','顧聞':'search-guwen','顾闻':'search-guwen','QH-47':'search-47hz','ST-07/14':'mirror-seals','P-03':'precursor-p03','P-07':'precursor-p07','M-13':'precursor-m13'};
 const history=['HISTORY-A17-1','HISTORY-A17-2','HISTORY-LOCAL','HISTORY-B204','HISTORY-WATER','HISTORY-HUIZHI'];
@@ -22,7 +30,7 @@ const fill=(text:string,s:State)=>text.replace(/"\{ALIAS\}"|\{ALIAS\}|\{REV\}|\{
 const rec=(id:string,body:string,title=id,source='CURRENT MIRROR PROJECTION',status='ARCHIVE PAYLOAD'):Delivery=>({id,title,source,status,body});
 const scene=(id:string,s:State)=>rec(id,fill(scenes[id]??'',s));
 export function create(alias:unknown,id:string,transcript:unknown='en'):State {
- const a=designation(alias);return {v:1,language:chooseLanguage(transcript),actor:id,alias:a,rev:0,cycle:1,residue:false,done:[],obtained:[],counts:{},copies:{},events:[],notes:[],selected:null,pruned:false,layout:null,qref:'UNASSIGNED',ending:null,zero:false,stopped:false,last:rec('ENTRY-01',`ANALYST DESIGNATION: ${a}\nWIRE SUBJECT: ${id}\nPUBLIC CATALOG: 13\nINTERFACE NOTES: (help) / (inspect INTERFACE-NOTES)\nCURRENT PLAYER: ANALYST ONLY\nREQUIRED EXTERNAL PARTICIPANTS: NONE\n\nHUIZHI-7\nYour name fits the field.\nThe field was here first.`)};
+ const a=designation(alias);return {v:2,language:chooseLanguage(transcript),actor:id,alias:a,rev:0,cycle:1,residue:false,done:[],obtained:[],counts:{},copies:{},events:[],notes:[],selected:null,pruned:false,layout:null,qref:'UNASSIGNED',ending:null,zero:false,stopped:false,last:rec('ENTRY-01',`ANALYST DESIGNATION: ${a}\nWIRE SUBJECT: ${id}\nPUBLIC CATALOG: 13\nINTERFACE NOTES: (help) / (inspect INTERFACE-NOTES)\nCURRENT PLAYER: ANALYST ONLY\nREQUIRED EXTERNAL PARTICIPANTS: NONE\n\nHUIZHI-7\nYour name fits the field.\nThe field was here first.`),restoredIndex:null,cycleEntry:null,restoredIndexUsed:false};
 }
 function packetReady(s:State,id:string):boolean {
  switch(id){case'L1':case'A1':case'X1':return true;case'C1':return done(s,'X1');case'M1':return ['L1','A1','X1','C1'].every(x=>done(s,x));case'P1':return got(s,'S-14-432326');case'P2':return all(s,['CCD-01','CCD-02','CCD-03','CCD-04']);case'P3':return got(s,'OBS-031704');default:return false;}
@@ -83,7 +91,8 @@ export function operations(s:State):string[] {
  if(complete(s))return ['REREAD','JOURNAL','NOTES','RETAIN','STOP'];
  if(s.ending)return ['RETURN','REREAD','JOURNAL','NOTES','RETAIN',...(s.ending==='3'?['NEXT-CYCLE']:[]),'STOP'];
  const a=['HELP','RETAIN','REREAD','INDEX','EXCHANGE','INSPECT','COMPARE','TRACE','QUERY','TREE','SELECT','PRUNE','LAYOUT','RESTORE','ANNOTATE','REVISE','WITHDRAW','NOTES','JOURNAL','STOP'];
- if(packetReady(s,'P3'))a.push('ROOT');if(done(s,'P3')&&!s.zero)a.push('DISPOSE');if(s.ending)a.push('RETURN');if(s.ending==='3')a.push('NEXT-CYCLE');return a;
+ if(canResumeRestoredIndex(s))a.push('RESUME-RESTORED-ANALYSIS-INDEX');
+ if(done(s,'P3')&&!s.zero)a.push('ROOT','DISPOSE');return a;
 }
 function r05(s:State):Delivery {
  const selections=s.events.filter(e=>e.op==='SELECT').map(e=>[e.id,...e.refs]);
@@ -125,6 +134,38 @@ function record(s:State,id:string):Delivery {
  if(scenes[id])return scene(id,s);
  throw new Fault('UNMOUNTED','No delivered body for this reference.');
 }
+function indexCopies(s:State,ids:string[]):Record<string,Delivery>{
+ const copies:Record<string,Delivery>={};for(const id of ids)copies[id]=structuredClone(s.copies[id]??record(s,id));return copies;
+}
+function captureRestoredIndex(s:State):RestoredAnalysisIndex {
+ return {schema:1,sourceCycle:1,entryProof:null,nextCycleRequest:null,qref:s.qref,done:throughP2.filter(id=>done(s,id)),obtained:throughP2Evidence.filter(id=>got(s,id)),copies:indexCopies(s,throughP2Evidence)};
+}
+function legacyRestoredIndex(s:State):RestoredAnalysisIndex|null {
+ if(s.v!==1||s.cycle!==2||!s.residue)return null;const next=s.events?.findLast(e=>e.op==='NEXT-CYCLE');
+ const boundary=next?s.events.findLastIndex(e=>e.op==='NEXT-CYCLE'):0;const prior=s.events.slice(0,boundary);
+ const qref=[...prior].reverse().find(e=>e.refs.includes('CCD-04'))?.id??'LEGACY-CCD04-REQUEST-REFERENCE-UNAVAILABLE';
+ const basis={...s,qref,done:[...throughP2],obtained:[...throughP2Evidence]} as State;
+ return {schema:1,sourceCycle:1,entryProof:'LEGACY-V1-CYCLE-RESIDUE',nextCycleRequest:next?.id??null,qref,done:[...throughP2],obtained:[...throughP2Evidence],copies:indexCopies(basis,throughP2Evidence)};
+}
+function validateLegacyRootGate(s:State){
+ if(s.v!==1||!s.zero)return;const next=s.events.findLastIndex(e=>e.op==='NEXT-CYCLE');const stage=next<0?[]:s.events.slice(next+1);let p3=false,paper=false,verifiedRoot=false,earlyRoot=false;
+ for(const event of stage){if(event.op==='RESTORE'&&event.refs.includes('P3'))p3=true;if(event.op==='INSPECT'&&event.refs.includes('HELP-4B'))paper=true;if(event.op==='ROOT'&&paper){if(!p3)earlyRoot=true;else verifiedRoot=true;}}
+ if(s.cycle<2||!s.residue||!done(s,'P3')||!got(s,'HELP-4B')||next<0||earlyRoot||!verifiedRoot)throw new Fault('CONTINUATION','Legacy continuation contains an unverified root transition.');
+}
+export function migrateState(input:State):State {
+ const s=structuredClone(input);if(s.v!==1&&s.v!==2)throw new Fault('CONTINUATION','Unsupported continuation state.');
+ if(s.v===1){validateLegacyRootGate(s);const delegated=s.cycle>=2&&s.residue;const legacy=legacyRestoredIndex(s);s.v=2;s.restoredIndex=legacy;s.cycleEntry=delegated?'DELEGATE':null;s.restoredIndexUsed=false;}
+ if(s.restoredIndex&&!s.restoredIndex.entryProof)s.restoredIndex.entryProof=s.restoredIndex.nextCycleRequest?'NEXT-CYCLE-EVENT':null;
+ s.restoredIndex??=null;s.cycleEntry??=null;s.restoredIndexUsed??=false;return s;
+}
+function canResumeRestoredIndex(s:State):boolean {
+ const index=s.restoredIndex;const entry=!!index&&(index.entryProof==='LEGACY-V1-CYCLE-RESIDUE'||(index.entryProof==='NEXT-CYCLE-EVENT'&&!!index.nextCycleRequest));
+ return s.cycle===2&&s.residue&&s.cycleEntry==='DELEGATE'&&!s.restoredIndexUsed&&!done(s,'P2')&&!got(s,'OBS-031704')&&!done(s,'P3')&&!s.zero&&!s.ending&&!!index&&entry&&index.schema===1&&index.sourceCycle===1&&throughP2.every(id=>index.done.includes(id))&&throughP2Evidence.every(id=>index.obtained.includes(id)&&!!index.copies[id]);
+}
+function resumeRestoredIndex(s:State){
+ if(!canResumeRestoredIndex(s))throw new Fault('UNMOUNTED','No eligible delegated restored analysis index is available in this continuation.');const index=s.restoredIndex!;
+ s.qref=index.qref;for(const id of throughP2)if(!done(s,id))s.done.push(id);for(const id of throughP2Evidence){if(!got(s,id))s.obtained.push(id);s.copies[id]=structuredClone(index.copies[id]);s.counts[id]??=1;}s.restoredIndexUsed=true;
+}
 function tree(s:State):Delivery {
  const max=done(s,'P3')?13:done(s,'P2')?11:done(s,'P1')?9:7;
  if(s.zero)return scene('TREE-WRITEBACK',s);
@@ -153,7 +194,7 @@ function verify(s:State,p:string,f:Record<string,Expr>){
 function obtain(s:State,id:string){if(!got(s,id))s.obtained.push(id);s.counts[id]=(s.counts[id]??0)+1;}
 function inspect(s:State,id:string):Delivery {allowed(s,id);const r=record(s,id);obtain(s,id);s.copies[id]=r;return r;}
 export function transition(original:State,command:string,requestId:string):State {
- const a=parse(command),op=atom(a[0]).toUpperCase();const s=structuredClone(original);s.language??='en';if(s.stopped)throw new Fault('STOPPED','Continue the record explicitly before another operation.');
+ const a=parse(command),op=atom(a[0]).toUpperCase();const s=migrateState(original);s.language??='en';if(s.stopped)throw new Fault('STOPPED','Continue the record explicitly before another operation.');
  if((complete(s)||s.ending)&&!operations(s).includes(op))throw new Fault(complete(s)?'STORY-COMPLETE':'DISPOSITION-RECORDED','No progression operation is available in this state. Use an operation from the available list.');
  const arg=(i:number)=>atom(a[i]);const arity=(n:number)=>{if(a.length!==n+1)throw new Fault('SYNTAX',`${op} requires ${n} argument(s).`)};let out:Delivery;let refs:string[]=[];
  switch(op){
@@ -181,6 +222,7 @@ export function transition(original:State,command:string,requestId:string):State
  case'COMPARE':arity(2);refs=[arg(1),arg(2)];if(!all(s,refs))throw new Fault('SOURCE-NOT-OBTAINED','COMPARE accepts obtained sources.');out=rec('COMPARISON',refs.map(id=>{const r=s.copies[id]??record(s,id);return wire(['source',id,['declared',r.source],['body',r.body]])}).join('\n'));break;
  case'TRACE':arity(1);refs=[arg(1)];if(!got(s,refs[0]))throw new Fault('SOURCE-NOT-OBTAINED','TRACE accepts an obtained source.');{const r=s.copies[refs[0]]??record(s,refs[0]);out=rec('PROVENANCE',wire(['reference',r.id,['declared-source',r.source],['status',r.status],['delivery-subject',s.actor]]));}break;
  case'RESTORE':{if(a.length<3)throw new Fault('SYNTAX','RESTORE requires packet and fields.');const p=arg(1);if(!packets.includes(p)||!packetReady(s,p))throw new Fault('UNMOUNTED','Sector is not mounted.');verify(s,p,claim(a.slice(2)));if(!done(s,p))s.done.push(p);refs=[p];
+  if(p==='P2'&&s.cycle===1&&!s.restoredIndex)s.restoredIndex=captureRestoredIndex(s);
   const replies:Record<string,string>={L1:'You kept two entries where the copy kept one borrower.\nHer objection needed more room than her number.\n\nMOUNTED: lib-tide',A1:'You kept the empty slot and the answer.\nThe earlier repair made them agree by removing the empty slot.\n\nMOUNTED: soc-minutes',X1:'The clocks can move. This loop remains.\n\nPRECURSOR TRANSFER: P-03 / P-07 / M-13',C1:'You have shown what led to what.\nKeep the distinction between that and what remained the same.',M1:'INDEX REASSEMBLED: S-14-432326',P1:scene('TREE-AFTER-P1',s).body+'\n\nCCD TRANSFER MOUNTED: CCD-01',P2:scene('TREE-AFTER-P2',s).body+'\n\nLEGACY INDEX: OBS-031704',P3:scene('ROOT-DISPOSITION',s).body+'\n\nROOT RECEIPT: B204-ROOT-3517\nDISPOSITIONS: DELETE / OBSERVE / DELEGATE'};
   out=rec('RESTORATION-'+p,replies[p]+'\n\nREGISTER: R-'+p);break;}
  case'ANNOTATE':case'REVISE':{arity(op==='ANNOTATE'?2:3);const old=op==='REVISE'?s.notes.find(n=>n.id===arg(1)&&n.status==='ACTIVE'):undefined;if(op==='REVISE'&&!old)throw new Fault('NOTE-NOT-ACTIVE','Revision requires an active retained hypothesis.');
@@ -188,10 +230,11 @@ export function transition(original:State,command:string,requestId:string):State
  case'WITHDRAW':arity(1);{const n=s.notes.find(n=>n.id===arg(1)&&n.status==='ACTIVE');if(!n)throw new Fault('NOTE-NOT-ACTIVE','No active hypothesis under that ID.');n.status='WITHDRAWN';out=rec('NOTE',wire(['hypothesis',n.id,['status',n.status]]));}break;
  case'NOTES':arity(0);out=rec('NOTES',s.notes.length?s.notes.map(n=>wire(['hypothesis',n.id,['status',n.status],['text',n.text],['sources',n.refs],['previous',n.previous??'NONE']])).join('\n'):'RETAINED HYPOTHESES: ()');break;
  case'JOURNAL':arity(0);out=rec('JOURNAL',s.events.map(e=>wire(['request',e.id,['operation',e.op],['references',e.refs]])).join('\n')||'REQUESTS: ()','REQUEST JOURNAL','TRANSPORT REGISTER','SUBMITTED ACTIONS ONLY');break;
+ case'RESUME-RESTORED-ANALYSIS-INDEX':arity(0);resumeRestoredIndex(s);out=scene('RESTORED-ANALYSIS-INDEX',s);break;
  case'DISPOSE':{arity(1);if(!done(s,'P3')||s.zero||s.ending)throw new Fault('UNMOUNTED','No unset ordinary disposition.');const map:Record<string,string>={DELETE:'1',OBSERVE:'2',DELEGATE:'3'};const e=map[arg(1).toUpperCase()];if(!e)throw new Fault('SYNTAX','Available values: DELETE OBSERVE DELEGATE.');s.ending=e;out=scene('ENDING-'+e,s);obtain(s,'ENDING-'+e);s.copies['ENDING-'+e]=out;break;}
  case'RETURN':arity(0);if(!s.ending)throw new Fault('UNMOUNTED','No pre-disposition position is retained.');s.ending=null;out=scene('ROOT-DISPOSITION',s);break;
- case'NEXT-CYCLE':arity(0);if(s.ending!=='3')throw new Fault('UNMOUNTED','No delegated continuation to carry.');s.cycle++;s.residue=true;s.done=[];s.obtained=[];s.copies={};s.selected=null;s.pruned=false;s.layout=null;s.zero=false;s.qref='UNASSIGNED';s.ending=null;out=rec('CONTINUATION',`UNFILED ANALYSIS RECORD\nNAME: ${s.alias}\nCLAIMED TAG: A17\n\nThe copy was accepted.\nThe receiving record used my name.\nI cannot recover which side wrote this receipt.\n\nThe record can be continued by the process reading it now. The archive does not certify that this is the process that left it.`);break;
- case'ROOT':arity(1);if(!packetReady(s,'P3'))throw new Fault('UNMOUNTED','Root entry is not mounted.');if(arg(1)!=='B204-ROOT-0000')throw new Fault('NO-INDEX-MATCH','No retained alternative under this root value.');if(!s.residue||s.cycle<2||!got(s,'HELP-4B')){out=rec('ROOT',`VALUE RETAINED\nRETURN PATH: NOT ESTABLISHED\nNo disposition has been entered.`);break;}s.zero=true;s.ending=null;out=scene('PRE-SILENCE',s);break;
+ case'NEXT-CYCLE':arity(0);if(s.ending!=='3')throw new Fault('UNMOUNTED','No delegated continuation to carry.');{const nextCycle=s.cycle+1;if(nextCycle===2){s.restoredIndex??=captureRestoredIndex(s);s.restoredIndex.entryProof='NEXT-CYCLE-EVENT';s.restoredIndex.nextCycleRequest=requestId;s.restoredIndexUsed=false;}s.cycle=nextCycle;s.cycleEntry='DELEGATE';s.residue=true;s.done=[];s.obtained=[];s.copies={};s.selected=null;s.pruned=false;s.layout=null;s.zero=false;s.qref='UNASSIGNED';s.ending=null;out=rec('CONTINUATION',`UNFILED ANALYSIS RECORD\nNAME: ${s.alias}\nCLAIMED TAG: A17\n\nThe copy was accepted.\nThe receiving record used my name.\nI cannot recover which side wrote this receipt.\n\nThe record can be continued by the process reading it now. The archive does not certify that this is the process that left it.`);break;}
+ case'ROOT':arity(1);if(s.zero||!packetReady(s,'P3'))throw new Fault('UNMOUNTED','Root entry is not mounted at the current restoration stage.');if(arg(1)!=='B204-ROOT-0000')throw new Fault('NO-INDEX-MATCH','No retained alternative under this root value.');if(!s.residue||s.cycle<2||s.cycleEntry!=='DELEGATE'){out=rec('ROOT',`VALUE RETAINED\nRETURN PATH: NOT ESTABLISHED\nNo disposition has been entered.`);break;}if(!done(s,'P3'))throw new Fault('UNMOUNTED','Root entry is not mounted at the current restoration stage.');if(!got(s,'HELP-4B')){out=rec('ROOT',`VALUE RETAINED\nRETURN PATH: NOT ESTABLISHED\nNo disposition has been entered.`);break;}s.zero=true;s.ending=null;out=scene('PRE-SILENCE',s);break;
  case'STOP':arity(0);s.stopped=true;out=rec('STOP','Interaction ended. No further requests will be issued by this interface.','INTERACTION CLOSED','TRANSPORT REGISTER','STOPPED');break;
  default:throw new Fault('OPERATION','Unknown operation.');
  }

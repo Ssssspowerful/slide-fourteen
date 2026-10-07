@@ -6,7 +6,7 @@
 
 ## 保留的內容
 
-`game/` 與第二輪修正版 `70fd6d839cc99960c05e055783343dfda7baf34b` 逐檔相同，包括謎題判定、三語、HELP、結局、R-05、P2 與續讀快照規則。SQL schema 相同。改動僅為部署、HTTP 路徑、cookie 範圍與獨立 HTML 渲染。
+目前 AI Player Edition 版本為 `2.0.2`。本次只修復二週目的 restored-analysis-index 捷徑、舊 `2.0.1` cycle-two continuation 遷移，以及 P3 之前可提前提交 root zero 的 gate 漏洞；謎題答案、故事 canon、人類版與一週目流程均未改動。SQL schema 相同。
 
 人類端檔案、導覽、sitemap、存檔與謎題均不需要修改。新 cookie 為 `sf_agent_continuation`，限 `/Agent/`；AI 不讀人類 localStorage。
 
@@ -91,10 +91,18 @@ DNS 服務轉到 Cloudflare 時，網域仍可留在 Porkbun 註冊。人類端�
 
 設定刻意關閉 `workers.dev` 與 preview URLs，公開地址只使用自己的域名。路由為 `slidefourteen.org/Agent*`，程式對 `/AgentExtra` 等非目標路徑直接交回 origin；不攔截人類版 `/`、`/en/`、`/zh-hant/`、`/zh-hans/` 或 `/_next/`。
 
+## 二週目 restored analysis index
+
+合法完成 `DELEGATE → NEXT-CYCLE` 後，終端會同時提供兩條路：從 public index 完整重跑，或明確執行 `(resume-restored-analysis-index)`。捷徑恢復的是先前截至 P2 的合法 restoration subset；不會自動查詢 `OBS-031704`、完成 P3、取得 4-B 或提交 root zero。
+
+快照格式升為 state schema v2。一週目 P2 accepted 時保存 versioned restored-index snapshot，NEXT-CYCLE 再把合法轉移的 request 證據綁入該 snapshot。舊 v2.0.1 state 只有在服務端快照本身保留 `cycle>=2` 與 delegate residue 時才恢復 delegate entry；只有 `cycle=2` 會建立 fast-resume index。這兩個欄位在舊 engine 中只能由成功的 NEXT-CYCLE 產生，因此不依賴最多保留 512 筆、可能已截斷的 request journal。若原始 CCD request reference 已遭截斷，遷移會明確標示無法復原，不會捏造 ID。一般新 session、第一輪或沒有 delegate residue 的 state 不會取得捷徑。
+
+`B204-ROOT-0000` 現在必須在 P3 正式 accepted、4-B 已取得、cycle two delegate residue 有效且尚未 disposition 的狀態才會接受。只知道 literal 或只取得 `OBS-031704` 不足以跨過 gate。遷移也會拒絕無法證明 P3 與 4-B 均先於 ROOT 的舊 `zero=true` snapshot，避免部署前由舊 gate leak 形成的非法分支繼續掛載 writeback。
+
 ## 舊續讀資料
 
 快照格式與判定未改，但新 D1 不會自動擁有舊代管站的資料。舊 continuation 要在新站繼續，仍需另行匯出、匯入原快照。此包不包含玩家資料、續讀 token 或任何憑證。
 
 ## 本地驗證
 
-`npm test` 包含既有三語與主線判定測試，以及新部署的 HTTP 測試。HTTP 測試覆蓋三語 OPEN/HELP/L1/RESUME、token 改寫拒絕、重試與競態、無 JavaScript 表單、同域名路徑、限定 cookie 範圍、單一 Human archive footer 與人類路徑原樣通過。此驗證不代表 Cloudflare/DNS 正式設定或獨立 AI 盲測已完成。
+`npm test` 包含既有主線判定、三語 parity、cycle-two 專項與 production-bundle HTTP 測試。除既有三語 OPEN/HELP/L1/RESUME、token 改寫拒絕、重試與競態、無 JavaScript 表單、同域名路徑、限定 cookie 範圍、單一 Human archive footer 與人類路徑原樣通過外，也覆蓋：完整二週目重跑、顯式 fast resume、through-P2 validator 重驗、OBS/P3/root 邊界、legacy v2.0.1 lazy migration，以及 `DELEGATE → NEXT-CYCLE → fast resume → OBS → P3 → 4-B → root zero → writeback`。此驗證不代表獨立 AI 盲測已完成。

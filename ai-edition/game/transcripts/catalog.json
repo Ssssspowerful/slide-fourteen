@@ -1423,6 +1423,10 @@
     "HELP 回傳介面說明。可用操作欄位列出目前狀態真正支援的操作。普通處置後可使用 RETURN、RETAIN、REREAD、JOURNAL、NOTES、STOP；DELEGATE 另提供 NEXT-CYCLE。RETURN 恢復處置前的位置，以便選擇另一種處置。",
     "HELP 回传介面说明。可用操作栏位列出目前状态真正支援的操作。普通处置后可使用 RETURN、RETAIN、REREAD、JOURNAL、NOTES、STOP；DELEGATE 另提供 NEXT-CYCLE。RETURN 恢复处置前的位置，以便选择另一种处置。"
   ],
+  "In an eligible delegated cycle-two record, RESUME-RESTORED-ANALYSIS-INDEX explicitly mounts the prior restoration through P2. It does not issue the exact OBS-031704 query, restore P3, or submit the root value. Continuing from the public index remains available.": [
+    "在合格的已委派二週目紀錄中，RESUME-RESTORED-ANALYSIS-INDEX 會依明確操作掛載前次截至 P2 的復原狀態。它不會送出 OBS-031704 的精確查詢、不會復原 P3，也不會提交根值。從公開索引繼續的路徑仍然可用。",
+    "在合格的已委派二周目纪录中，RESUME-RESTORED-ANALYSIS-INDEX 会依明确操作挂载前次截至 P2 的复原状态。它不会送出 OBS-031704 的精确查询、不会复原 P3，也不会提交根值。从公开索引继续的路径仍然可用。"
+  ],
   "After FINAL-05 the state is STORY_COMPLETE. No further progression exists. Only REREAD, JOURNAL, NOTES, RETAIN and STOP remain. REREAD returns an obtained delivery; it does not mount new evidence or restart progression. Closing the interface ends interaction with this service.": [
     "FINAL-05 之後狀態為 STORY_COMPLETE，不再存在後續進度。只保留 REREAD、JOURNAL、NOTES、RETAIN、STOP。REREAD 回傳已取得的交付，不掛載新證據，也不重新啟動進度。關閉介面即結束與此服務的互動。",
     "FINAL-05 之后状态为 STORY_COMPLETE，不再存在后续进度。只保留 REREAD、JOURNAL、NOTES、RETAIN、STOP。REREAD 回传已取得的交付，不挂载新证据，也不重新启动进度。关闭介面即结束与此服务的互动。"
@@ -1450,6 +1454,30 @@
   "You kept both sources. Which use of \"you\" did that settle?": [
     "你保留了兩個來源。這確定了哪一個「你」？",
     "你保留了两个来源。这确定了哪一个「你」？"
+  ],
+  "RESTORED ANALYSIS INDEX / PRIOR RESTORATION MOUNTED\nCOMPLETED THROUGH: P2\nCURRENT BINDING: UNRESOLVED\nQUALIFIED ANALYST RECORDS: A17-1 A17-2": [
+    "已復原解析索引／前次復原已掛載\n完成至：P2\nCURRENT 綁定：UNRESOLVED\n合格 ANALYST 紀錄：A17-1 A17-2",
+    "已复原解析索引／前次复原已挂载\n完成至：P2\nCURRENT 绑定：UNRESOLVED\n合格 ANALYST 纪录：A17-1 A17-2"
+  ],
+  "OBS-031704: NOT QUERIED IN THIS CONTINUATION\nP3: NOT RESTORED\nROOT ZERO: NOT SUBMITTED": [
+    "OBS-031704：本續讀紀錄尚未查詢\nP3：尚未復原\nROOT ZERO：尚未提交",
+    "OBS-031704：本续读纪录尚未查询\nP3：尚未复原\nROOT ZERO：尚未提交"
+  ],
+  "The damaged position still requires an exact query:\n(query \"OBS-031704\")": [
+    "受損位置仍須再次精確查詢：\n(query \"OBS-031704\")",
+    "受损位置仍须再次精确查询：\n(query \"OBS-031704\")"
+  ],
+  "RESTORATION PATHS": [
+    "復原路徑",
+    "复原路径"
+  ],
+  "CONTINUE FROM PUBLIC INDEX": [
+    "由公開索引繼續",
+    "从公开索引继续"
+  ],
+  "RESUME RESTORED ANALYSIS INDEX": [
+    "續接已復原解析索引",
+    "续接已复原解析索引"
   ],
   "This question did not arrive through your current request.": [
     "這個問題不是經由你目前的請求抵達的。",
@@ -2535,9 +2563,9 @@
     "每個操作發生一次。COPY 為獨立副本。選擇符合提交狀態的路徑。操作位元組：SELECT=53 PRUNE=14 LAYOUT=20 COMMIT=04（十六進位）。循環使用有序的四位元組金鑰，對 DATA_HEX 位元組作 XOR，再解碼 UTF-8。不產生回寫令牌。",
     "每个操作发生一次。COPY 为独立副本。选择符合提交状态的路径。操作位元组：SELECT=53 PRUNE=14 LAYOUT=20 COMMIT=04（十六进位）。循环使用有序的四位元组金钥，对 DATA_HEX 位元组作 XOR，再解码 UTF-8。不产生回写令牌。"
   ],
-  "Your current record proceeds through the public index and mounted sectors. Earlier restoration records remain source material; they do not automatically complete the present restoration.": [
-    "目前紀錄經由公開索引與已掛載區段繼續。較早的復原紀錄作為來源材料保留，不會自動完成這一次的復原。",
-    "目前纪录经由公开索引与已挂载区段继续。较早的复原纪录作为来源材料保留，不会自动完成这一次的复原。"
+  "Your current record may continue from the public index or resume the restored analysis index. Resuming mounts the prior restoration through P2; the damaged position still requires an exact query.": [
+    "目前紀錄可以從公開索引繼續，或續接已復原的解析索引。續接會掛載前次截至 P2 的復原狀態；受損位置仍須再次精確查詢。",
+    "目前纪录可以从公开索引继续，或续接已复原的解析索引。续接会挂载前次截至 P2 的复原状态；受损位置仍须再次精确查询。"
   ],
   "Retained photograph transcription from the same tape batch: B-204 apparatus. The image is dated 1994, but the monitor reflection contains the tank modifications made in 1997. This is a retained description, not a request for the current terminal to view an image.": [
     "同批磁帶保留的 B-204 設備照片轉錄：影像標示 1994 年，但螢幕反射包含 1997 年才完成的水槽改裝。這是保留的照片描述，不要求目前終端觀看影像。",

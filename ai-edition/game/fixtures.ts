@@ -14,13 +14,16 @@ export const proofs:Record<string,string>={
  P2:'(source-reject R74) (retain-analysts (A17-2 A17-1)) (current-binding UNRESOLVED)',
  P3:'(root B-204) (position OBS-031704) (endpoint UNREGISTERED) (supports (MAP-PERMIT READ-PERMIT WATER-PERMIT))'
 };
-export function mainline(s:State,run:typeof step=step){
- for(const p of ['A1','L1','X1','C1','M1','P1','P2','P3']){
+const required:Record<string,string[]>={A1:['T7-NODES','T7-SOURCE','T7-CUT','T7-LAYOUT'],L1:['L1-CATALOG','L1-PAPER','L1-CLOSURE'],X1:['X1-SETS','X1-NEWS','X1-WATER','X1-CONTROL'],C1:['C1-TRANSFER','S-03','S-07','S-13','precursor-p03','precursor-p07','precursor-m13'],M1:['M1-MAIL','R-L1','R-A1','R-X1','R-C1'],P1:['PUB13','IN14'],P2:['P2-TAGS','TERMINAL-BINDINGS'],P3:['P3-PERMITS','OBS-031704']};
+function restorePackets(s:State,packets:string[],run:typeof step){
+ for(const p of packets){
   if(p==='P1')s=run(s,'(query "S-14-432326")');
   if(p==='P2'){for(let i=1;i<=4;i++)s=run(s,`(inspect CCD-0${i})`);}
   if(p==='P3')s=run(s,'(query OBS-031704)');
-  const req:Record<string,string[]>={A1:['T7-NODES','T7-SOURCE','T7-CUT','T7-LAYOUT'],L1:['L1-CATALOG','L1-PAPER','L1-CLOSURE'],X1:['X1-SETS','X1-NEWS','X1-WATER','X1-CONTROL'],C1:['C1-TRANSFER','S-03','S-07','S-13','precursor-p03','precursor-p07','precursor-m13'],M1:['M1-MAIL','R-L1','R-A1','R-X1','R-C1'],P1:['PUB13','IN14'],P2:['P2-TAGS','TERMINAL-BINDINGS'],P3:['P3-PERMITS','OBS-031704']};
-  s=read(s,req[p],run);s=run(s,`(restore ${p} ${proofs[p]})`);ok(s.done.includes(p));
+  s=read(s,required[p],run);s=run(s,`(restore ${p} ${proofs[p]})`);ok(s.done.includes(p));
  }
  return s;
 }
+export function throughP2(s:State,run:typeof step=step){return restorePackets(s,['A1','L1','X1','C1','M1','P1','P2'],run)}
+export function finishP3(s:State,run:typeof step=step){return restorePackets(s,['P3'],run)}
+export function mainline(s:State,run:typeof step=step){return finishP3(throughP2(s,run),run)}

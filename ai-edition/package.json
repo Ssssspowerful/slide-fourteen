@@ -1,14 +1,14 @@
 {
   "name": "slide-fourteen-agent",
   "private": true,
-  "version": "2.0.1",
+  "version": "2.0.2",
   "type": "module",
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --experimental-transform-types game/verify.ts && node --experimental-transform-types game/verify-r2.ts && node qa/http.mjs",
+    "test": "node --experimental-transform-types game/verify.ts && node --experimental-transform-types game/verify-cycle2.ts && node --experimental-transform-types game/verify-r2.ts && node qa/http.mjs",
     "dev": "wrangler dev --config wrangler.local.jsonc",
     "deploy": "node configure.mjs && wrangler d1 migrations apply slide-fourteen-agent --remote --config wrangler.deploy.json && wrangler deploy --config wrangler.deploy.json"
   },
